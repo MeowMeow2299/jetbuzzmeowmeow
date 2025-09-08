@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Login.css';
 import { useAuth } from '../auth/AuthContext.jsx';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const { loginWithGoogle, loginWithFacebook, loginWithEmail, signupWithEmail, startPhoneLogin } = useAuth();
+  const { user, loginWithGoogle, loginWithFacebook, loginWithEmail, signupWithEmail, startPhoneLogin } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/';
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -20,6 +24,11 @@ const Login = () => {
       setError(err?.message || 'Login failed');
     }
   };
+  useEffect(() => {
+    if (user) {
+      navigate(from, { replace: true });
+    }
+  }, [user, navigate, from]);
   const onSendOtp = async () => {
     setError('');
     try {
