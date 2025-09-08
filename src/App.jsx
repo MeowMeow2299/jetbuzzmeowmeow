@@ -8,6 +8,7 @@ import Casino from './pages/Casino';
 import Slots from './pages/Slots';
 import ComingSoon from './pages/ComingSoon';
 import GameChicken from './pages/GameChicken';
+import LiveCasino from './pages/LiveCasino';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/casino" element={<Casino />} />
               <Route path="/slots" element={<Slots />} />
               <Route path="/gamechicken" element={<GameChicken />} />
+              <Route path="/live-casino" element={<LiveCasino />} />
               <Route path="*" element={<ComingSoon />} />
             </Routes>
           </main>

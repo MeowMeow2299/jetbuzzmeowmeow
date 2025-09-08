@@ -56,7 +56,7 @@ const Sidebar = () => {
           <>
             <ul className="main-items">
               {mainItems.map((item, index) => {
-                const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS';
+                const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS' || item.name === 'LIVE CASINO';
                 return (
                   <li key={index} className="main-item">
                     {openInNewTab ? (
