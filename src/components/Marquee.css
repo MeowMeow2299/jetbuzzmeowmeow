@@ -1,0 +1,42 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;       /* Ẩn scroll ngang */
+  background: rgba(0,0,0,0.6);
+  color: #FFD700;
+  font-weight: bold;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform; /* tối ưu animation */
+}
+
+.marquee-content span {
+  padding-right: 50px; /* khoảng cách giữa 2 text */
+  flex-shrink: 0;       /* không co lại */
+}
+
+/* Chạy từ phải sang trái */
+.marquee-content.left {
+  animation: scroll-left 20s linear infinite;
+}
+
+/* Chạy từ trái sang phải */
+.marquee-content.right {
+  animation: scroll-right 20s linear infinite;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}

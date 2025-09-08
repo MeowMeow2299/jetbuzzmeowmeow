@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full màn hình */
+  overflow: hidden;     /* Ẩn mọi phần tràn */
+  overflow-x: hidden;   /* Chặn cuộn ngang */
+}
+
+.container-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Ảnh luôn fit */
+  display: block;
+}
+
+.container-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%); /* canh giữa */
+  text-align: center;
+  color: #FFD700;
+  max-width: 90%;     /* Ngăn chữ vượt quá màn hình */
+  word-wrap: break-word;
+}
+
+.container-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Ngăn toàn trang cuộn ngang */
+}
+
