@@ -13,17 +13,27 @@ const firebaseConfig = {
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
 };
 
-const hasAllEnv = Object.values(firebaseConfig).every((v) => typeof v === 'string' && v.trim() !== '' && v !== 'undefined');
+// Fallback to your provided config if env vars are missing
+const firebaseConfigFallback = {
+  apiKey: "AIzaSyBTyYqFFm8Qx4i7MgPqgQsjSCrgonnGmRo",
+  authDomain: "jetbuzzgaming.firebaseapp.com",
+  projectId: "jetbuzzgaming",
+  appId: "1:561922224936:web:ac021fa10a6055f599561d",
+  messagingSenderId: "561922224936",
+};
 
-export const isAuthConfigured = hasAllEnv;
+const hasAllEnv = Object.values(firebaseConfig).every((v) => typeof v === 'string' && v.trim() !== '' && v !== 'undefined');
+const configUsed = hasAllEnv ? firebaseConfig : firebaseConfigFallback;
+
+export const isAuthConfigured = !!configUsed?.apiKey;
 
 let app;
 let _auth = null;
 let _google = null;
 let _facebook = null;
 
-if (hasAllEnv) {
-  app = initializeApp(firebaseConfig);
+if (isAuthConfigured) {
+  app = initializeApp(configUsed);
   _auth = getAuth(app);
   _google = new GoogleAuthProvider();
   _facebook = new FacebookAuthProvider();
