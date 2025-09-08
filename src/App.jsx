@@ -11,6 +11,7 @@ import GameChicken from './pages/GameChicken';
 import LiveCasino from './pages/LiveCasino';
 import Lottery from './pages/Lottery';
 import ESport from './pages/ESport';
+import TableGames from './pages/TableGames';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="/live-casino" element={<LiveCasino />} />
               <Route path="/lottery" element={<Lottery />} />
               <Route path="/e-sports" element={<ESport />} />
+              <Route path="/table-games" element={<TableGames />} />
               <Route path="*" element={<ComingSoon />} />
             </Routes>
           </main>
