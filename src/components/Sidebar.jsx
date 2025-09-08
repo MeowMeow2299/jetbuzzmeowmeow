@@ -54,11 +54,18 @@ const Sidebar = () => {
             </div>
 
             <ul className="main-items">
-              {mainItems.map((item, index) => (
-                <li key={index} className="main-item">
-                  <Link to={item.link}>{item.name}</Link>
-                </li>
-              ))}
+              {mainItems.map((item, index) => {
+                const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS';
+                return (
+                  <li key={index} className="main-item">
+                    {openInNewTab ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
+                    ) : (
+                      <Link to={item.link}>{item.name}</Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
 
             <ul className="sub-items">
