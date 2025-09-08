@@ -30,7 +30,7 @@ function App() {
               <Route path="/gamechicken" element={<GameChicken />} />
               <Route path="/live-casino" element={<LiveCasino />} />
               <Route path="/lottery" element={<Lottery />} />
-              <Route path="/esport" element={<ESport />} />
+              <Route path="/e-sports" element={<ESport />} />
               <Route path="*" element={<ComingSoon />} />
             </Routes>
           </main>

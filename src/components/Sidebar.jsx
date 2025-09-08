@@ -27,7 +27,7 @@ const Sidebar = () => {
     { name: 'LOTTERY', link: '/lottery' },
     { name: 'SPORTS', link: '/sports' },
     { name: 'GAMECHICKEN', link: '/gamechicken' },
-    { name: 'E-SPORT', link: '/esport' },
+    { name: 'E-SPORT', link: '/e-sports' },
     { name: 'POPULAR GAMES', link: '/popular' },
   ];
 
