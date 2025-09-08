@@ -4,6 +4,7 @@ import {
   GoogleAuthProvider,
   FacebookAuthProvider,
 } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -31,12 +32,14 @@ let app;
 let _auth = null;
 let _google = null;
 let _facebook = null;
+let _db = null;
 
 if (isAuthConfigured) {
   app = initializeApp(configUsed);
   _auth = getAuth(app);
   _google = new GoogleAuthProvider();
   _facebook = new FacebookAuthProvider();
+  _db = getFirestore(app);
 } else {
   // eslint-disable-next-line no-console
   console.error('[Auth] Missing Firebase env. Set VITE_FIREBASE_* env vars. Auth disabled.');
@@ -45,4 +48,5 @@ if (isAuthConfigured) {
 export const auth = _auth;
 export const googleProvider = _google;
 export const facebookProvider = _facebook;
+export const db = _db;
 

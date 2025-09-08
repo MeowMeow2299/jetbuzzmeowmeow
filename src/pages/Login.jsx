@@ -94,7 +94,7 @@ const Login = () => {
           </>
         )}
 
-        <p className="signup-hint">Don't have an account? <a href="#" className="link-accent">Create one</a></p>
+        <p className="signup-hint">Don't have an account? <a href="/signup" className="link-accent">Create one</a></p>
       </div>
     </div>
   );

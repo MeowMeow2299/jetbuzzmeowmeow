@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { auth, googleProvider, facebookProvider } from './firebase';
+import { auth, googleProvider, facebookProvider, db } from './firebase';
 import {
   onAuthStateChanged,
   signInWithPopup,
@@ -9,6 +9,7 @@ import {
   RecaptchaVerifier,
   signInWithPhoneNumber,
 } from 'firebase/auth';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const AuthContext = createContext(null);
 
@@ -23,6 +24,25 @@ export const AuthProvider = ({ children }) => {
     });
     return () => unsub();
   }, []);
+
+  useEffect(() => {
+    const upsert = async () => {
+      if (user && db) {
+        const ref = doc(db, 'users', user.uid);
+        await setDoc(ref, {
+          uid: user.uid,
+          email: user.email || null,
+          phone: user.phoneNumber || null,
+          displayName: user.displayName || null,
+          photoURL: user.photoURL || null,
+          provider: user.providerData?.[0]?.providerId || null,
+          updatedAt: serverTimestamp(),
+          createdAt: serverTimestamp(),
+        }, { merge: true });
+      }
+    };
+    upsert();
+  }, [user]);
 
   const loginWithGoogle = () => signInWithPopup(auth, googleProvider);
   const loginWithFacebook = () => signInWithPopup(auth, facebookProvider);
