@@ -6,17 +6,23 @@ import Dom from './Dom';
 import Sliderx from './Sliderx';
 import Sliderxx from './Sliderxx';
 import Sliderxxx from './Sliderxxx';
+import { useAuth } from '../auth/AuthContext.jsx';
 
 const Home = () => {
+  const { user } = useAuth();
   return (
     <>
       <Container />
-      <Marquee />
-      <Slider />
-      <Dom />
-      <Sliderx />
-      <Sliderxx />
-      <Sliderxxx />
+      {user && (
+        <>
+          <Marquee />
+          <Slider />
+          <Dom />
+          <Sliderx />
+          <Sliderxx />
+          <Sliderxxx />
+        </>
+      )}
     </>
   );
 };

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
 import { FaHome, FaThLarge, FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../auth/AuthContext.jsx';
 
 const Sidebar = () => {
+  const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleSidebar = () => {
@@ -58,7 +60,7 @@ const Sidebar = () => {
               {mainItems.map((item, index) => {
                 const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS' || item.name === 'LIVE CASINO' || item.name === 'LOTTERY' || item.name === 'E-SPORT';
                 return (
-                  <li key={index} className="main-item">
+                  <li key={index} className="main-item" style={{opacity: user ? 1 : 0.5, pointerEvents: user ? 'auto' : 'none'}}>
                     {openInNewTab ? (
                       <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
                     ) : (
@@ -69,7 +71,7 @@ const Sidebar = () => {
               })}
             </ul>
 
-            <ul className="sub-items">
+            <ul className="sub-items" style={{opacity: user ? 1 : 0.5, pointerEvents: user ? 'auto' : 'none'}}>
               {subItems.map((item, index) => (
                 <li key={index} className="sub-item">
                   {item === 'Chicken Game' ? (

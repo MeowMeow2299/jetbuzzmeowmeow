@@ -14,6 +14,7 @@ import ESport from './pages/ESport';
 import TableGames from './pages/TableGames';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -28,13 +29,13 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/casino" element={<Casino />} />
-              <Route path="/slots" element={<Slots />} />
-              <Route path="/gamechicken" element={<GameChicken />} />
-              <Route path="/live-casino" element={<LiveCasino />} />
-              <Route path="/lottery" element={<Lottery />} />
-              <Route path="/e-sports" element={<ESport />} />
-              <Route path="/table-games" element={<TableGames />} />
+              <Route path="/casino" element={<ProtectedRoute><Casino /></ProtectedRoute>} />
+              <Route path="/slots" element={<ProtectedRoute><Slots /></ProtectedRoute>} />
+              <Route path="/gamechicken" element={<ProtectedRoute><GameChicken /></ProtectedRoute>} />
+              <Route path="/live-casino" element={<ProtectedRoute><LiveCasino /></ProtectedRoute>} />
+              <Route path="/lottery" element={<ProtectedRoute><Lottery /></ProtectedRoute>} />
+              <Route path="/e-sports" element={<ProtectedRoute><ESport /></ProtectedRoute>} />
+              <Route path="/table-games" element={<ProtectedRoute><TableGames /></ProtectedRoute>} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="*" element={<ComingSoon />} />
