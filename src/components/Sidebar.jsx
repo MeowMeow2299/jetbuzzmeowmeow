@@ -47,12 +47,6 @@ const Sidebar = () => {
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
         {isOpen && (
           <>
-            <div className="icon-bar">
-              <FaHome className="sidebar-icon" />
-              <FaThLarge className="sidebar-icon" />
-              <FaHeart className="sidebar-icon" />
-            </div>
-
             <ul className="main-items">
               {mainItems.map((item, index) => {
                 const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS';
