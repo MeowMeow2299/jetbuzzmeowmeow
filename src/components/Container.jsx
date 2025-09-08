@@ -3,7 +3,7 @@ import './Container.css';
 const Container = () => {
   return (
     <div className="container">
-      <img src="./photo/1.png" alt="Banner" className="container-img" />
+      <img src="/photo/1.png" alt="Banner" className="container-img" />
 
     </div>
   );

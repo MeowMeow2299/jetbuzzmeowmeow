@@ -1,5 +1,5 @@
 import React from 'react';
-import './dom.css';
+import './Dom.css';
 
 const menuItems = [
   { iconClass: 'fa fa-home', label: 'Home' },
