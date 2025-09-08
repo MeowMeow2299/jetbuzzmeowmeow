@@ -1,0 +1,62 @@
+.signup-page {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(255,215,0,0.12), rgba(0,0,0,0)),
+              radial-gradient(900px 500px at 90% 20%, rgba(255,215,0,0.08), rgba(0,0,0,0)),
+              #000;
+}
+
+.signup-bg::before { content: ''; position: absolute; inset: 0; pointer-events:none; }
+.signup-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.signup-card__header { text-align: center; margin-bottom: 16px; }
+.signup-title { margin: 0 0 6px; font-size: 24px; color: #fff; }
+.signup-subtitle { margin: 0; color: #d6d6d6; font-size: 14px; }
+
+.signup-form .form-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.signup-form .form-field input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  outline: none;
+}
+.signup-form .form-field input:focus {
+  border-color: rgba(255,215,0,0.55);
+  box-shadow: 0 0 0 3px rgba(255,215,0,0.15);
+}
+
+.agree-row { display: flex; align-items: flex-start; gap: 8px; color: #bbb; font-size: 13px; margin: 8px 0 12px; }
+.btn-primary.btn-wide { width: 100%; }
+.error-hint { margin-top: 10px; color: #ff8a8a; font-size: 13px; text-align: center; }
+
+.divider { position: relative; text-align: center; color: #aaa; font-size: 12px; margin: 16px 0; }
+.divider::before, .divider::after { content: ''; position: absolute; top: 50%; width: 40%; height: 1px; background: rgba(255,255,255,0.12); }
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.social-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.btn-social { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); color: #fff; cursor: pointer; }
+.btn-social.google { border-color: rgba(234,67,53,0.45); }
+.btn-social.facebook { border-color: rgba(24,119,242,0.45); }
+.link-accent { color: #FFD700; text-decoration: none; }
+.link-accent:hover { text-decoration: underline; }
+.signin-hint { margin-top: 14px; text-align: center; color: #bbb; font-size: 13px; }
+
+@media (max-width: 480px) { .signup-card { padding: 22px; border-radius: 14px; } }
+

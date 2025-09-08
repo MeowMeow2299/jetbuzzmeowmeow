@@ -13,6 +13,7 @@ import Lottery from './pages/Lottery';
 import ESport from './pages/ESport';
 import TableGames from './pages/TableGames';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               <Route path="/e-sports" element={<ESport />} />
               <Route path="/table-games" element={<TableGames />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
               <Route path="*" element={<ComingSoon />} />
             </Routes>
           </main>

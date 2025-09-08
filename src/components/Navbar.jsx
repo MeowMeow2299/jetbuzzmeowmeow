@@ -28,7 +28,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <input type="text" placeholder="Search..." />
           </div>
           <button className="btn-glass" onClick={() => navigate('/login')}>Login</button>
-          <button className="btn-glass btn-glass--accent" onClick={onSignupClick}>Signup</button>
+          <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
         </div>
       </div>
     </header>
