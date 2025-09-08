@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
 import { FaHome, FaThLarge, FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,13 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    document.body.classList.toggle('sidebar-open', isOpen);
+    return () => {
+      document.body.classList.remove('sidebar-open');
+    };
+  }, [isOpen]);
 
   // mainItems giờ là object có name + link
   const mainItems = [

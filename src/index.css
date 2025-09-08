@@ -14,3 +14,12 @@ body {
   color: #fff;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/* Layout shifts when sidebar is open */
+.sidebar-open .navbar {
+  padding-left: 250px;
+}
+
+.sidebar-open .main-content {
+  margin-left: 250px;
+}
