@@ -29,7 +29,7 @@ const Sidebar = () => {
     'Crickex', 'Crickex Login', 'Crickex Bet', 'CRICKEX APP', 'Crickex Online',
     'Crickex Account Create', 'CRICKEX BONUS', 'Crickex BD Login', 'Crickex Betting App',
     'Crickex Bet Bangla', 'JEETBUZZ', 'Jeetbuzz Login', 'Jeetbuzz Casino',
-    'Jeetbuzz Game', 'Jeetbuzz Online', 'Jeetbuzz Partner',
+    'Jeetbuzz Game', 'Jeetbuzz Online', 'Jeetbuzz Partner', 'mainchicken',
   ];
 
   return (
@@ -64,7 +64,13 @@ const Sidebar = () => {
 
             <ul className="sub-items">
               {subItems.map((item, index) => (
-                <li key={index} className="sub-item">{item}</li>
+                <li key={index} className="sub-item">
+                  {item === 'mainchicken' ? (
+                    <a href="/gamechicken" target="_blank" rel="noopener noreferrer">mainchicken</a>
+                  ) : (
+                    item
+                  )}
+                </li>
               ))}
             </ul>
           </>
