@@ -89,6 +89,19 @@
   text-align: center;
 }
 
+/* Ensure main item links are always yellow and not underlined */
+.main-items a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.main-items a:hover,
+.main-items a:active,
+.main-items a:visited {
+  color: #FFD700;
+  text-decoration: none;
+}
+
 .sub-item {
   color: #ffffff;
   margin-bottom: 8px;
