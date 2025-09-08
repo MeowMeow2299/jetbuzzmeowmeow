@@ -6,7 +6,6 @@ import Dom from './Dom';
 import Sliderx from './Sliderx';
 import Sliderxx from './Sliderxx';
 import Sliderxxx from './Sliderxxx';
-import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -18,7 +17,6 @@ const Home = () => {
       <Sliderx />
       <Sliderxx />
       <Sliderxxx />
-      <Footer />
     </>
   );
 };
