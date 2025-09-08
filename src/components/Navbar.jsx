@@ -13,10 +13,6 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
               <img src="/photo/1.png" alt="Logo chính" />
             </NavLink>
           </h1>
-          {/* Logo phụ - bà đổi link ảnh ở src */}
-          <div className="logo-extra">
-            <img src="/photo/logo.png" alt="Logo phụ" />
-          </div>
         </div>
 
         {/* Slogan */}
