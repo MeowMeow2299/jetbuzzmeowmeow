@@ -10,7 +10,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
         <div className="navbar-left">
           <h1 className="logo">
             <NavLink to="/" aria-label="Home">
-              <img src="/photo/1.png" alt="Logo chính" />
+              <img src="/photo/logo.png" alt="Logo" />
             </NavLink>
           </h1>
         </div>
