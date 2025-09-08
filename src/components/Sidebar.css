@@ -38,6 +38,11 @@
   z-index: 2001; /* cao hơn sidebar */
 }
 
+@media (max-width: 768px) {
+  .hamburger { top: 12px; left: 12px; }
+  .sidebar { width: 220px; padding: 16px; }
+}
+
 .hamburger .line {
   width: 30px;
   height: 3px;

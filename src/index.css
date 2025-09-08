@@ -23,3 +23,8 @@ body {
 .sidebar-open .main-content {
   margin-left: 250px;
 }
+
+@media (max-width: 768px) {
+  .sidebar-open .navbar { padding-left: 56px; }
+  .sidebar-open .main-content { margin-left: 0; }
+}

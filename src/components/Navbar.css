@@ -167,20 +167,31 @@
 
 /* Responsive tweak */
 @media (max-width: 768px) {
-  .slogan {
-    font-size: 18px;
-    text-align: center;
+  .navbar {
+    height: auto;
+    padding: 6px 8px;
   }
-
   .navbar-container {
-    flex-direction: column;
+    padding: 0;
+    gap: 8px;
     align-items: center;
-    gap: 10px;
   }
-
+  .navbar-left .logo img {
+    height: 32px;
+  }
+  .navbar-center .slogan {
+    display: none;
+  }
+  .search-bar {
+    display: none;
+  }
   .navbar-right {
-    margin-top: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .btn-glass {
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }
