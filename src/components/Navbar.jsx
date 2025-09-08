@@ -1,8 +1,9 @@
 import { Search } from 'lucide-react';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = ({ onLoginClick, onSignupClick }) => {
+  const navigate = useNavigate();
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -26,7 +27,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <Search className="search-icon" size={18} />
             <input type="text" placeholder="Search..." />
           </div>
-          <button className="btn-glass" onClick={onLoginClick}>Login</button>
+          <button className="btn-glass" onClick={() => navigate('/login')}>Login</button>
           <button className="btn-glass btn-glass--accent" onClick={onSignupClick}>Signup</button>
         </div>
       </div>
