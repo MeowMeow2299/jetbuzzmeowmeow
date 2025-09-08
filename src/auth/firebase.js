@@ -13,9 +13,26 @@ const firebaseConfig = {
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
 };
 
-const app = initializeApp(firebaseConfig);
+const hasAllEnv = Object.values(firebaseConfig).every((v) => typeof v === 'string' && v.trim() !== '' && v !== 'undefined');
 
-export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
-export const facebookProvider = new FacebookAuthProvider();
+export const isAuthConfigured = hasAllEnv;
+
+let app;
+let _auth = null;
+let _google = null;
+let _facebook = null;
+
+if (hasAllEnv) {
+  app = initializeApp(firebaseConfig);
+  _auth = getAuth(app);
+  _google = new GoogleAuthProvider();
+  _facebook = new FacebookAuthProvider();
+} else {
+  // eslint-disable-next-line no-console
+  console.error('[Auth] Missing Firebase env. Set VITE_FIREBASE_* env vars. Auth disabled.');
+}
+
+export const auth = _auth;
+export const googleProvider = _google;
+export const facebookProvider = _facebook;
 
