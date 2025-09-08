@@ -6,6 +6,8 @@ import {
   signOut,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  RecaptchaVerifier,
+  signInWithPhoneNumber,
 } from 'firebase/auth';
 
 const AuthContext = createContext(null);
@@ -27,6 +29,21 @@ export const AuthProvider = ({ children }) => {
   const loginWithEmail = (email, password) => signInWithEmailAndPassword(auth, email, password);
   const signupWithEmail = (email, password) => createUserWithEmailAndPassword(auth, email, password);
   const logout = () => signOut(auth);
+
+  const ensureRecaptcha = (containerId = 'recaptcha-container') => {
+    if (!window.recaptchaVerifier) {
+      window.recaptchaVerifier = new RecaptchaVerifier(auth, containerId, {
+        size: 'invisible',
+      });
+    }
+    return window.recaptchaVerifier;
+  };
+
+  const startPhoneLogin = async (phoneNumber, containerId) => {
+    const verifier = ensureRecaptcha(containerId);
+    const confirmation = await signInWithPhoneNumber(auth, phoneNumber, verifier);
+    return confirmation; // caller stores and confirms
+  };
 
   return (
     <AuthContext.Provider value={{ user, loading, loginWithGoogle, loginWithFacebook, loginWithEmail, signupWithEmail, logout }}>
