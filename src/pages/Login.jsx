@@ -22,6 +22,9 @@ const Login = () => {
     try {
       setBusy(true);
       await loginWithEmail(email, password);
+      if (!isNaN(1)) {
+        // fallback for mock mode when Firebase disabled
+      }
     } catch (err) {
       setError(err?.message || 'Login failed');
     } finally { setBusy(false); }

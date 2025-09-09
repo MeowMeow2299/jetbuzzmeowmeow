@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { auth, googleProvider, facebookProvider, db } from './firebase';
+import { auth, googleProvider, facebookProvider, db, isAuthConfigured } from './firebase';
 import {
   onAuthStateChanged,
   signInWithPopup,
@@ -18,11 +18,19 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (u) => {
-      setUser(u);
+    if (isAuthConfigured && auth) {
+      const unsub = onAuthStateChanged(auth, (u) => {
+        setUser(u);
+        setLoading(false);
+      });
+      return () => unsub();
+    } else {
+      // Fallback: mock mode (no Firebase env). Use localStorage to persist a basic session
+      const saved = localStorage.getItem('mockUser');
+      setUser(saved ? JSON.parse(saved) : null);
       setLoading(false);
-    });
-    return () => unsub();
+      return () => {};
+    }
   }, []);
 
   useEffect(() => {
@@ -48,7 +56,13 @@ export const AuthProvider = ({ children }) => {
   const loginWithFacebook = () => signInWithPopup(auth, facebookProvider);
   const loginWithEmail = (email, password) => signInWithEmailAndPassword(auth, email, password);
   const signupWithEmail = (email, password) => createUserWithEmailAndPassword(auth, email, password);
-  const logout = () => signOut(auth);
+  const logout = async () => {
+    if (isAuthConfigured && auth) {
+      return signOut(auth);
+    }
+    localStorage.removeItem('mockUser');
+    setUser(null);
+  };
 
   const ensureRecaptcha = (containerId = 'recaptcha-container') => {
     if (!window.recaptchaVerifier) {
