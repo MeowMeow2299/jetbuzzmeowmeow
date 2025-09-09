@@ -27,6 +27,13 @@ const Banner = () => {
                 alt={banner.alt}
                 className="banner-image"
               />
+              <div className="banner-logo-overlay">
+                <img 
+                  src="./photo/logo.png" 
+                  alt="JetBuzz Logo"
+                  className="banner-logo"
+                />
+              </div>
             </div>
           ))}
         </div>

@@ -51,6 +51,31 @@
   transform: scale(1.02);
 }
 
+/* Banner Logo Overlay */
+.banner-logo-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 8px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.banner-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.banner-logo:hover {
+  transform: scale(1.1);
+}
+
 /* Navigation Arrows */
 .banner-nav {
   position: absolute;
@@ -176,6 +201,17 @@
     height: 200px;
   }
   
+  .banner-logo-overlay {
+    top: 12px;
+    right: 12px;
+    padding: 6px;
+  }
+  
+  .banner-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
   .banner-nav {
     width: 40px;
     height: 40px;
@@ -219,6 +255,17 @@
   .banner-image {
     width: 690px;
     height: 150px;
+  }
+  
+  .banner-logo-overlay {
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+  }
+  
+  .banner-logo {
+    width: 40px;
+    height: 40px;
   }
   
   .banner-nav {
