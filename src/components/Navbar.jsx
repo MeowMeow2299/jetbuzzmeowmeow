@@ -27,7 +27,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <Search className="search-icon" size={18} />
             <input type="text" placeholder="Search..." />
           </div>
-          <button className="btn-glass" onClick={() => navigate('/login')}>Login</button>
+          <NavLink className="btn-glass" to="/login">Login</NavLink>
           <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
         </div>
       </div>
