@@ -5,7 +5,7 @@
   top: 0;
   left: 0;   /* luôn dính từ mép trái */
   right: 0;  /* luôn dính mép phải */
-  height: 50px;
+  height: 60px;
   z-index: 3000;
   background: rgba(15, 15, 15, 0.85);
   backdrop-filter: blur(10px);
@@ -13,6 +13,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   display: flex;
   align-items: center;
+  padding: 8px 0;
 }
 
 
@@ -44,7 +45,7 @@
 .navbar-container {
   width: 100%;
   height: 100%;
-  padding: 0 8px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +55,8 @@
 
 /* Logo bên trái */
 .navbar-left .logo img {
-  height: 44px;
+  height: 50px;
+  margin-left: 20px; /* Dịch logo sang phải để tránh hamburger menu */
 }
 
 /* Slogan ở giữa */
@@ -211,15 +213,16 @@
 @media (max-width: 768px) {
   .navbar {
     height: auto;
-    padding: 6px 8px;
+    padding: 8px 0;
   }
   .navbar-container {
-    padding: 0;
+    padding: 0 12px;
     gap: 6px;
     align-items: center;
   }
   .navbar-left .logo img {
-    height: 32px;
+    height: 40px;
+    margin-left: 15px;
   }
   .navbar-center .slogan {
     display: none;
@@ -249,6 +252,15 @@
 }
 
 @media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 8px;
+  }
+  
+  .navbar-left .logo img {
+    height: 35px;
+    margin-left: 10px;
+  }
+  
   .btn-circle {
     width: 32px;
     height: 32px;
