@@ -1,4 +1,18 @@
 /* App layout helpers */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .main-content {
   padding-top: 50px; /* height of navbar */
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

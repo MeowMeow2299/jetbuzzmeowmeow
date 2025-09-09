@@ -173,7 +173,7 @@
   }
   .navbar-container {
     padding: 0;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
   }
   .navbar-left .logo img {
@@ -188,10 +188,10 @@
   .navbar-right {
     margin-top: 0;
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 6px;
   }
   .btn-glass {
-    padding: 6px 10px;
-    font-size: 14px;
+    padding: 6px 9px;
+    font-size: 13px;
   }
 }

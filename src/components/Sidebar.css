@@ -41,6 +41,8 @@
 @media (max-width: 768px) {
   .hamburger { top: 12px; left: 12px; }
   .sidebar { width: 220px; padding: 16px; }
+  .main-item { font-size: 14px; }
+  .sub-item { font-size: 13px; }
 }
 
 .hamburger .line {
