@@ -35,7 +35,7 @@
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-  z-index: 2001; /* cao hơn sidebar */
+  z-index: 4001; /* luôn cao hơn navbar */
 }
 
 @media (max-width: 768px) {
