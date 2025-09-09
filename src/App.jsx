@@ -17,6 +17,9 @@ import ESport from './pages/ESport';
 import TableGames from './pages/TableGames';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import BGD33 from './pages/BGD33';
+import JeetBuzz from './pages/JeetBuzz';
+import JeetBuzzGame from './pages/JeetBuzzGame';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -44,6 +47,9 @@ function App() {
               <Route path="/table-games" element={<TableGames />} />
               <Route path="/sports" element={<ComingSoon />} />
               <Route path="/popular" element={<ComingSoon />} />
+              <Route path="/bgd33" element={<BGD33 />} />
+              <Route path="/jeetbuzz" element={<JeetBuzz />} />
+              <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="*" element={<ComingSoon />} />

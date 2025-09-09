@@ -34,9 +34,9 @@ const Sidebar = () => {
   ];
 
   const subItems = [
-    { name: 'BGD33', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'BGD33', link: '/bgd33', isInternal: true },
     { name: 'BETBDT', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
-    { name: 'JEETBUZZ', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'JEETBUZZ', link: '/jeetbuzz', isInternal: true },
     { name: 'Crickex', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'TK999', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'CK444', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
@@ -52,7 +52,7 @@ const Sidebar = () => {
     { name: 'Crickex Bet Bangla', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'Jeetbuzz Login', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'Jeetbuzz Casino', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
-    { name: 'Jeetbuzz Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Game', link: '/jeetbuzz-game', isInternal: true },
     { name: 'Jeetbuzz Online', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'Jeetbuzz Partner', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'Chicken Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
@@ -90,14 +90,20 @@ const Sidebar = () => {
             <ul className="sub-items">
               {subItems.map((item, index) => (
                 <li key={index} className="sub-item">
-                  <a 
-                    href={item.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="sub-item-link"
-                  >
-                    {item.name}
-                  </a>
+                  {item.isInternal ? (
+                    <Link to={item.link} className="sub-item-link">
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <a 
+                      href={item.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="sub-item-link"
+                    >
+                      {item.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
