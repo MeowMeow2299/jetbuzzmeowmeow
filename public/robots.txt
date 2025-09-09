@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jeetbuzzgames.com/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all game pages
+Allow: /casino
+Allow: /slots
+Allow: /live-casino
+Allow: /table-games
+Allow: /lottery
+Allow: /e-sports
+Allow: /gamechicken
+Allow: /promotion
+
+# Crawl delay
+Crawl-delay: 1
