@@ -105,222 +105,23 @@
 .announcement-illustration {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   border-radius: 15px;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 20px;
   position: relative;
   height: 200px;
   overflow: hidden;
-}
-
-.rabbit-character {
-  position: absolute;
-  left: 50px;
-  top: 20px;
-  width: 120px;
-  height: 120px;
-}
-
-.rabbit-body {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 80px;
-  background: white;
-  border-radius: 30px 30px 20px 20px;
-}
-
-.rabbit-head {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-}
-
-.rabbit-ears {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 20px solid white;
-}
-
-.rabbit-ears::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: -6px;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 15px solid #ffb6c1;
-}
-
-.rabbit-eyes {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 8px;
-  height: 8px;
-  background: black;
-  border-radius: 50%;
-}
-
-.rabbit-eyes::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -15px;
-  width: 8px;
-  height: 8px;
-  background: black;
-  border-radius: 50%;
-}
-
-.rabbit-nose {
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 4px;
-  background: #ff69b4;
-  border-radius: 50%;
-}
-
-.rabbit-mouth {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 10px;
-  border: 2px solid black;
-  border-top: none;
-  border-radius: 0 0 20px 20px;
-}
-
-.rabbit-bow-tie {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 15px;
-  background: #ff0000;
-  border-radius: 10px;
-}
-
-.rabbit-sunglasses {
-  position: absolute;
-  top: 12px;
-  left: 10px;
-  width: 30px;
-  height: 15px;
-  background: #333;
-  border-radius: 15px;
-  border: 2px solid #666;
-}
-
-.rabbit-arm {
-  position: absolute;
-  top: 50px;
-  right: -10px;
-  width: 20px;
-  height: 30px;
-  background: white;
-  border-radius: 10px;
-  transform: rotate(30deg);
-}
-
-.slot-elements {
-  position: absolute;
-  right: 50px;
-  top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-.slot-machine {
-  width: 60px;
-  height: 80px;
-  background: #ff0000;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.slot-reel {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.safe-vault {
-  width: 60px;
-  height: 80px;
-  background: #228b22;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.safe-door {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.gold-coins {
-  position: absolute;
-  top: 0;
-  left: 0;
+.banner-image {
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.coin {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #FFD700;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: coinFall 3s infinite linear;
-}
-
-.coin-1 { top: 20px; left: 200px; animation-delay: 0s; }
-.coin-2 { top: 40px; left: 300px; animation-delay: 0.5s; }
-.coin-3 { top: 60px; left: 150px; animation-delay: 1s; }
-.coin-4 { top: 80px; left: 350px; animation-delay: 1.5s; }
-.coin-5 { top: 100px; left: 250px; animation-delay: 2s; }
-.coin-6 { top: 120px; left: 400px; animation-delay: 2.5s; }
-
-@keyframes coinFall {
-  0% {
-    transform: translateY(-20px) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(200px) rotate(360deg);
-    opacity: 0;
-  }
-}
 
 .bonus-section {
   flex: 1;
@@ -340,8 +141,8 @@
 }
 
 .bonus-card {
-  background: #8b5cf6;
-  color: white;
+  background: #FFD700;
+  color: #000;
   padding: 15px;
   border-radius: 10px;
   text-align: center;

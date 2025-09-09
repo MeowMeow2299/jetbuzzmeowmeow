@@ -85,33 +85,7 @@ const Info = ({ isOpen, onClose }) => {
 
           <div className="main-announcement">
             <div className="announcement-illustration">
-              <div className="rabbit-character">
-                <div className="rabbit-body"></div>
-                <div className="rabbit-head"></div>
-                <div className="rabbit-ears"></div>
-                <div className="rabbit-eyes"></div>
-                <div className="rabbit-nose"></div>
-                <div className="rabbit-mouth"></div>
-                <div className="rabbit-bow-tie"></div>
-                <div className="rabbit-sunglasses"></div>
-                <div className="rabbit-arm"></div>
-              </div>
-              <div className="slot-elements">
-                <div className="slot-machine">
-                  <div className="slot-reel">7</div>
-                </div>
-                <div className="safe-vault">
-                  <div className="safe-door">7</div>
-                </div>
-              </div>
-              <div className="gold-coins">
-                <div className="coin coin-1"></div>
-                <div className="coin coin-2"></div>
-                <div className="coin coin-3"></div>
-                <div className="coin coin-4"></div>
-                <div className="coin coin-5"></div>
-                <div className="coin coin-6"></div>
-              </div>
+              <img src="/photo/banner7.jpeg" alt="Announcement Banner" className="banner-image" />
             </div>
 
             <div className="bonus-section">
