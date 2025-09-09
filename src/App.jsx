@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Casino from './pages/Casino';
 import Slots from './pages/Slots';
+import Promotion from './pages/Promotion';
 import ComingSoon from './pages/ComingSoon';
 import GameChicken from './pages/GameChicken';
 import LiveCasino from './pages/LiveCasino';
@@ -33,6 +34,7 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/promotion" element={<Promotion />} />
               <Route path="/casino" element={<ProtectedRoute><Casino /></ProtectedRoute>} />
               <Route path="/slots" element={<ProtectedRoute><Slots /></ProtectedRoute>} />
               <Route path="/gamechicken" element={<ProtectedRoute><GameChicken /></ProtectedRoute>} />
