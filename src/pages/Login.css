@@ -72,6 +72,7 @@
   background: rgba(0,0,0,0.35);
   color: #fff;
   outline: none;
+  font-size: 16px; /* tránh trình duyệt mobile auto-zoom */
 }
 .form-field input:focus {
   border-color: rgba(255,215,0,0.55);
@@ -84,9 +85,10 @@
   color: #111;
   background: linear-gradient(135deg, #FFD700, #D4AF37);
   border-radius: 10px;
-  padding: 10px 14px;
+  padding: 12px 16px;
   font-weight: 700;
   cursor: pointer;
+  min-height: 44px; /* kích thước chạm tối thiểu */
 }
 .btn-primary:hover { filter: brightness(1.04); }
 .link-muted { color: #bbb; font-size: 13px; text-decoration: none; }
@@ -110,13 +112,14 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 12px;
+  padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.18);
   background: rgba(255,255,255,0.06);
   color: #fff;
   cursor: pointer;
   transition: transform 0.15s ease, background 0.2s ease;
+  min-height: 44px;
 }
 .btn-social:hover { transform: translateY(-1px); background: rgba(255,255,255,0.1); }
 .btn-social i { font-size: 14px; }
@@ -132,6 +135,9 @@
 .error-hint { margin-top: 10px; color: #ff8a8a; font-size: 13px; }
 
 @media (max-width: 480px) {
-  .login-card { padding: 22px; border-radius: 14px; }
+  .login-card { padding: 20px; border-radius: 14px; width: calc(100% - 24px); }
+  .social-grid { grid-template-columns: 1fr; }
+  .btn-primary { font-size: 16px; }
+  .btn-social { font-size: 16px; }
 }
 

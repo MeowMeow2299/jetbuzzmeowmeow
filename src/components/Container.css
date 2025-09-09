@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full màn hình */
+  height: 60vh; /* tránh phóng to quá trên mobile; có thể tinh chỉnh */
   overflow: hidden;     /* Ẩn mọi phần tràn */
   overflow-x: hidden;   /* Chặn cuộn ngang */
 }
@@ -33,6 +33,12 @@
 .container-content h2 {
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container { height: 48vh; }
+  .container-content h1 { font-size: 2rem; }
+  .container-content h2 { font-size: 1.5rem; }
 }
 
 html, body {
