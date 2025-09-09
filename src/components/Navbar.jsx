@@ -30,6 +30,9 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
 
         {/* Search + Buttons */}
         <div className="navbar-right">
+          <NavLink className="btn-glass promotion-link" to="/promotion">
+            Promotion
+          </NavLink>
           <div className="search-bar">
             <Search className="search-icon" size={18} />
             <input type="text" placeholder="Search..." />

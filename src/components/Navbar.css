@@ -114,6 +114,13 @@
   color: #FFD700;
 }
 
+/* Promotion Link */
+.promotion-link {
+  margin-right: 12px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
 /* Search bar */
 .search-bar {
   display: flex;
