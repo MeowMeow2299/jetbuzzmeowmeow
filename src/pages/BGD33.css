@@ -186,14 +186,42 @@
   font-weight: bold;
 }
 
-/* Casino Games Grid - 5 rows */
-.casino-games-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  gap: 0;
-  margin: 30px 0;
-  width: 100%;
+/* Casino Games List - 5 rows like benefits list */
+.casino-games-list {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.casino-games-list h4 {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.casino-games-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.casino-games-list li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #FFD700;
+  transition: all 0.3s ease;
+}
+
+.casino-games-list li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+}
+
+.casino-games-list li strong {
+  color: #FFD700;
+  font-weight: bold;
 }
 
 .game-card {
