@@ -2,7 +2,7 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 250px; /* Giảm chiều cao từ 400px xuống 250px */
+  height: 240px; /* Giảm chiều cao xuống 240px */
   margin-top: 50px; /* Space below navbar */
   overflow: hidden;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
@@ -144,7 +144,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner-container {
-    height: 200px; /* Giảm chiều cao mobile */
+    height: 180px; /* Giảm chiều cao mobile */
     margin-top: 50px;
   }
   
@@ -175,7 +175,7 @@
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 150px; /* Giảm chiều cao mobile nhỏ */
+    height: 140px; /* Giảm chiều cao mobile nhỏ */
   }
   
   .banner-nav {
