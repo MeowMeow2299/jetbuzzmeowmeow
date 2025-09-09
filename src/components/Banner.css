@@ -86,27 +86,27 @@
 /* Pagination Dots */
 .banner-pagination {
   position: absolute;
-  bottom: 15px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
+  gap: 6px;
   z-index: 10;
 }
 
 .banner-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   position: relative;
 }
 
 .banner-dot:hover {
-  background: rgba(255, 215, 0, 0.4);
+  background: rgba(255, 215, 0, 0.3);
   border-color: #FFD700;
   transform: scale(1.1);
 }
@@ -114,18 +114,18 @@
 .banner-dot.active {
   background: #FFD700;
   border-color: #FFD700;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+  transform: scale(1.15);
 }
 
 .banner-dot.active::after {
   content: '';
   position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  border: 1px solid rgba(255, 215, 0, 0.6);
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 1px solid rgba(255, 215, 0, 0.4);
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
@@ -163,13 +163,13 @@
   }
   
   .banner-pagination {
-    bottom: 15px;
-    gap: 8px;
+    bottom: 10px;
+    gap: 5px;
   }
   
   .banner-dot {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
   }
 }
 
@@ -185,13 +185,13 @@
   }
   
   .banner-pagination {
-    bottom: 10px;
-    gap: 6px;
+    bottom: 8px;
+    gap: 4px;
   }
   
   .banner-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
 }
 

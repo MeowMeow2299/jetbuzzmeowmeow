@@ -10,6 +10,9 @@ const Banner = () => {
     { id: 3, src: './photo/banner3.jpeg', alt: 'Banner 3' },
     { id: 4, src: './photo/banner4.jpeg', alt: 'Banner 4' },
     { id: 5, src: './photo/banner5.jpeg', alt: 'Banner 5' },
+    { id: 6, src: './photo/banner6.jpeg', alt: 'Banner 6' },
+    { id: 7, src: './photo/banner7.jpeg', alt: 'Banner 7' },
+    { id: 8, src: './photo/banner8.jpeg', alt: 'Banner 8' },
   ];
 
   // Auto slide every 4 seconds
@@ -50,14 +53,6 @@ const Banner = () => {
             </div>
           ))}
         </div>
-
-        {/* Navigation arrows */}
-        <button className="banner-nav banner-nav-prev" onClick={goToPrevious}>
-          <i className="fas fa-chevron-left"></i>
-        </button>
-        <button className="banner-nav banner-nav-next" onClick={goToNext}>
-          <i className="fas fa-chevron-right"></i>
-        </button>
 
         {/* Pagination dots */}
         <div className="banner-pagination">
