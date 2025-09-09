@@ -56,7 +56,7 @@
 /* Logo bên trái */
 .navbar-left .logo img {
   height: 50px;
-  margin-left: 20px; /* Dịch logo sang phải để tránh hamburger menu */
+  margin-left: 35px; /* Dịch logo sang phải để tránh hamburger menu */
 }
 
 /* Slogan ở giữa */
@@ -222,7 +222,7 @@
   }
   .navbar-left .logo img {
     height: 40px;
-    margin-left: 15px;
+    margin-left: 25px;
   }
   .navbar-center .slogan {
     display: none;
@@ -258,7 +258,7 @@
   
   .navbar-left .logo img {
     height: 35px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .btn-circle {
