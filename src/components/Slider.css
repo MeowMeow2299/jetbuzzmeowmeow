@@ -116,7 +116,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 215, 0, 0.9);
   border: none;
   border-radius: 50%;
   width: 60px;
@@ -135,14 +135,14 @@
 }
 
 .play-btn:hover {
-  background: white;
+  background: rgba(255, 215, 0, 1);
   transform: translate(-50%, -50%) scale(1.1);
 }
 
 .play-triangle {
   width: 0;
   height: 0;
-  border-left: 15px solid #333;
+  border-left: 15px solid #000;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   margin-left: 3px;
@@ -163,14 +163,14 @@
 }
 
 .game-info {
-  background: #1a1a1a;
+  background: #FFD700;
   padding: 12px;
 }
 
 .game-title {
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: #000;
   margin-bottom: 4px;
   white-space: nowrap;
   overflow: hidden;
@@ -179,7 +179,7 @@
 
 .game-provider {
   font-size: 11px;
-  color: #888;
+  color: #333;
   font-weight: normal;
 }
 
