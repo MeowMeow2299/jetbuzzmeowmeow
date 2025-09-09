@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import FirebaseErrorHandler from './components/FirebaseErrorHandler';
 import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -20,6 +21,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 function App() {
   return (
     <BrowserRouter>
+      <FirebaseErrorHandler />
       <div className="app-layout" style={{ display: 'flex' }}>
         <Sidebar />
         <div className="content-area" style={{ flex: 1, width: '100%' }}>

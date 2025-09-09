@@ -7,11 +7,11 @@ import {
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyBTyYqFFm8Qx4i7MgPqgQsjSCrgonnGmRo",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "jetbuzzgaming.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "jetbuzzgaming",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:561922224936:web:ac021fa10a6055f599561d",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "561922224936",
 };
 
 // Fallback to your provided config if env vars are missing
