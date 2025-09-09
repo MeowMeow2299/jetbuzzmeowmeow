@@ -1,0 +1,233 @@
+/* Banner Container */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px; /* Space below navbar */
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Banner Slider */
+.banner-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Banner Track */
+.banner-track {
+  display: flex;
+  width: 800%; /* 8 banners * 100% */
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual Banner Slide */
+.banner-slide {
+  width: 12.5%; /* 100% / 8 banners */
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Banner Image */
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+  transform: scale(1.02);
+}
+
+/* Navigation Arrows */
+.banner-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #FFD700;
+  color: #FFD700;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.banner-nav:hover {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: #FFA500;
+  color: #FFA500;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.banner-nav-prev {
+  left: 20px;
+}
+
+.banner-nav-next {
+  right: 20px;
+}
+
+/* Pagination Dots */
+.banner-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.banner-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #FFD700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.banner-dot:hover {
+  background: rgba(255, 215, 0, 0.3);
+  transform: scale(1.2);
+}
+
+.banner-dot.active {
+  background: #FFD700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+  transform: scale(1.3);
+}
+
+.banner-dot.active::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-container {
+    height: 250px;
+    margin-top: 50px;
+  }
+  
+  .banner-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .banner-nav-prev {
+    left: 10px;
+  }
+  
+  .banner-nav-next {
+    right: 10px;
+  }
+  
+  .banner-pagination {
+    bottom: 15px;
+    gap: 8px;
+  }
+  
+  .banner-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-container {
+    height: 200px;
+  }
+  
+  .banner-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .banner-pagination {
+    bottom: 10px;
+    gap: 6px;
+  }
+  
+  .banner-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Loading Animation */
+.banner-slide {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+.banner-container * {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.banner-nav:focus,
+.banner-dot:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .banner-nav {
+    border-width: 3px;
+  }
+  
+  .banner-dot {
+    border-width: 3px;
+  }
+}

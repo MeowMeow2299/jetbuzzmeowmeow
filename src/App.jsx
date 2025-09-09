@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -26,6 +27,7 @@ function App() {
             onLoginClick={() => console.log('Login clicked')}
             onSignupClick={() => console.log('Signup clicked')}
           />
+          <Banner />
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
