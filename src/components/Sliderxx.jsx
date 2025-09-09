@@ -1,15 +1,24 @@
+import React from "react";
 import "./Sliderxx.css";
 
 const Sliderxx = () => {
   const items = [
-    { id: 1, title: "STARBURST 1", img: "/photo/2.png" },
-    { id: 2, title: "STARBURST 2", img: "/photo/3.png" },
-    { id: 3, title: "STARBURST 3", img: "/photo/4.png" },
-    { id: 4, title: "STARBURST 4", img: "/photo/5.png" },
-    { id: 5, title: "STARBURST 5", img: "/photo/6.png" },
-    { id: 6, title: "STARBURST 6", img: "/photo/7.png" },
-    { id: 7, title: "STARBURST 7", img: "/photo/8.png" },
-    { id: 8, title: "STARBURST 8", img: "/photo/9.png" },
+    { id: 1, title: "Lightning Blackjack", provider: "Evolution", img: "/photo/JL0186.png", isFavorite: false },
+    { id: 2, title: "Immersive Roulette", provider: "Evolution", img: "/photo/JL0187.png", isFavorite: true },
+    { id: 3, title: "Speed Baccarat", provider: "Evolution", img: "/photo/JL0188.png", isFavorite: false },
+    { id: 4, title: "Infinite Blackjack", provider: "Evolution", img: "/photo/JL0189.png", isFavorite: true },
+    { id: 5, title: "Auto Roulette", provider: "Evolution", img: "/photo/JL0190.png", isFavorite: false },
+    { id: 6, title: "VIP Blackjack", provider: "Evolution", img: "/photo/JL0191.png", isFavorite: true },
+    { id: 7, title: "Dragon Tiger Live", provider: "Evolution", img: "/photo/JL0192.png", isFavorite: false },
+    { id: 8, title: "Baccarat Squeeze", provider: "Evolution", img: "/photo/JL0216.png", isFavorite: true },
+    { id: 9, title: "Roulette Royale", provider: "Evolution", img: "/photo/JL0223.png", isFavorite: false },
+    { id: 10, title: "Blackjack Party", provider: "Evolution", img: "/photo/JL0231.png", isFavorite: true },
+    { id: 11, title: "Mega Ball Live", provider: "Evolution", img: "/photo/KA0775.png", isFavorite: false },
+    { id: 12, title: "Crazy Time Live", provider: "Evolution", img: "/photo/KA0811.png", isFavorite: true },
+    { id: 13, title: "Monopoly Live Show", provider: "Evolution", img: "/photo/KA0817.png", isFavorite: false },
+    { id: 14, title: "Dream Catcher Live", provider: "Evolution", img: "/photo/JL-COLOR.png", isFavorite: true },
+    { id: 15, title: "Gonzo's Treasure Hunt Live", provider: "Evolution", img: "/photo/JP.svg", isFavorite: false },
+    { id: 16, title: "Wheel of Fortune Live", provider: "Evolution", img: "/photo/superace.png", isFavorite: true },
   ];
 
   return (
@@ -24,9 +33,21 @@ const Sliderxx = () => {
       <div className="slider-container">
         <div className="slider-track">
           {items.concat(items).map((item, index) => (
-            <div key={index} className="slider-item">
-              <img src={item.img} alt={item.title} />
-              <div className="slider-title">{item.title}</div>
+            <div key={index} className="game-card">
+              <div className="game-image-container">
+                <img src={item.img} alt={item.title} className="game-image" />
+                <button className="favorite-btn">
+                  <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
+                </button>
+                <button className="play-btn">
+                  <div className="play-triangle"></div>
+                </button>
+                <div className="free-trial-label">FREE TRIAL</div>
+              </div>
+              <div className="game-info">
+                <div className="game-title">{item.title}</div>
+                <div className="game-provider">{item.provider}</div>
+              </div>
             </div>
           ))}
         </div>

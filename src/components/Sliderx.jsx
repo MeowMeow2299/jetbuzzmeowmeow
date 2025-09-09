@@ -1,15 +1,24 @@
+import React from "react";
 import "./Sliderx.css";
 
 const Sliderx = () => {
   const items = [
-    { id: 1, title: "STARBURST 1", img: "/photo/2.png" },
-    { id: 2, title: "STARBURST 2", img: "/photo/3.png" },
-    { id: 3, title: "STARBURST 3", img: "/photo/4.png" },
-    { id: 4, title: "STARBURST 4", img: "/photo/5.png" },
-    { id: 5, title: "STARBURST 5", img: "/photo/6.png" },
-    { id: 6, title: "STARBURST 6", img: "/photo/7.png" },
-    { id: 7, title: "STARBURST 7", img: "/photo/8.png" },
-    { id: 8, title: "STARBURST 8", img: "/photo/9.png" },
+    { id: 1, title: "Blackjack Classic", provider: "Evolution", img: "/photo/JL0111.png", isFavorite: false },
+    { id: 2, title: "Roulette European", provider: "Evolution", img: "/photo/JL0116.png", isFavorite: true },
+    { id: 3, title: "Baccarat Live", provider: "Evolution", img: "/photo/JL0125.png", isFavorite: false },
+    { id: 4, title: "Poker Texas Hold'em", provider: "Pragmatic Play", img: "/photo/JL0136.png", isFavorite: true },
+    { id: 5, title: "Dragon Tiger", provider: "Evolution", img: "/photo/JL0148.png", isFavorite: false },
+    { id: 6, title: "Sic Bo Live", provider: "Evolution", img: "/photo/JL0156.png", isFavorite: true },
+    { id: 7, title: "Crazy Time", provider: "Evolution", img: "/photo/JL0162.png", isFavorite: false },
+    { id: 8, title: "Monopoly Live", provider: "Evolution", img: "/photo/JL0166.png", isFavorite: true },
+    { id: 9, title: "Lightning Roulette", provider: "Evolution", img: "/photo/JL0167.png", isFavorite: false },
+    { id: 10, title: "Dream Catcher", provider: "Evolution", img: "/photo/JL0170.png", isFavorite: true },
+    { id: 11, title: "Gonzo's Treasure Hunt", provider: "Evolution", img: "/photo/JL0171.png", isFavorite: false },
+    { id: 12, title: "Mega Ball", provider: "Evolution", img: "/photo/JL0181.png", isFavorite: true },
+    { id: 13, title: "Wheel of Fortune", provider: "Evolution", img: "/photo/JL0182.png", isFavorite: false },
+    { id: 14, title: "Deal or No Deal", provider: "Evolution", img: "/photo/JL0183.png", isFavorite: true },
+    { id: 15, title: "Crazy Coin Flip", provider: "Evolution", img: "/photo/JL0184.png", isFavorite: false },
+    { id: 16, title: "Cash or Crash", provider: "Evolution", img: "/photo/JL0185.png", isFavorite: true },
   ];
 
   return (
@@ -24,9 +33,21 @@ const Sliderx = () => {
       <div className="slider-container">
         <div className="slider-track">
           {items.concat(items).map((item, index) => (
-            <div key={index} className="slider-item">
-              <img src={item.img} alt={item.title} />
-              <div className="slider-title">{item.title}</div>
+            <div key={index} className="game-card">
+              <div className="game-image-container">
+                <img src={item.img} alt={item.title} className="game-image" />
+                <button className="favorite-btn">
+                  <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
+                </button>
+                <button className="play-btn">
+                  <div className="play-triangle"></div>
+                </button>
+                <div className="free-trial-label">FREE TRIAL</div>
+              </div>
+              <div className="game-info">
+                <div className="game-title">{item.title}</div>
+                <div className="game-provider">{item.provider}</div>
+              </div>
             </div>
           ))}
         </div>
