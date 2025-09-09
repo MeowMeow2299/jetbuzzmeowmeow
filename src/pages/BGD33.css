@@ -227,15 +227,11 @@
 .game-card {
   background: rgba(255, 215, 0, 0.1);
   padding: 25px;
-  border-radius: 0;
-  border-left: 4px solid #FFD700;
-  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 215, 0, 0.3);
   transition: all 0.3s ease;
   height: fit-content;
-}
-
-.game-card:last-child {
-  border-bottom: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .game-card:hover {

@@ -121,15 +121,51 @@ const BGD33 = () => {
         <section className="casino-games-section">
           <h2>Best Casino Games on BK33</h2>
           
-          <div className="casino-games-list">
-            <h4>Popular Casino Games:</h4>
-            <ul>
-              <li><strong>1. Live Roulette:</strong> A timeless casino classic, live roulette on BK33 brings the Vegas experience straight to your screen. With real dealers spinning the wheel in real-time, you get the authentic feel of a luxury casino.</li>
-              <li><strong>2. Live Blackjack:</strong> For fans of strategy, blackjack is a must-play. BK33 offers multiple variations of blackjack with professional dealers, giving players the perfect mix of skill and luck.</li>
-              <li><strong>3. Baccarat:</strong> Simple yet elegant, baccarat is a favorite among Asian players. The live version allows you to interact with dealers and enjoy high-stakes action.</li>
-              <li><strong>4. Online Slots:</strong> BK33 has a vast collection of slot machines with diverse themes, from classic fruit slots to modern video slots with bonus rounds. Popular titles include progressive jackpots, 3D animated slots, and branded slot games.</li>
-              <li><strong>5. Poker:</strong> Whether you enjoy Texas Hold'em, Omaha, or live dealer poker rooms, BK33 has a vibrant poker community for both beginners and seasoned pros.</li>
-            </ul>
+          <div className="casino-games-grid">
+            <div className="game-card">
+              <h3>1. Live Roulette</h3>
+              <p>
+                A timeless casino classic, live roulette on BK33 brings the Vegas experience straight to your screen. 
+                With real dealers spinning the wheel in real-time, you get the authentic feel of a luxury casino.
+              </p>
+            </div>
+
+            <div className="game-card">
+              <h3>2. Live Blackjack</h3>
+              <p>
+                For fans of strategy, blackjack is a must-play. BK33 offers multiple variations of blackjack with 
+                professional dealers, giving players the perfect mix of skill and luck.
+              </p>
+            </div>
+
+            <div className="game-card">
+              <h3>3. Baccarat</h3>
+              <p>
+                Simple yet elegant, baccarat is a favorite among Asian players. The live version allows you to 
+                interact with dealers and enjoy high-stakes action.
+              </p>
+            </div>
+
+            <div className="game-card">
+              <h3>4. Online Slots</h3>
+              <p>
+                BK33 has a vast collection of slot machines with diverse themes, from classic fruit slots to modern 
+                video slots with bonus rounds. Popular titles include:
+              </p>
+              <ul>
+                <li>Progressive jackpots</li>
+                <li>3D animated slots</li>
+                <li>Branded slot games</li>
+              </ul>
+            </div>
+
+            <div className="game-card">
+              <h3>5. Poker</h3>
+              <p>
+                Whether you enjoy Texas Hold'em, Omaha, or live dealer poker rooms, BK33 has a vibrant poker 
+                community for both beginners and seasoned pros.
+              </p>
+            </div>
           </div>
         </section>
 
