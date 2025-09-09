@@ -36,6 +36,7 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   overflow: hidden;
+  z-index: 3500;
 }
 
 .login-card::before {

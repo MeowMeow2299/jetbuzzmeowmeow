@@ -14,15 +14,17 @@ const Login = () => {
   const [phone, setPhone] = useState('');
   const [otp, setOtp] = useState('');
   const [confirmation, setConfirmation] = useState(null);
+  const [busy, setBusy] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
     setError('');
     try {
+      setBusy(true);
       await loginWithEmail(email, password);
     } catch (err) {
       setError(err?.message || 'Login failed');
-    }
+    } finally { setBusy(false); }
   };
   useEffect(() => {
     if (user) {
@@ -32,20 +34,22 @@ const Login = () => {
   const onSendOtp = async () => {
     setError('');
     try {
+      setBusy(true);
       const c = await startPhoneLogin(phone, 'recaptcha-container');
       setConfirmation(c);
     } catch (err) {
       setError(err?.message || 'Failed to send OTP');
-    }
+    } finally { setBusy(false); }
   };
   const onVerifyOtp = async () => {
     if (!confirmation) return;
     setError('');
     try {
+      setBusy(true);
       await confirmation.confirm(otp);
     } catch (err) {
       setError(err?.message || 'Invalid OTP');
-    }
+    } finally { setBusy(false); }
   };
   return (
     <div className="login-page">
@@ -68,7 +72,7 @@ const Login = () => {
           </div>
 
           <div className="form-actions">
-            <button type="submit" className="btn-primary">Login</button>
+            <button type="submit" className="btn-primary" disabled={busy}>Login</button>
             <a className="link-muted" href="#">Forgot password?</a>
           </div>
         </form>
@@ -88,7 +92,7 @@ const Login = () => {
           <input id="phone" type="tel" placeholder="+84xxxxxxxxx" value={phone} onChange={(e)=>setPhone(e.target.value)} />
         </div>
         <div className="form-actions" style={{gap: '8px'}}>
-          <button className="btn-primary" type="button" onClick={onSendOtp}>Send OTP</button>
+          <button className="btn-primary" type="button" onClick={onSendOtp} disabled={busy || !phone}>Send OTP</button>
           <div id="recaptcha-container" />
         </div>
         {confirmation && (
@@ -98,7 +102,7 @@ const Login = () => {
               <input id="otp" type="text" placeholder="123456" value={otp} onChange={(e)=>setOtp(e.target.value)} />
             </div>
             <div className="form-actions">
-              <button className="btn-primary" type="button" onClick={onVerifyOtp}>Verify OTP</button>
+              <button className="btn-primary" type="button" onClick={onVerifyOtp} disabled={busy || !otp}>Verify OTP</button>
             </div>
           </>
         )}

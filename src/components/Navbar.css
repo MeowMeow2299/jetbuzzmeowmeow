@@ -6,7 +6,7 @@
   left: 0;   /* luôn dính từ mép trái */
   right: 0;  /* luôn dính mép phải */
   height: 50px;
-  z-index: 1000;
+  z-index: 3000;
   background: rgba(15, 15, 15, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
