@@ -113,6 +113,8 @@
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;
+  text-decoration: none; /* remove underline for anchor usage */
+  display: inline-block;
 }
 
 .btn-glass::before {
