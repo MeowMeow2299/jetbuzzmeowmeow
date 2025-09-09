@@ -22,15 +22,15 @@ const Sidebar = () => {
   // mainItems giờ là object có name + link
   const mainItems = [
     { name: 'HOME', link: '/', isInternal: true },
-    { name: 'CASINO GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'SLOTS', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'LIVE CASINO', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'TABLE GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'LOTTERY', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'SPORTS', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'GAMECHICKEN', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'E-SPORT', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
-    { name: 'POPULAR GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'CASINO GAMES', link: '/casino', isInternal: true },
+    { name: 'SLOTS', link: '/slots', isInternal: true },
+    { name: 'LIVE CASINO', link: '/live-casino', isInternal: true },
+    { name: 'TABLE GAMES', link: '/table-games', isInternal: true },
+    { name: 'LOTTERY', link: '/lottery', isInternal: true },
+    { name: 'SPORTS', link: '/sports', isInternal: true },
+    { name: 'GAMECHICKEN', link: '/gamechicken', isInternal: true },
+    { name: 'E-SPORT', link: '/e-sports', isInternal: true },
+    { name: 'POPULAR GAMES', link: '/popular', isInternal: true },
   ];
 
   const subItems = [
