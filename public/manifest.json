@@ -1,0 +1,29 @@
+{
+  "name": "JeetBuzz Games - Premium Online Casino",
+  "short_name": "JeetBuzz Games",
+  "description": "Premium Online Casino & Gaming Experience with slots, live casino, table games, sports betting and more. Bet Smart Win More!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/photo/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/photo/logo.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment", "casino"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

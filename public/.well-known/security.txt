@@ -1,0 +1,6 @@
+Contact: mailto:security@jeetbuzzgames.com
+Expires: 2025-12-31T23:59:59.000Z
+Encryption: https://jeetbuzzgames.com/pgp-key.txt
+Preferred-Languages: en, bn
+Canonical: https://jeetbuzzgames.com/.well-known/security.txt
+Policy: https://jeetbuzzgames.com/security-policy

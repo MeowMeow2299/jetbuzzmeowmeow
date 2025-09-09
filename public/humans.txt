@@ -1,0 +1,19 @@
+# JeetBuzz Games - Team
+
+/* TEAM */
+Developer: AI Assistant
+Contact: dev@jeetbuzzgames.com
+From: Bangladesh
+
+/* THANKS */
+Special thanks to:
+- React.js team
+- Vite team
+- Firebase team
+- Font Awesome team
+
+/* SITE */
+Last update: 2024/12/19
+Language: English / Bengali
+Doctype: HTML5
+IDE: Cursor AI
