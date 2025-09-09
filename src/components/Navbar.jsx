@@ -52,10 +52,11 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
               </div>
             </>
           ) : (
-            // When user is not logged in - show Login and Signup
+            // When user is not logged in - show Login, Signup and Language
             <>
               <NavLink className="btn-glass" to="/login">Login</NavLink>
               <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
+              <Language />
             </>
           )}
         </div>

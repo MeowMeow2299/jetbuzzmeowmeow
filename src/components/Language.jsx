@@ -12,6 +12,7 @@ const Language = () => {
     { code: 'AR', name: 'العربية', flag: '🇸🇦' },
     { code: 'TH', name: 'ไทย', flag: '🇹🇭' },
     { code: 'VI', name: 'Tiếng Việt', flag: '🇻🇳' },
+    { code: 'FR', name: 'Français', flag: '🇫🇷' },
   ];
 
   const handleLanguageChange = (langCode) => {
