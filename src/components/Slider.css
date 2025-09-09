@@ -152,8 +152,8 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background: rgba(0, 150, 255, 0.9);
-  color: white;
+  background: rgba(255, 215, 0, 0.9);
+  color: #000;
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 10px;
