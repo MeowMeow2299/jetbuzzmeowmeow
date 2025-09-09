@@ -38,30 +38,10 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <input type="text" placeholder="Search..." />
           </div>
           
-          {user ? (
-            // When user is logged in - show Profile and Language
-            <>
-              <div className="navbar-buttons">
-                <div className="profile-container">
-                  <button 
-                    className="btn-circle profile-btn"
-                    onClick={() => setShowProfile(!showProfile)}
-                  >
-                    <i className="fas fa-user"></i>
-                  </button>
-                  {showProfile && <Profile />}
-                </div>
-                <Language />
-              </div>
-            </>
-          ) : (
-            // When user is not logged in - show Login, Signup and Language
-            <>
-              <NavLink className="btn-glass" to="/login">Login</NavLink>
-              <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
-              <Language />
-            </>
-          )}
+          {/* Always show Language, no login/signup buttons */}
+          <div className="navbar-buttons">
+            <Language />
+          </div>
         </div>
       </div>
     </header>
