@@ -189,7 +189,7 @@
 .casino-games-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 0;
   margin: 30px 0;
   width: 100%;
 }
@@ -197,10 +197,15 @@
 .game-card {
   background: rgba(255, 215, 0, 0.1);
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 0;
   border-left: 4px solid #FFD700;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
   transition: all 0.3s ease;
   height: fit-content;
+}
+
+.game-card:last-child {
+  border-bottom: none;
 }
 
 .game-card:hover {
@@ -361,7 +366,7 @@
   }
   
   .casino-games-grid {
-    gap: 15px;
+    gap: 0;
   }
 }
 
@@ -377,6 +382,6 @@
   }
   
   .casino-games-grid {
-    gap: 15px;
+    gap: 0;
   }
 }
