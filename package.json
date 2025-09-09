@@ -1,8 +1,40 @@
 {
   "name": "jetbuzz",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "JetBuzz Gaming Platform - Premium Online Casino & Gaming Experience",
+  "author": {
+    "name": "JetBuzz Development Team",
+    "email": "dev@jetbuzz.com",
+    "url": "https://jetbuzz.com"
+  },
+  "contributors": [
+    {
+      "name": "AI Assistant",
+      "role": "Full-Stack Developer",
+      "contribution": "React Frontend, Firebase Integration, UI/UX Design"
+    }
+  ],
+  "keywords": [
+    "casino",
+    "gaming",
+    "react",
+    "firebase",
+    "online-games",
+    "slots",
+    "live-casino",
+    "bangladesh"
+  ],
+  "license": "MIT",
+  "homepage": "https://jetbuzzmeowmeow.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MeowMeow2299/jetbuzzmeowmeow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MeowMeow2299/jetbuzzmeowmeow/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
