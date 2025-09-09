@@ -11,32 +11,11 @@ import { useAuth } from '../auth/AuthContext.jsx';
 
 const Home = () => {
   const { user } = useAuth();
-  const [showInfo, setShowInfo] = useState(false);
+  const [showInfo, setShowInfo] = useState(true); // Tự động mở modal khi vào web
 
   return (
     <>
-      <Container onOpenInfo={() => setShowInfo(true)} />
-      
-      {/* Nút mở modal thông báo - hiện cho tất cả user */}
-      <button 
-        onClick={() => setShowInfo(true)}
-        style={{
-          position: 'fixed',
-          top: '20px',
-          right: '20px',
-          background: '#FFD700',
-          color: '#000',
-          border: 'none',
-          padding: '10px 20px',
-          borderRadius: '25px',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-          zIndex: 1000,
-          boxShadow: '0 4px 8px rgba(0,0,0,0.3)'
-        }}
-      >
-        📢 Announcement
-      </button>
+      <Container />
       
       {user && (
         <>
