@@ -2,7 +2,7 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 220px; /* Phù hợp với ảnh 200px + padding */
+  height: 270px; /* Cập nhật chiều cao thành 270px */
   margin-top: 50px; /* Space below navbar */
   overflow: hidden;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
@@ -23,24 +23,24 @@
 /* Banner Track */
 .banner-track {
   display: flex;
-  width: 2160px; /* 8 banners * 270px */
-  height: 200px;
+  width: 5520px; /* 8 banners * 690px */
+  height: 270px;
   animation: scroll-left 25s linear infinite;
   gap: 0;
 }
 
 /* Individual Banner Slide */
 .banner-slide {
-  width: 270px;
-  height: 200px;
+  width: 690px;
+  height: 270px;
   flex-shrink: 0;
   position: relative;
 }
 
 /* Banner Image */
 .banner-image {
-  width: 270px;
-  height: 200px;
+  width: 690px;
+  height: 270px;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -157,23 +157,23 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner-container {
-    height: 180px; /* Giảm chiều cao mobile */
+    height: 200px; /* Giảm chiều cao mobile */
     margin-top: 50px;
   }
   
   .banner-track {
-    width: 1620px; /* 6 banners * 270px */
-    height: 160px;
+    width: 4140px; /* 6 banners * 690px */
+    height: 200px;
   }
   
   .banner-slide {
-    width: 270px;
-    height: 160px;
+    width: 690px;
+    height: 200px;
   }
   
   .banner-image {
-    width: 270px;
-    height: 160px;
+    width: 690px;
+    height: 200px;
   }
   
   .banner-nav {
@@ -203,22 +203,22 @@
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 140px; /* Giảm chiều cao mobile nhỏ */
+    height: 150px; /* Giảm chiều cao mobile nhỏ */
   }
   
   .banner-track {
-    width: 1080px; /* 4 banners * 270px */
-    height: 120px;
+    width: 2760px; /* 4 banners * 690px */
+    height: 150px;
   }
   
   .banner-slide {
-    width: 270px;
-    height: 120px;
+    width: 690px;
+    height: 150px;
   }
   
   .banner-image {
-    width: 270px;
-    height: 120px;
+    width: 690px;
+    height: 150px;
   }
   
   .banner-nav {
