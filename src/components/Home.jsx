@@ -15,19 +15,9 @@ const Home = () => {
 
   return (
     <>
-      <Container />
-      {user && (
-        <>
-          <Marquee />
-          <Slider />
-          <Dom />
-          <Sliderx />
-          <Sliderxx />
-          <Sliderxxx />
-        </>
-      )}
+      <Container onOpenInfo={() => setShowInfo(true)} />
       
-      {/* Nút mở modal thông báo */}
+      {/* Nút mở modal thông báo - hiện cho tất cả user */}
       <button 
         onClick={() => setShowInfo(true)}
         style={{
@@ -47,6 +37,17 @@ const Home = () => {
       >
         📢 Announcement
       </button>
+      
+      {user && (
+        <>
+          <Marquee />
+          <Slider />
+          <Dom />
+          <Sliderx />
+          <Sliderxx />
+          <Sliderxxx />
+        </>
+      )}
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>
