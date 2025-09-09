@@ -40,6 +40,7 @@ const Sliderxxx = () => {
             <div key={index} className="game-card" onClick={handleGameClick}>
               <div className="game-image-container">
                 <img src={item.img} alt={item.title} className="game-image" />
+                <div className="game-title-overlay">{item.title}</div>
                 <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
                   <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
                 </button>
