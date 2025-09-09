@@ -34,11 +34,28 @@ const Sidebar = () => {
   ];
 
   const subItems = [
-    'BGD33', 'BETBDT', 'JEETBUZZ', 'Crickex', 'TK999', 'CK444', 'L444 Online Game',
-    'Crickex', 'Crickex Login', 'Crickex Bet', 'CRICKEX APP', 'Crickex Online',
-    'Crickex Account Create', 'CRICKEX BONUS', 'Crickex BD Login', 'Crickex Betting App',
-    'Crickex Bet Bangla', 'JEETBUZZ', 'Jeetbuzz Login', 'Jeetbuzz Casino',
-    'Jeetbuzz Game', 'Jeetbuzz Online', 'Jeetbuzz Partner', 'Chicken Game',
+    { name: 'BGD33', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'BETBDT', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'JEETBUZZ', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'TK999', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'CK444', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'L444 Online Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Login', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Bet', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'CRICKEX APP', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Online', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Account Create', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'CRICKEX BONUS', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex BD Login', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Betting App', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex Bet Bangla', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Login', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Casino', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Online', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Jeetbuzz Partner', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Chicken Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
   ];
 
   return (
@@ -74,11 +91,14 @@ const Sidebar = () => {
             <ul className="sub-items">
               {subItems.map((item, index) => (
                 <li key={index} className="sub-item">
-                  {item === 'Chicken Game' ? (
-                    <a href="/gamechicken" target="_blank" rel="noopener noreferrer">Chicken Game</a>
-                  ) : (
-                    item
-                  )}
+                  <a 
+                    href={item.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="sub-item-link"
+                  >
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>

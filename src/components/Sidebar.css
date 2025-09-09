@@ -120,3 +120,31 @@
   color: #FFD700;
   transform: translateX(5px);
 }
+
+/* Sub-item links styling */
+.sub-item-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sub-item-link:hover {
+  color: #FFD700;
+  background: rgba(255, 215, 0, 0.1);
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+.sub-item-link:active,
+.sub-item-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sub-item-link:active:hover {
+  color: #FFD700;
+}
