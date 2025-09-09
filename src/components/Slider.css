@@ -38,16 +38,17 @@
 
 .slider-track {
   display: flex;
-  gap: 15px;
+  gap: 0;
   animation: scroll-left 25s linear infinite;
   width: max-content;
 }
 
 .game-card {
   flex: 0 0 auto;
-  width: 220px;
+  width: 100vw;
+  max-width: 100%;
   background: #111;
-  border-radius: 15px;
+  border-radius: 0;
   overflow: hidden;
   color: white;
   font-weight: bold;
@@ -55,6 +56,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   position: relative;
+  margin: 0;
 }
 
 .game-card:hover {
@@ -65,7 +67,7 @@
 .game-image-container {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -173,15 +175,16 @@
 
 .game-info {
   background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
-  padding: 15px;
+  padding: 20px;
   position: relative;
   box-shadow: 
     inset 0 1px 0 rgba(255, 255, 255, 0.6),
     inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-  min-height: 80px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .game-info::before {
@@ -195,10 +198,10 @@
 }
 
 .game-title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -206,11 +209,11 @@
 }
 
 .game-provider {
-  font-size: 12px;
+  font-size: 16px;
   color: #333;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 @keyframes scroll-left {
