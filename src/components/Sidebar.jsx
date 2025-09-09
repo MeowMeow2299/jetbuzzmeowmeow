@@ -21,16 +21,16 @@ const Sidebar = () => {
 
   // mainItems giờ là object có name + link
   const mainItems = [
-    { name: 'HOME', link: '/' },
-    { name: 'CASINO GAMES', link: '/casino' },
-    { name: 'SLOTS', link: '/slots' },
-    { name: 'LIVE CASINO', link: '/live-casino' },
-    { name: 'TABLE GAMES', link: '/table-games' },
-    { name: 'LOTTERY', link: '/lottery' },
-    { name: 'SPORTS', link: '/sports' },
-    { name: 'GAMECHICKEN', link: '/gamechicken' },
-    { name: 'E-SPORT', link: '/e-sports' },
-    { name: 'POPULAR GAMES', link: '/popular' },
+    { name: 'HOME', link: '/', isInternal: true },
+    { name: 'CASINO GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'SLOTS', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'LIVE CASINO', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'TABLE GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'LOTTERY', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'SPORTS', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'GAMECHICKEN', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'E-SPORT', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
+    { name: 'POPULAR GAMES', link: 'https://www.betbdt.vip/register?affiliateCode=soy001', isInternal: false },
   ];
 
   const subItems = [
@@ -75,13 +75,12 @@ const Sidebar = () => {
           <>
             <ul className="main-items">
               {mainItems.map((item, index) => {
-                const openInNewTab = item.name === 'CASINO GAMES' || item.name === 'SLOTS' || item.name === 'LIVE CASINO' || item.name === 'LOTTERY' || item.name === 'E-SPORT';
                 return (
                   <li key={index} className="main-item">
-                    {openInNewTab ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
-                    ) : (
+                    {item.isInternal ? (
                       <Link to={item.link}>{item.name}</Link>
+                    ) : (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.name}</a>
                     )}
                   </li>
                 );
