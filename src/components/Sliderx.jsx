@@ -2,6 +2,10 @@ import React from "react";
 import "./Sliderx.css";
 
 const Sliderx = () => {
+  const handleGameClick = () => {
+    window.open('https://www.betbdt.vip/register?affiliateCode=soy001', '_blank');
+  };
+
   const items = [
     { id: 1, title: "Blackjack Classic", provider: "Evolution", img: "/photo/JL0111.png", isFavorite: false },
     { id: 2, title: "Roulette European", provider: "Evolution", img: "/photo/JL0116.png", isFavorite: true },
@@ -33,13 +37,13 @@ const Sliderx = () => {
       <div className="slider-container">
         <div className="slider-track">
           {items.concat(items).map((item, index) => (
-            <div key={index} className="game-card">
+            <div key={index} className="game-card" onClick={handleGameClick}>
               <div className="game-image-container">
                 <img src={item.img} alt={item.title} className="game-image" />
-                <button className="favorite-btn">
+                <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
                   <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
                 </button>
-                <button className="play-btn">
+                <button className="play-btn" onClick={(e) => e.stopPropagation()}>
                   <div className="play-triangle"></div>
                 </button>
                 <div className="free-trial-label">FREE TRIAL</div>

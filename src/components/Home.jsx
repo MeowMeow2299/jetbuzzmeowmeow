@@ -17,16 +17,13 @@ const Home = () => {
     <>
       <Container />
       
-      {user && (
-        <>
-          <Marquee />
-          <Slider />
-          <Dom />
-          <Sliderx />
-          <Sliderxx />
-          <Sliderxxx />
-        </>
-      )}
+      {/* Hiển thị tất cả games cho mọi người, không cần login */}
+      <Marquee />
+      <Slider />
+      <Dom />
+      <Sliderx />
+      <Sliderxx />
+      <Sliderxxx />
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>
