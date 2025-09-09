@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Banner.css';
 
 const Banner = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  
   const banners = [
     { id: 1, src: './photo/banner1.jpeg', alt: 'Banner 1' },
     { id: 2, src: './photo/banner2.jpeg', alt: 'Banner 2' },
@@ -15,67 +13,21 @@ const Banner = () => {
     { id: 8, src: './photo/banner8.jpeg', alt: 'Banner 8' },
   ];
 
-  // Auto slide every 4 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % banners.length);
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, [banners.length]);
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
-  const goToPrevious = () => {
-    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
-  };
-
-  const goToNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % banners.length);
-  };
-
-  // Calculate transform based on screen size
-  const getTransformValue = () => {
-    const isMobile = window.innerWidth <= 480;
-    const isTablet = window.innerWidth <= 768;
-    
-    if (isMobile) {
-      return currentSlide * 110; // 100px + 10px gap
-    } else if (isTablet) {
-      return currentSlide * 130; // 120px + 10px gap
-    } else {
-      return currentSlide * 160; // 150px + 10px gap
-    }
-  };
+  // Duplicate banners for infinite loop
+  const infiniteBanners = [...banners, ...banners];
 
   return (
     <div className="banner-container">
       <div className="banner-slider">
-        <div 
-          className="banner-track"
-          style={{ transform: `translateX(-${getTransformValue()}px)` }}
-        >
-          {banners.map((banner) => (
-            <div key={banner.id} className="banner-slide">
+        <div className="banner-track">
+          {infiniteBanners.map((banner, index) => (
+            <div key={`${banner.id}-${index}`} className="banner-slide">
               <img 
                 src={banner.src} 
                 alt={banner.alt}
                 className="banner-image"
               />
             </div>
-          ))}
-        </div>
-
-        {/* Pagination dots */}
-        <div className="banner-pagination">
-          {banners.map((_, index) => (
-            <button
-              key={index}
-              className={`banner-dot ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => goToSlide(index)}
-            />
           ))}
         </div>
       </div>
