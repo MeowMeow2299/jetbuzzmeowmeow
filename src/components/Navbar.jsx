@@ -1,9 +1,16 @@
 import { Search } from 'lucide-react';
 import './Navbar.css';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '../auth/AuthContext';
+import Profile from './Profile';
+import Language from './Language';
+import { useState } from 'react';
 
 const Navbar = ({ onLoginClick, onSignupClick }) => {
   const navigate = useNavigate();
+  const { user } = useAuth();
+  const [showProfile, setShowProfile] = useState(false);
+
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -27,8 +34,30 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <Search className="search-icon" size={18} />
             <input type="text" placeholder="Search..." />
           </div>
-          <NavLink className="btn-glass" to="/login">Login</NavLink>
-          <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
+          
+          {user ? (
+            // When user is logged in - show Profile and Language
+            <>
+              <div className="navbar-buttons">
+                <div className="profile-container">
+                  <button 
+                    className="btn-circle profile-btn"
+                    onClick={() => setShowProfile(!showProfile)}
+                  >
+                    <i className="fas fa-user"></i>
+                  </button>
+                  {showProfile && <Profile />}
+                </div>
+                <Language />
+              </div>
+            </>
+          ) : (
+            // When user is not logged in - show Login and Signup
+            <>
+              <NavLink className="btn-glass" to="/login">Login</NavLink>
+              <button className="btn-glass btn-glass--accent" onClick={() => navigate('/signup')}>Signup</button>
+            </>
+          )}
         </div>
       </div>
     </header>
