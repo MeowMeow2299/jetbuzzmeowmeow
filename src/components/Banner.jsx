@@ -36,12 +36,26 @@ const Banner = () => {
     setCurrentSlide((prev) => (prev + 1) % banners.length);
   };
 
+  // Calculate transform based on screen size
+  const getTransformValue = () => {
+    const isMobile = window.innerWidth <= 480;
+    const isTablet = window.innerWidth <= 768;
+    
+    if (isMobile) {
+      return currentSlide * 110; // 100px + 10px gap
+    } else if (isTablet) {
+      return currentSlide * 130; // 120px + 10px gap
+    } else {
+      return currentSlide * 160; // 150px + 10px gap
+    }
+  };
+
   return (
     <div className="banner-container">
       <div className="banner-slider">
         <div 
           className="banner-track"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          style={{ transform: `translateX(-${getTransformValue()}px)` }}
         >
           {banners.map((banner) => (
             <div key={banner.id} className="banner-slide">
