@@ -20,6 +20,11 @@ import Signup from './pages/Signup';
 import BGD33 from './pages/BGD33';
 import JeetBuzz from './pages/JeetBuzz';
 import JeetBuzzGame from './pages/JeetBuzzGame';
+import CK444 from './pages/CK444';
+import BETBDT from './pages/BETBDT';
+import Crickex from './pages/Crickex';
+import TK999 from './pages/TK999';
+import L444 from './pages/L444';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -47,9 +52,14 @@ function App() {
               <Route path="/table-games" element={<TableGames />} />
               <Route path="/sports" element={<ComingSoon />} />
               <Route path="/popular" element={<ComingSoon />} />
-              <Route path="/bgd33" element={<BGD33 />} />
-              <Route path="/jeetbuzz" element={<JeetBuzz />} />
-              <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />
+            <Route path="/bgd33" element={<BGD33 />} />
+            <Route path="/jeetbuzz" element={<JeetBuzz />} />
+            <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />
+            <Route path="/ck444" element={<CK444 />} />
+            <Route path="/betbdt" element={<BETBDT />} />
+            <Route path="/crickex" element={<Crickex />} />
+            <Route path="/tk999" element={<TK999 />} />
+            <Route path="/l444" element={<L444 />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="*" element={<ComingSoon />} />

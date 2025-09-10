@@ -332,3 +332,100 @@
     padding-left: 50px;
   }
 }
+
+/* Guidelines Grid */
+.guidelines-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.guideline-category {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+  transition: all 0.3s ease;
+}
+
+.guideline-category:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
+}
+
+.guideline-category h3 {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.guideline-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guideline-category li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-left: 3px solid #FFA500;
+}
+
+/* Access Steps */
+.access-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.access-steps {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.access-steps ol {
+  padding-left: 20px;
+}
+
+.access-steps li {
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.access-steps li strong {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Additional responsive adjustments for new sections */
+@media (max-width: 768px) {
+  .guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-table {
+    font-size: 0.8rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 8px 5px;
+  }
+}

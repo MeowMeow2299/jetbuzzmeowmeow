@@ -5,188 +5,335 @@ const JeetBuzz = () => {
   return (
     <div className="page page-jeetbuzz">
       <div className="jeetbuzz-hero">
-        <h1>JeetBuzz Games in Bangladesh & How to Find Information on Google, Yahoo, and Bing</h1>
+        <h1>JEETBUZZ – Leading Online Casino in Bangladesh</h1>
         <p className="hero-subtitle">
-          JeetBuzz Games has emerged as a leading online platform for gaming enthusiasts in Bangladesh. 
-          Offering a wide array of gaming options, including popular cricket leagues and tournaments, 
-          JeetBuzz caters to both novice and seasoned players.
+          Play JEETBUZZ, one of Bangladesh's top online casinos. Enjoy JEETBUZZ slots, live dealer games, Teen Patti, crash games, and exclusive bonuses on mobile and desktop. jeetbuzz login, jeetbuzz casino, jeetbuzz game, jeetbuzz live casino, jeetbuzz online, jeetbuzz partner.
         </p>
       </div>
 
       <div className="jeetbuzz-content">
-        <section className="search-engines-section">
-          <h2>🌐 Searching for JeetBuzz on Major Search Engines</h2>
+        <section className="jeetbuzz-intro">
+          <h2>JEETBUZZ – Leading Online Casino in Bangladesh</h2>
           <p>
-            To gather information about JeetBuzz Games, users can use popular search engines. Here's how:
+            JEETBUZZ is a premier jeetbuzz online casino in Bangladesh, trusted for its secure platform, wide game selection, and exciting gameplay. Players can enjoy jeetbuzz game offerings like slots, jeetbuzz live casino, card games, and crash games all on a single platform.
           </p>
+          <p>
+            With fast deposits, instant withdrawals, and generous JEETBUZZ bonuses, the platform ensures maximum entertainment and safety for all players.
+          </p>
+        </section>
 
-          <div className="search-engine-card">
-            <h3>1. Google</h3>
+        <section className="why-choose-section">
+          <h2>Why Choose JEETBUZZ</h2>
+          
+          <div className="benefits-list">
             <ul>
-              <li><strong>How to search:</strong> Go to Google.com and type "JeetBuzz Games Bangladesh".</li>
-              <li><strong>Why Google?:</strong> Google provides the most extensive and updated results, including official websites, news, reviews, and forum discussions.</li>
-              <li><strong>Tip:</strong> Use keywords like BGD33, BETBDT, JEETBUZZ, CRICKEX for more specific results.</li>
-            </ul>
-          </div>
-
-          <div className="search-engine-card">
-            <h3>2. Yahoo</h3>
-            <ul>
-              <li><strong>How to search:</strong> Go to Yahoo.com and type "JeetBuzz online gaming Bangladesh".</li>
-              <li><strong>Why Yahoo?:</strong> Yahoo provides a mix of news, articles, and user-generated content. While less comprehensive than Google, it can show niche blogs and discussions.</li>
-              <li><strong>Tip:</strong> Include casino and cricket keywords like TK999, CK444, or BK33 to refine your search.</li>
-            </ul>
-          </div>
-
-          <div className="search-engine-card">
-            <h3>3. Bing</h3>
-            <ul>
-              <li><strong>How to search:</strong> Go to Bing.com and type "JeetBuzz Games official site".</li>
-              <li><strong>Why Bing?:</strong> Bing can show regional results and different perspectives than Google. It sometimes highlights official sites, promotions, or local platforms better.</li>
-              <li><strong>Tip:</strong> Use long-tail keywords like "JeetBuzz live cricket betting Bangladesh" to get accurate results.</li>
+              <li><strong>Wide Game Selection:</strong> JEETBUZZ Slots, JEETBUZZ Poker, JEETBUZZ Teen Patti, JEETBUZZ Baccarat, JEETBUZZ Blackjack, JEETBUZZ Andar Bahar, JEETBUZZ Crash Games – all included in jeetbuzz casino.</li>
+              <li><strong>Mobile-Friendly:</strong> Fully optimized for Android and iOS devices for seamless jeetbuzz online gameplay.</li>
+              <li><strong>Secure Transactions:</strong> Trusted local payment options for deposits and withdrawals.</li>
+              <li><strong>Generous Bonuses:</strong> Welcome offers, cashback, free spins, and referral rewards.</li>
+              <li><strong>Local Language Support:</strong> Bengali interface for easy navigation.</li>
+              <li><strong>Affiliate Opportunities:</strong> Join as a jeetbuzz partner to earn rewards.</li>
             </ul>
           </div>
         </section>
 
-        <section className="what-is-jeetbuzz-section">
-          <h2>🏏 What is JeetBuzz?</h2>
+        <section className="jeetbuzz-intro">
+          <h2>About JeetBuzz Platform</h2>
           <p>
-            JeetBuzz is an online gaming and betting platform that provides users in Bangladesh with the opportunity 
-            to engage in various gaming activities, including sports betting, casino games, and more. The platform 
-            is known for its user-friendly interface, competitive odds, and a wide range of gaming markets. Whether 
-            you're interested in pre-match betting or live gaming, JeetBuzz offers a comprehensive suite of options 
-            to suit your preferences.
+            JeetBuzz has quickly grown into one of the most popular online gaming platforms in Bangladesh, offering players an exciting mix of casino games, live dealer tables, and sports betting opportunities. Designed for both beginners and experienced players, JeetBuzz combines entertainment with convenience, allowing users to enjoy their favorite games anytime, anywhere.
+          </p>
+          <p>
+            What makes JeetBuzz stand out is its wide variety of games. From classic slot machines to high-energy table games like blackjack, roulette, and baccarat, there's something for every type of player. For those who enjoy live interaction, JeetBuzz offers live dealer games where real hosts bring the casino atmosphere directly to your screen. Sports lovers aren't left out either—JeetBuzz provides competitive odds on cricket, football, and many other sports, making it a one-stop platform for both casino and betting fans.
+          </p>
+          <p>
+            Bonuses and promotions are another reason players love JeetBuzz. New members are welcomed with attractive sign-up offers, while regular players enjoy cashback deals, free spins, and seasonal rewards. These promotions give players more chances to win and make the gaming experience even more rewarding.
+          </p>
+          <p>
+            The platform is also built with simplicity in mind. Registration is quick, requiring only a few basic details before you can start playing. The login process is secure, ensuring that your personal information and funds are always protected. JeetBuzz is also optimized for mobile devices, allowing players to access their accounts and favorite games directly from Android or iOS smartphones without any hassle.
+          </p>
+          <p>
+            Payments are smooth and flexible. JeetBuzz supports popular Bangladeshi payment methods like bKash, Nagad, and Rocket, alongside international wallets and even cryptocurrencies. Withdrawals are processed quickly, often within 24 hours, giving players confidence that their winnings are always within reach.
+          </p>
+          <p>
+            Customer support is available 24/7 through live chat and email, ensuring that help is always just a message away. Whether you have questions about deposits, bonuses, or technical issues, the support team is ready to assist.
+          </p>
+          <p>
+            In the end, JeetBuzz isn't just another casino—it's a complete gaming hub tailored to Bangladeshi players. With its huge selection of games, safe payments, exciting promotions, and reliable support, JeetBuzz continues to attract thousands of users who want both fun and trust in one platform. If you're looking for a place where gaming meets reliability, JeetBuzz is the right choice.
           </p>
         </section>
 
-        <section className="key-features-section">
-          <h2>🔍 Key Features of JeetBuzz</h2>
-          <ul className="features-list">
-            <li><strong>Cricket Betting:</strong> Bet on major cricket tournaments like the IPL, BPL, and ICC World Cup.</li>
-            <li><strong>Betting Exchange:</strong> Peer-to-peer betting with better odds.</li>
-            <li><strong>Live Betting:</strong> Place bets on live matches with real-time odds.</li>
-            <li><strong>Casino Games:</strong> A variety of online casino games including live dealer games.</li>
-            <li><strong>Mobile Access:</strong> Play or bet on the go via Android or iOS devices.</li>
-          </ul>
-        </section>
+        <section className="games-section">
+          <h2>Popular Games on JEETBUZZ</h2>
+          
+          <div className="games-categories">
+            <div className="game-category">
+              <h3>🎰 Slots</h3>
+              <ul>
+                <li>Sweet Bonanza</li>
+                <li>Gates of Olympus</li>
+                <li>Starburst</li>
+                <li>Big Bass Bonanza</li>
+                <li>Book of Dead</li>
+              </ul>
+            </div>
 
-        <section className="gaming-options-section">
-          <h2>🧠 Understanding the Gaming Options</h2>
-          <ul className="gaming-options-list">
-            <li><strong>Match Winner:</strong> Predict the outcome of a match, choosing which team will emerge victorious.</li>
-            <li><strong>Top Batsman/Bowler:</strong> Bet on the player who will score the most runs or take the most wickets in a match.</li>
-            <li><strong>Over/Under Runs:</strong> Wager on whether the total runs scored in a match will be over or under a specified number.</li>
-            <li><strong>Live Betting:</strong> Place bets during a live match, with odds that fluctuate based on the game's progress.</li>
-          </ul>
-        </section>
+            <div className="game-category">
+              <h3>🃏 Table & Card Games</h3>
+              <ul>
+                <li>Teen Patti (Indian Poker)</li>
+                <li>Andar Bahar</li>
+                <li>Blackjack</li>
+                <li>Baccarat</li>
+                <li>Dragon Tiger</li>
+              </ul>
+            </div>
 
-        <section className="cricket-leagues-section">
-          <h2>🏅 Popular Cricket Leagues on JeetBuzz</h2>
-          <div className="leagues-grid">
-            <div className="league-card">Indian Premier League (IPL)</div>
-            <div className="league-card">Bangladesh Premier League (BPL)</div>
-            <div className="league-card">Big Bash League (BBL)</div>
-            <div className="league-card">ICC World Cup</div>
+            <div className="game-category">
+              <h3>🎥 Live Casino Games</h3>
+              <ul>
+                <li>Live Blackjack</li>
+                <li>Live Roulette</li>
+                <li>Live Baccarat</li>
+                <li>Live Teen Patti</li>
+                <li>Game Shows: Crazy Time, Dream Catcher</li>
+              </ul>
+              <p>All these games are part of jeetbuzz live casino for real-time streaming and interaction.</p>
+            </div>
+
+            <div className="game-category">
+              <h3>⚡ Crash & Instant Win Games</h3>
+              <ul>
+                <li>Aviator</li>
+                <li>JetX</li>
+                <li>Big Bass Crash</li>
+                <li>Plinko Rush</li>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section className="promotions-section">
-          <h2>💰 Promotions and Bonuses</h2>
-          <ul className="promotions-list">
-            <li>Welcome Bonus</li>
-            <li>Referral Program</li>
-            <li>Special Promotions</li>
-          </ul>
+        <section className="bonuses-section">
+          <h2>JEETBUZZ Bonuses and Promotions</h2>
+          <p>Maximize your gaming experience with our exciting bonus offers:</p>
+
+          <div className="bonuses-grid">
+            <div className="bonus-item">
+              <h3>Welcome Bonus</h3>
+              <p>Extra credits for new players.</p>
+            </div>
+
+            <div className="bonus-item">
+              <h3>Deposit Cashback</h3>
+              <p>Partial return on losses.</p>
+            </div>
+
+            <div className="bonus-item">
+              <h3>Free Spins</h3>
+              <p>Special spins for selected slots.</p>
+            </div>
+
+            <div className="bonus-item">
+              <h3>Referral Bonus</h3>
+              <p>Invite friends and earn rewards as a jeetbuzz partner.</p>
+            </div>
+
+            <div className="bonus-item">
+              <h3>Seasonal Promotions</h3>
+              <p>Special offers during holidays or events.</p>
+            </div>
+          </div>
         </section>
 
-        <section className="security-section">
-          <h2>🔐 Security and Licensing</h2>
-          <p>
-            JeetBuzz operates under a valid license, ensuring that all gaming activities are conducted legally and securely. 
-            The platform employs advanced encryption technologies to protect user data and transactions.
-          </p>
+        <section className="access-section">
+          <h2>How to Access JEETBUZZ</h2>
+          <div className="access-steps">
+            <ol>
+              <li><strong>Create an Account:</strong> Register via official jeetbuzz login page.</li>
+              <li><strong>Deposit Funds:</strong> Use local payment methods for instant deposits.</li>
+              <li><strong>Start Playing:</strong> Enjoy jeetbuzz game offerings including slots, live games, and crash games.</li>
+              <li><strong>Withdraw Winnings:</strong> Fast and safe withdrawals for Bangladesh players.</li>
+            </ol>
+          </div>
         </section>
 
-        <section className="payment-methods-section">
-          <h2>💳 Payment Methods</h2>
-          <ul className="payment-list">
-            <li>Bank Transfer</li>
-            <li>Mobile Wallets like bKash, Nagad, Rocket</li>
-            <li>Cryptocurrency (USDT)</li>
-          </ul>
+        <section className="guidelines-section">
+          <h2>Guidelines for Safe and Responsible Gaming</h2>
+          
+          <div className="guidelines-grid">
+            <div className="guideline-category">
+              <h3>Registration Guidelines</h3>
+              <ul>
+                <li>Use real email/phone number and a strong password.</li>
+                <li>Only players above 18 years are allowed to play.</li>
+              </ul>
+            </div>
+
+            <div className="guideline-category">
+              <h3>Deposit and Withdrawal Guidelines</h3>
+              <ul>
+                <li>Use trusted local payment methods.</li>
+                <li>Start with amounts you can afford.</li>
+              </ul>
+            </div>
+
+            <div className="guideline-category">
+              <h3>Gameplay Guidelines</h3>
+              <ul>
+                <li>Understand game rules before playing.</li>
+                <li>Start with small bets until familiar with the game.</li>
+                <li>Apply bonuses strategically for jeetbuzz online games.</li>
+              </ul>
+            </div>
+
+            <div className="guideline-category">
+              <h3>Mobile Gaming Guidelines</h3>
+              <ul>
+                <li>Use the official app for Android or iOS.</li>
+                <li>Ensure a stable internet connection for jeetbuzz live casino.</li>
+              </ul>
+            </div>
+
+            <div className="guideline-category">
+              <h3>Customer Support Guidelines</h3>
+              <ul>
+                <li>Contact official support channels for help.</li>
+                <li>Report suspicious activity immediately.</li>
+              </ul>
+            </div>
+
+            <div className="guideline-category">
+              <h3>Responsible Gaming Guidelines</h3>
+              <ul>
+                <li>Play within limits and track your wins/losses.</li>
+                <li>Use responsible gaming tools if needed.</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
-        <section className="tips-section">
-          <h2>📈 Tips for Successful Gaming on JeetBuzz</h2>
-          <ul className="tips-list">
-            <li><strong>Research:</strong> Study team statistics, player form, and match conditions before placing bets.</li>
-            <li><strong>Bankroll Management:</strong> Set a budget and stick to it to avoid excessive losses.</li>
-            <li><strong>Diversify Bets:</strong> Don't put all your money on a single bet; spread your risk.</li>
-            <li><strong>Utilize Bonuses:</strong> Take advantage of welcome bonuses and promotions to maximize your gaming value.</li>
-          </ul>
-        </section>
-
-        <section className="registration-section">
-          <h2>🛠️ How to Register on JeetBuzz</h2>
-          <ol className="registration-steps">
-            <li><strong>Visit the Official Website</strong> - Go to the JeetBuzz official website</li>
-            <li><strong>Click on 'Sign Up'</strong> - Look for the registration button on the homepage</li>
-            <li><strong>Fill in Personal Details</strong> - Provide your name, email, phone number, and other required information</li>
-            <li><strong>Verify Account</strong> - Complete the email or SMS verification process</li>
-            <li><strong>Make a Deposit</strong> - Add funds to your account using your preferred payment method</li>
-            <li><strong>Start Gaming</strong> - Begin placing bets and playing games</li>
-          </ol>
-        </section>
-
-        <section className="mobile-app-section">
-          <h2>📱 Mobile App</h2>
-          <p>
-            JeetBuzz offers a mobile application compatible with both Android and iOS devices, allowing you to 
-            enjoy gaming and betting on the go with full functionality.
-          </p>
-        </section>
-
-        <section className="legal-section">
-          <h2>🧾 Legal Considerations in Bangladesh</h2>
-          <p>
-            While gambling laws in Bangladesh can be complex, JeetBuzz operates under international regulations, 
-            ensuring compliance with applicable laws and providing a secure platform for users.
-          </p>
+        <section className="comparison-section">
+          <h2>🏆 Comparison: JEETBUZZ vs Other Popular Bangladeshi Casinos</h2>
+          <div className="comparison-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Brand</th>
+                  <th>Games Offered</th>
+                  <th>Bonus & Promotions</th>
+                  <th>Mobile App</th>
+                  <th>Login / Access</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>JEETBUZZ</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat, JEETBUZZ Blackjack, JEETBUZZ Andar Bahar</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile optimized</td>
+                  <td>jeetbuzz login</td>
+                </tr>
+                <tr>
+                  <td>BGD33</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile optimized</td>
+                  <td>BGD33 Access</td>
+                </tr>
+                <tr>
+                  <td>BETBDT</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile optimized</td>
+                  <td>BETBDT Access</td>
+                </tr>
+                <tr>
+                  <td>Crickex</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Android & iOS</td>
+                  <td>Crickex Login</td>
+                </tr>
+                <tr>
+                  <td>TK999</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Android app</td>
+                  <td>TK999 Login</td>
+                </tr>
+                <tr>
+                  <td>BK33</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile friendly</td>
+                  <td>BK33 Login</td>
+                </tr>
+                <tr>
+                  <td>L444</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ App available</td>
+                  <td>L444 Access</td>
+                </tr>
+                <tr>
+                  <td>EK333</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Android & iOS</td>
+                  <td>EK333 Login</td>
+                </tr>
+                <tr>
+                  <td>EA77</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile optimized</td>
+                  <td>EA77 Access</td>
+                </tr>
+                <tr>
+                  <td>CK444</td>
+                  <td>JEETBUZZ Slots, JEETBUZZ Teen Patti, JEETBUZZ Live Casino, JEETBUZZ Crash Games, JEETBUZZ Poker, JEETBUZZ Baccarat</td>
+                  <td>JEETBUZZ Welcome Bonus, JEETBUZZ Free Spins, JEETBUZZ Cashback</td>
+                  <td>✅ Mobile ready</td>
+                  <td>CK444 Login</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <section className="faq-section">
-          <h2>📊 Frequently Asked Questions (FAQs)</h2>
+          <h2>FAQ Section</h2>
+          
           <div className="faq-list">
             <div className="faq-item">
-              <h4>Q1: Is JeetBuzz legal in Bangladesh?</h4>
-              <p>A1: Yes, under international licenses.</p>
+              <h3>Q1: What is JEETBUZZ?</h3>
+              <p>A1: JEETBUZZ is a leading online casino in Bangladesh offering slots, live dealer games, Teen Patti, crash games, and table games like Blackjack and Baccarat.</p>
             </div>
+
             <div className="faq-item">
-              <h4>Q2: What games can I play?</h4>
-              <p>A2: Cricket betting, casino games, and more.</p>
+              <h3>Q2: How do I register on JEETBUZZ?</h3>
+              <p>A2: Visit the official jeetbuzz login page, provide your email or phone number, create a secure password, and complete age verification.</p>
             </div>
+
             <div className="faq-item">
-              <h4>Q3: How to deposit funds?</h4>
-              <p>A3: Bank transfer, mobile wallets, cryptocurrency.</p>
+              <h3>Q3: What games are available on JEETBUZZ?</h3>
+              <p>A3: JEETBUZZ offers JEETBUZZ slots, JEETBUZZ live casino games, Teen Patti, Andar Bahar, Poker, Baccarat, Blackjack, and crash games like Aviator and JetX.</p>
             </div>
+
             <div className="faq-item">
-              <h4>Q4: Bonuses for new users?</h4>
-              <p>A4: Yes, welcome bonus available.</p>
+              <h3>Q4: Does JEETBUZZ offer bonuses?</h3>
+              <p>A4: Yes, JEETBUZZ provides welcome bonuses, free spins, cashback, referral rewards, and seasonal promotions.</p>
             </div>
+
             <div className="faq-item">
-              <h4>Q5: Mobile gaming?</h4>
-              <p>A5: Yes, via app.</p>
+              <h3>Q5: Is JEETBUZZ mobile-friendly?</h3>
+              <p>A5: Yes. JEETBUZZ is fully optimized for Android and iOS devices for jeetbuzz online gameplay.</p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Q6: How do I become a JEETBUZZ partner?</h3>
+              <p>A6: Join the affiliate program to become a jeetbuzz partner and earn rewards by referring new players.</p>
             </div>
           </div>
-        </section>
-
-        <section className="conclusion-section">
-          <h2>🏁 Conclusion</h2>
-          <p>
-            JeetBuzz is a premier online gaming platform in Bangladesh offering cricket betting, casino games, 
-            and live events. With secure, user-friendly interface, competitive odds, and robust features, 
-            JeetBuzz provides an enjoyable experience for both beginners and experienced players.
-          </p>
         </section>
       </div>
     </div>

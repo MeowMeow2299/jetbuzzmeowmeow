@@ -35,12 +35,12 @@ const Sidebar = () => {
 
   const subItems = [
     { name: 'BGD33', link: '/bgd33', isInternal: true },
-    { name: 'BETBDT', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'BETBDT', link: '/betbdt', isInternal: true },
     { name: 'JEETBUZZ', link: '/jeetbuzz', isInternal: true },
-    { name: 'Crickex', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
-    { name: 'TK999', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
-    { name: 'CK444', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
-    { name: 'L444 Online Game', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
+    { name: 'Crickex', link: '/crickex', isInternal: true },
+    { name: 'TK999', link: '/tk999', isInternal: true },
+    { name: 'CK444', link: '/ck444', isInternal: true },
+    { name: 'L444 Online Game', link: '/l444', isInternal: true },
     { name: 'Crickex Login', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'Crickex Bet', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
     { name: 'CRICKEX APP', link: 'https://www.betbdt.vip/register?affiliateCode=soy001' },
