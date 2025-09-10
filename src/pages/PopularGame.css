@@ -1,0 +1,379 @@
+/* Popular Game Page Styles */
+.popular-game-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  color: #000000;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.content-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-section:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.content-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.platform-section {
+  padding: 60px 0;
+  background: rgba(255, 215, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.platform-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffd700;
+  text-align: left;
+}
+
+.platform-section h2::after {
+  display: none;
+}
+
+.platform-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.search-terms {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 30px 0;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.search-terms h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.search-terms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-terms li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.search-terms li::before {
+  content: '🎯';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.search-terms strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.brands-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.brands-list li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.brands-list li::before {
+  content: '🎮';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.brands-list strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+.comparison-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.comparison-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffd700;
+  text-align: center;
+}
+
+.comparison-table {
+  overflow-x: auto;
+  margin: 40px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-table th {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  font-weight: 700;
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.comparison-table td {
+  padding: 18px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.comparison-table tr:hover {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.faq-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffd700;
+  text-align: center;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background: rgba(255, 215, 0, 0.05);
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffd700;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .content-section h2,
+  .platform-section h2,
+  .comparison-section h2,
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+  
+  .platform-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .search-terms {
+    padding: 20px;
+  }
+  
+  .search-terms h3 {
+    font-size: 1.3rem;
+  }
+  
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px 8px;
+  }
+  
+  .faq-item {
+    padding: 20px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  
+  .content-section,
+  .platform-section,
+  .comparison-section,
+  .faq-section {
+    padding: 40px 0;
+  }
+  
+  .content-section h2,
+  .platform-section h2,
+  .comparison-section h2,
+  .faq-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .platform-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .search-terms {
+    padding: 15px;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+  }
+  
+  .faq-item {
+    padding: 15px;
+  }
+}

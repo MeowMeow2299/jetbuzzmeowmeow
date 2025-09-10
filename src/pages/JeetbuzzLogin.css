@@ -1,5 +1,5 @@
-/* Jeetbuzz Game Page Styles */
-.jeetbuzz-game-page {
+/* Jeetbuzz Login Page Styles */
+.jeetbuzz-login-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #ffffff;
@@ -86,13 +86,13 @@
   text-align: justify;
 }
 
-.why-choose-section {
+.login-steps-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(10px);
 }
 
-.why-choose-section h2 {
+.login-steps-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -101,7 +101,7 @@
   position: relative;
 }
 
-.why-choose-section h2::after {
+.login-steps-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -113,149 +113,7 @@
   border-radius: 2px;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.feature-item {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.feature-item:hover {
-  background: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.3);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.feature-item h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.feature-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-  margin: 0;
-}
-
-.categories-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.categories-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.categories-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.category-item {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.category-item:hover {
-  background: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.3);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.category-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.category-item h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.category-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-  margin: 0;
-  text-align: left;
-}
-
-.how-to-start-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(10px);
-}
-
-.how-to-start-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.how-to-start-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.how-to-start-section p {
+.login-steps-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 30px;
@@ -265,7 +123,7 @@
 
 .steps-list {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .step-item {
@@ -310,14 +168,23 @@
   flex: 1;
 }
 
-.bangladeshi-players-section {
+.registration-note {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.why-choose-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.bangladeshi-players-section h2 {
+.why-choose-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -326,7 +193,7 @@
   position: relative;
 }
 
-.bangladeshi-players-section h2::after {
+.why-choose-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -338,7 +205,7 @@
   border-radius: 2px;
 }
 
-.bangladeshi-players-section p {
+.why-choose-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 30px;
@@ -346,44 +213,50 @@
   text-align: center;
 }
 
-.benefits-list {
-  max-width: 800px;
-  margin: 0 auto 40px;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
-.benefit-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.feature-item {
   background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
+  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
-.benefit-item:hover {
+.feature-item:hover {
   background: rgba(255, 215, 0, 0.05);
   border-color: rgba(255, 215, 0, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.benefit-icon {
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
   font-size: 1.5rem;
-  margin-right: 15px;
-  flex-shrink: 0;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffd700;
 }
 
-.benefit-item p {
-  font-size: 1.1rem;
+.feature-item p {
+  font-size: 1rem;
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
 }
 
-.local-choice-note {
+.world-note {
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #000000;
   padding: 25px;
@@ -395,13 +268,13 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.safety-section {
+.games-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(10px);
 }
 
-.safety-section h2 {
+.games-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -410,7 +283,7 @@
   position: relative;
 }
 
-.safety-section h2::after {
+.games-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -422,7 +295,95 @@
   border-radius: 2px;
 }
 
-.safety-section p {
+.games-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.game-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.game-item:hover {
+  background: rgba(255, 215, 0, 0.05);
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.game-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.game-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.promotions-note {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.app-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.app-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.app-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #e0e0e0;
@@ -431,14 +392,13 @@
   text-align: center;
 }
 
-.final-thoughts-section {
+.final-cta-section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.final-thoughts-section h2 {
+.final-cta-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -447,7 +407,7 @@
   position: relative;
 }
 
-.final-thoughts-section h2::after {
+.final-cta-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -459,11 +419,11 @@
   border-radius: 2px;
 }
 
-.final-thoughts-section p {
+.final-cta-section p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #e0e0e0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   max-width: 800px;
   margin-left: auto;
@@ -484,69 +444,6 @@
   max-width: 800px;
 }
 
-.faq-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(10px);
-}
-
-.faq-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.faq-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
-}
-
-.faq-item {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-  background: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.faq-item h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.faq-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-  margin: 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -564,13 +461,11 @@
   }
   
   .content-section h2,
+  .login-steps-section h2,
   .why-choose-section h2,
-  .categories-section h2,
-  .how-to-start-section h2,
-  .bangladeshi-players-section h2,
-  .safety-section h2,
-  .final-thoughts-section h2,
-  .faq-section h2 {
+  .games-section h2,
+  .app-section h2,
+  .final-cta-section h2 {
     font-size: 2rem;
   }
   
@@ -585,28 +480,19 @@
   }
   
   .features-grid,
-  .categories-grid {
+  .games-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
   .feature-item,
-  .category-item {
+  .game-item {
     padding: 20px;
   }
   
-  .benefit-item {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .benefit-icon {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
-  .faq-grid {
-    grid-template-columns: 1fr;
+  .cta-box {
+    padding: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -620,24 +506,20 @@
   }
   
   .content-section,
+  .login-steps-section,
   .why-choose-section,
-  .categories-section,
-  .how-to-start-section,
-  .bangladeshi-players-section,
-  .safety-section,
-  .final-thoughts-section,
-  .faq-section {
+  .games-section,
+  .app-section,
+  .final-cta-section {
     padding: 40px 0;
   }
   
   .content-section h2,
+  .login-steps-section h2,
   .why-choose-section h2,
-  .categories-section h2,
-  .how-to-start-section h2,
-  .bangladeshi-players-section h2,
-  .safety-section h2,
-  .final-thoughts-section h2,
-  .faq-section h2 {
+  .games-section h2,
+  .app-section h2,
+  .final-cta-section h2 {
     font-size: 1.6rem;
   }
   
@@ -652,30 +534,22 @@
   }
   
   .feature-item,
-  .category-item {
+  .game-item {
     padding: 15px;
   }
   
   .feature-icon,
-  .category-icon {
+  .game-icon {
     font-size: 2.5rem;
   }
   
   .feature-item h3,
-  .category-item h3 {
+  .game-item h3 {
     font-size: 1.3rem;
   }
   
-  .benefit-item {
-    padding: 15px;
-  }
-  
-  .faq-item {
-    padding: 20px;
-  }
-  
   .cta-box {
-    padding: 20px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 0.9rem;
   }
 }

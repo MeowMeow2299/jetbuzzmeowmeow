@@ -1,5 +1,5 @@
-/* Jeetbuzz Game Page Styles */
-.jeetbuzz-game-page {
+/* Jeetbuzz Online Page Styles */
+.jeetbuzz-online-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #ffffff;
@@ -113,125 +113,70 @@
   border-radius: 2px;
 }
 
-.features-grid {
+.reasons-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
   margin: 40px 0;
 }
 
-.feature-item {
+.reason-item {
+  display: flex;
+  align-items: flex-start;
   background: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 15px;
-  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
-.feature-item:hover {
+.reason-item:hover {
   background: rgba(255, 215, 0, 0.05);
   border-color: rgba(255, 215, 0, 0.3);
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.feature-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.feature-item h3 {
+.reason-number {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #ffd700;
-}
-
-.feature-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-  margin: 0;
-}
-
-.categories-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.categories-section h2 {
-  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
+  margin-right: 20px;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
 }
 
-.categories-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
+.reason-content {
+  flex: 1;
 }
 
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 40px 0;
-}
-
-.category-item {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.category-item:hover {
-  background: rgba(255, 215, 0, 0.05);
-  border-color: rgba(255, 215, 0, 0.3);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.category-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.category-item h3 {
+.reason-content h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
   color: #ffd700;
 }
 
-.category-item p {
+.reason-content p {
   font-size: 1rem;
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
-  text-align: left;
 }
 
 .how-to-start-section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .how-to-start-section h2 {
@@ -310,11 +255,122 @@
   flex: 1;
 }
 
-.bangladeshi-players-section {
+.popular-games-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+}
+
+.popular-games-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.popular-games-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.game-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.game-item:hover {
+  background: rgba(255, 215, 0, 0.05);
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.game-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.game-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin: 0;
+  text-align: left;
+}
+
+.app-section,
+.safety-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-section h2,
+.safety-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.app-section h2::after,
+.safety-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.app-section p,
+.safety-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bangladeshi-players-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
 }
 
 .bangladeshi-players-section h2 {
@@ -338,17 +394,9 @@
   border-radius: 2px;
 }
 
-.bangladeshi-players-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: #e0e0e0;
-  text-align: center;
-}
-
 .benefits-list {
   max-width: 800px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 
 .benefit-item {
@@ -383,110 +431,9 @@
   margin: 0;
 }
 
-.local-choice-note {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
-  color: #000000;
-  padding: 25px;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 600;
-  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.safety-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(10px);
-}
-
-.safety-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.safety-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.safety-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.final-thoughts-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.final-thoughts-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.final-thoughts-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.final-thoughts-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-  margin-bottom: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-box {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
-  color: #000000;
-  padding: 25px;
-  border-radius: 15px;
-  margin: 30px auto;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  max-width: 800px;
-}
-
 .faq-section {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
 }
 
@@ -565,13 +512,23 @@
   
   .content-section h2,
   .why-choose-section h2,
-  .categories-section h2,
   .how-to-start-section h2,
-  .bangladeshi-players-section h2,
+  .popular-games-section h2,
+  .app-section h2,
   .safety-section h2,
-  .final-thoughts-section h2,
+  .bangladeshi-players-section h2,
   .faq-section h2 {
     font-size: 2rem;
+  }
+  
+  .reason-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .reason-number {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
   
   .step-item {
@@ -584,14 +541,14 @@
     margin-bottom: 15px;
   }
   
-  .features-grid,
-  .categories-grid {
+  .reasons-grid,
+  .games-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
-  .feature-item,
-  .category-item {
+  .reason-item,
+  .game-item {
     padding: 20px;
   }
   
@@ -621,48 +578,47 @@
   
   .content-section,
   .why-choose-section,
-  .categories-section,
   .how-to-start-section,
-  .bangladeshi-players-section,
+  .popular-games-section,
+  .app-section,
   .safety-section,
-  .final-thoughts-section,
+  .bangladeshi-players-section,
   .faq-section {
     padding: 40px 0;
   }
   
   .content-section h2,
   .why-choose-section h2,
-  .categories-section h2,
   .how-to-start-section h2,
-  .bangladeshi-players-section h2,
+  .popular-games-section h2,
+  .app-section h2,
   .safety-section h2,
-  .final-thoughts-section h2,
+  .bangladeshi-players-section h2,
   .faq-section h2 {
     font-size: 1.6rem;
   }
   
+  .reason-item,
   .step-item {
     padding: 20px;
   }
   
+  .reason-number,
   .step-number {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
   
-  .feature-item,
-  .category-item {
+  .game-item {
     padding: 15px;
   }
   
-  .feature-icon,
-  .category-icon {
+  .game-icon {
     font-size: 2.5rem;
   }
   
-  .feature-item h3,
-  .category-item h3 {
+  .game-item h3 {
     font-size: 1.3rem;
   }
   
@@ -672,10 +628,5 @@
   
   .faq-item {
     padding: 20px;
-  }
-  
-  .cta-box {
-    padding: 20px;
-    font-size: 1rem;
   }
 }

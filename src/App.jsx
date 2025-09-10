@@ -25,6 +25,20 @@ import BETBDT from './pages/BETBDT';
 import Crickex from './pages/Crickex';
 import TK999 from './pages/TK999';
 import L444 from './pages/L444';
+import PopularGame from './pages/PopularGame';
+import CrickexLogin from './pages/CrickexLogin';
+import CrickexBet from './pages/CrickexBet';
+import CrickexApp from './pages/CrickexApp';
+import CrickexOnline from './pages/CrickexOnline';
+import CrickexAccountCreate from './pages/CrickexAccountCreate';
+import CrickexBonus from './pages/CrickexBonus';
+import CrickexBDLogin from './pages/CrickexBDLogin';
+import CrickexBettingApp from './pages/CrickexBettingApp';
+import CrickexBetBangla from './pages/CrickexBetBangla';
+import JeetbuzzLogin from './pages/JeetbuzzLogin';
+import JeetbuzzCasino from './pages/JeetbuzzCasino';
+import JeetbuzzOnline from './pages/JeetbuzzOnline';
+import JeetbuzzPartner from './pages/JeetbuzzPartner';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -51,13 +65,26 @@ function App() {
               <Route path="/e-sports" element={<ESport />} />
               <Route path="/table-games" element={<TableGames />} />
               <Route path="/sports" element={<ComingSoon />} />
-              <Route path="/popular" element={<ComingSoon />} />
+              <Route path="/popular" element={<PopularGame />} />
             <Route path="/bgd33" element={<BGD33 />} />
             <Route path="/jeetbuzz" element={<JeetBuzz />} />
             <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />
             <Route path="/ck444" element={<CK444 />} />
             <Route path="/betbdt" element={<BETBDT />} />
             <Route path="/crickex" element={<Crickex />} />
+            <Route path="/crickex-login" element={<CrickexLogin />} />
+            <Route path="/crickex-bet" element={<CrickexBet />} />
+            <Route path="/crickex-app" element={<CrickexApp />} />
+            <Route path="/crickex-online" element={<CrickexOnline />} />
+            <Route path="/crickex-account-create" element={<CrickexAccountCreate />} />
+            <Route path="/crickex-bonus" element={<CrickexBonus />} />
+            <Route path="/crickex-bd-login" element={<CrickexBDLogin />} />
+            <Route path="/crickex-betting-app" element={<CrickexBettingApp />} />
+            <Route path="/crickex-bet-bangla" element={<CrickexBetBangla />} />
+            <Route path="/jeetbuzz-login" element={<JeetbuzzLogin />} />
+            <Route path="/jeetbuzz-casino" element={<JeetbuzzCasino />} />
+            <Route path="/jeetbuzz-online" element={<JeetbuzzOnline />} />
+            <Route path="/jeetbuzz-partner" element={<JeetbuzzPartner />} />
             <Route path="/tk999" element={<TK999 />} />
             <Route path="/l444" element={<L444 />} />
               <Route path="/login" element={<Login />} />

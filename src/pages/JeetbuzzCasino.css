@@ -1,5 +1,5 @@
-/* Jeetbuzz Game Page Styles */
-.jeetbuzz-game-page {
+/* Jeetbuzz Casino Page Styles */
+.jeetbuzz-casino-page {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #ffffff;
@@ -113,11 +113,19 @@
   border-radius: 2px;
 }
 
+.why-choose-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .feature-item {
@@ -156,14 +164,26 @@
   margin: 0;
 }
 
-.categories-section {
+.premium-note {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.games-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.categories-section h2 {
+.games-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -172,7 +192,7 @@
   position: relative;
 }
 
-.categories-section h2::after {
+.games-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -184,14 +204,22 @@
   border-radius: 2px;
 }
 
-.categories-grid {
+.games-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 40px 0;
 }
 
-.category-item {
+.game-item {
   background: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 15px;
@@ -201,31 +229,157 @@
   transition: all 0.3s ease;
 }
 
-.category-item:hover {
+.game-item:hover {
   background: rgba(255, 215, 0, 0.05);
   border-color: rgba(255, 215, 0, 0.3);
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.category-icon {
+.game-icon {
   font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.category-item h3 {
+.game-item h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
   color: #ffd700;
 }
 
-.category-item p {
+.game-item p {
   font-size: 1rem;
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
   text-align: left;
+}
+
+.bonuses-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+}
+
+.bonuses-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.bonuses-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.bonuses-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.bonuses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.bonus-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.bonus-item:hover {
+  background: rgba(255, 215, 0, 0.05);
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bonus-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.bonus-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.excitement-note {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-section,
+.security-section {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-section h2,
+.security-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffd700;
+  text-align: center;
+  position: relative;
+}
+
+.app-section h2::after,
+.security-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+}
+
+.app-section p,
+.security-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
 }
 
 .how-to-start-section {
@@ -255,17 +409,9 @@
   border-radius: 2px;
 }
 
-.how-to-start-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: #e0e0e0;
-  text-align: center;
-}
-
 .steps-list {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .step-item {
@@ -310,14 +456,26 @@
   flex: 1;
 }
 
-.bangladeshi-players-section {
+.easy-note {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.number-one-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.bangladeshi-players-section h2 {
+.number-one-section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -326,7 +484,7 @@
   position: relative;
 }
 
-.bangladeshi-players-section h2::after {
+.number-one-section h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -338,20 +496,12 @@
   border-radius: 2px;
 }
 
-.bangladeshi-players-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: #e0e0e0;
-  text-align: center;
-}
-
-.benefits-list {
+.reasons-list {
   max-width: 800px;
   margin: 0 auto 40px;
 }
 
-.benefit-item {
+.reason-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -363,27 +513,27 @@
   transition: all 0.3s ease;
 }
 
-.benefit-item:hover {
+.reason-item:hover {
   background: rgba(255, 215, 0, 0.05);
   border-color: rgba(255, 215, 0, 0.3);
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.benefit-icon {
+.reason-icon {
   font-size: 1.5rem;
   margin-right: 15px;
   flex-shrink: 0;
 }
 
-.benefit-item p {
+.reason-item p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
 }
 
-.local-choice-note {
+.top-choice-note {
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #000000;
   padding: 25px;
@@ -393,95 +543,6 @@
   font-weight: 600;
   box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.safety-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(10px);
-}
-
-.safety-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.safety-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.safety-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.final-thoughts-section {
-  padding: 60px 0;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.final-thoughts-section h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #ffd700;
-  text-align: center;
-  position: relative;
-}
-
-.final-thoughts-section h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  border-radius: 2px;
-}
-
-.final-thoughts-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #e0e0e0;
-  margin-bottom: 20px;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-box {
-  background: linear-gradient(135deg, #ffd700, #ffed4e);
-  color: #000000;
-  padding: 25px;
-  border-radius: 15px;
-  margin: 30px auto;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  max-width: 800px;
 }
 
 .faq-section {
@@ -565,11 +626,12 @@
   
   .content-section h2,
   .why-choose-section h2,
-  .categories-section h2,
+  .games-section h2,
+  .bonuses-section h2,
+  .app-section h2,
+  .security-section h2,
   .how-to-start-section h2,
-  .bangladeshi-players-section h2,
-  .safety-section h2,
-  .final-thoughts-section h2,
+  .number-one-section h2,
   .faq-section h2 {
     font-size: 2rem;
   }
@@ -585,22 +647,24 @@
   }
   
   .features-grid,
-  .categories-grid {
+  .games-grid,
+  .bonuses-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
   .feature-item,
-  .category-item {
+  .game-item,
+  .bonus-item {
     padding: 20px;
   }
   
-  .benefit-item {
+  .reason-item {
     flex-direction: column;
     text-align: center;
   }
   
-  .benefit-icon {
+  .reason-icon {
     margin-right: 0;
     margin-bottom: 10px;
   }
@@ -621,22 +685,24 @@
   
   .content-section,
   .why-choose-section,
-  .categories-section,
+  .games-section,
+  .bonuses-section,
+  .app-section,
+  .security-section,
   .how-to-start-section,
-  .bangladeshi-players-section,
-  .safety-section,
-  .final-thoughts-section,
+  .number-one-section,
   .faq-section {
     padding: 40px 0;
   }
   
   .content-section h2,
   .why-choose-section h2,
-  .categories-section h2,
+  .games-section h2,
+  .bonuses-section h2,
+  .app-section h2,
+  .security-section h2,
   .how-to-start-section h2,
-  .bangladeshi-players-section h2,
-  .safety-section h2,
-  .final-thoughts-section h2,
+  .number-one-section h2,
   .faq-section h2 {
     font-size: 1.6rem;
   }
@@ -652,30 +718,26 @@
   }
   
   .feature-item,
-  .category-item {
+  .game-item,
+  .bonus-item {
     padding: 15px;
   }
   
   .feature-icon,
-  .category-icon {
+  .game-icon {
     font-size: 2.5rem;
   }
   
   .feature-item h3,
-  .category-item h3 {
+  .game-item h3 {
     font-size: 1.3rem;
   }
   
-  .benefit-item {
+  .reason-item {
     padding: 15px;
   }
   
   .faq-item {
     padding: 20px;
-  }
-  
-  .cta-box {
-    padding: 20px;
-    font-size: 1rem;
   }
 }
