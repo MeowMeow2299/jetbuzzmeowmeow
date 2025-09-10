@@ -204,7 +204,7 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
   counter-reset: feature-counter;
@@ -212,7 +212,7 @@
 
 .feature-item {
   background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
+  padding: 35px 30px;
   border-radius: 15px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -220,6 +220,10 @@
   transition: all 0.3s ease;
   counter-increment: feature-counter;
   position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feature-item:hover {
@@ -247,6 +251,7 @@
   font-weight: 700;
   box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 10;
 }
 
 .feature-icon {
@@ -267,6 +272,10 @@
   line-height: 1.6;
   color: #e0e0e0;
   margin: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .trust-badge {
@@ -395,8 +404,9 @@
   }
   
   .feature-item {
-    padding: 20px;
+    padding: 25px 20px;
     margin-top: 20px;
+    min-height: 180px;
   }
   
   .feature-item::before {
@@ -447,8 +457,9 @@
   }
   
   .feature-item {
-    padding: 15px;
+    padding: 20px 15px;
     margin-top: 15px;
+    min-height: 160px;
   }
   
   .feature-item::before {
