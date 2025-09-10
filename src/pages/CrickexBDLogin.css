@@ -179,6 +179,7 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: visible;
 }
 
 .features-section h2 {
@@ -204,15 +205,16 @@
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
   counter-reset: feature-counter;
+  overflow: visible;
 }
 
 .feature-item {
   background: rgba(255, 255, 255, 0.05);
-  padding: 40px 30px 30px 30px;
+  padding: 50px 30px 40px 30px;
   border-radius: 15px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -221,6 +223,7 @@
   counter-increment: feature-counter;
   position: relative;
   min-height: auto;
+  overflow: visible;
 }
 
 .feature-item:hover {
@@ -397,7 +400,7 @@
   }
   
   .feature-item {
-    padding: 35px 20px 25px 20px;
+    padding: 45px 20px 35px 20px;
     margin-top: 20px;
   }
   
@@ -449,7 +452,7 @@
   }
   
   .feature-item {
-    padding: 30px 15px 20px 15px;
+    padding: 40px 15px 30px 15px;
     margin-top: 15px;
   }
   
