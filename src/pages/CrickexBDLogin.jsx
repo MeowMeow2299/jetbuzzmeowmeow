@@ -101,15 +101,6 @@ const CrickexBDLogin = () => {
         </div>
       </div>
 
-      <div className="app-section">
-        <div className="container">
-          <h2>Download Crickex App BD for Easy Login</h2>
-          <p>
-            For players who prefer mobile betting, the Crickex App BD is available for both Android and iOS devices. After a quick install, you can log in anytime, place live bets, and withdraw your winnings directly to your account. The app is designed for speed, security, and smooth gameplay, making it perfect for Bangladeshi players on the go.
-          </p>
-        </div>
-      </div>
-
       <div className="cta-section">
         <div className="container">
           <h2>Start Betting Today with Crickex BD Login</h2>
@@ -119,6 +110,15 @@ const CrickexBDLogin = () => {
           <div className="cta-box">
             <p>👉 Login now to Crickex BD through JeetBuzzGames and claim your welcome bonus today!</p>
           </div>
+        </div>
+      </div>
+
+      <div className="app-section">
+        <div className="container">
+          <h2>Download Crickex App BD for Easy Login</h2>
+          <p>
+            For players who prefer mobile betting, the Crickex App BD is available for both Android and iOS devices. After a quick install, you can log in anytime, place live bets, and withdraw your winnings directly to your account. The app is designed for speed, security, and smooth gameplay, making it perfect for Bangladeshi players on the go.
+          </p>
         </div>
       </div>
     </div>
