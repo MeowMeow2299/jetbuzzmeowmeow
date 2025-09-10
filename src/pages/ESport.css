@@ -1,80 +1,126 @@
+/* E-Sport Page Styles - Simple and Clear */
 .es-page {
+  min-height: 100vh;
+  background: #1a1a2e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   padding: 20px;
-  color: #fff;
-  background: #000;
+  line-height: 1.6;
 }
 
 .es-hero {
-  background: linear-gradient(135deg, #FFD700, #FFA500);
-  text-align: center;
-  margin-bottom: 24px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  color: #000000;
   padding: 40px 20px;
-  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .es-hero h1 {
-  margin: 0 0 8px 0;
-  font-size: 28px;
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
   color: #000000;
 }
 
 .es-subtitle {
+  font-size: 1.2rem;
+  margin: 0;
   color: #333333;
 }
 
 .es-section {
-  max-width: 960px;
-  margin: 0 auto 24px;
-  background: #0f0f0f;
-  border: 1px solid #1f1f1f;
-  border-radius: 8px;
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .es-section h2 {
-  margin-top: 0;
-  color: #FFD700;
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+}
+
+.es-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
 }
 
 .es-list {
-  margin: 0;
-  padding-left: 18px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+.es-list li {
+  margin-bottom: 10px;
+}
+
+.es-list strong {
+  color: #ffd700;
 }
 
 .es-table {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  border: 1px solid #222;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .es-row {
-  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.es-row--head {
+  background: rgba(255, 215, 0, 0.1);
+  font-weight: bold;
+  color: #ffd700;
 }
 
 .es-row > div {
-  padding: 10px 12px;
-  border-bottom: 1px solid #222;
-  border-right: 1px solid #222;
+  padding: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .es-row > div:last-child {
   border-right: none;
 }
 
-.es-row--head > div {
-  background: #141414;
-  font-weight: 700;
-  color: #FFD700;
+.es-row:last-child {
+  border-bottom: none;
 }
 
-@media (max-width: 720px) {
-  .es-table {
+/* Responsive */
+@media (max-width: 768px) {
+  .es-page {
+    padding: 10px;
+  }
+  
+  .es-hero {
+    padding: 20px 15px;
+  }
+  
+  .es-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .es-section {
+    padding: 20px;
+  }
+  
+  .es-row {
     grid-template-columns: 1fr;
   }
+  
   .es-row > div {
     border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
-

@@ -1,80 +1,128 @@
+/* Live Casino Page Styles - Simple and Clear */
 .lc-page {
+  min-height: 100vh;
+  background: #1a1a2e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   padding: 20px;
-  color: #fff;
-  background: #000;
+  line-height: 1.6;
 }
 
 .lc-hero {
-  background: linear-gradient(135deg, #FFD700, #FFA500);
-  text-align: center;
-  margin-bottom: 24px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  color: #000000;
   padding: 40px 20px;
-  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .lc-hero h1 {
-  margin: 0 0 8px 0;
-  font-size: 28px;
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
   color: #000000;
 }
 
 .lc-subtitle {
+  font-size: 1.2rem;
+  margin: 0;
   color: #333333;
 }
 
 .lc-section {
-  max-width: 960px;
-  margin: 0 auto 24px;
-  background: #0f0f0f;
-  border: 1px solid #1f1f1f;
-  border-radius: 8px;
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lc-section h2 {
-  margin-top: 0;
-  color: #FFD700;
+  color: #ffd700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffd700;
+  padding-bottom: 10px;
+}
+
+.lc-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
 }
 
 .lc-list {
-  margin: 0;
-  padding-left: 18px;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+.lc-list li {
+  margin-bottom: 15px;
+}
+
+.lc-list strong {
+  color: #ffd700;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .lc-table {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  border: 1px solid #222;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lc-row {
-  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lc-row--head {
+  background: rgba(255, 215, 0, 0.1);
+  font-weight: bold;
+  color: #ffd700;
 }
 
 .lc-row > div {
-  padding: 10px 12px;
-  border-bottom: 1px solid #222;
-  border-right: 1px solid #222;
+  padding: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lc-row > div:last-child {
   border-right: none;
 }
 
-.lc-row--head > div {
-  background: #141414;
-  font-weight: 700;
-  color: #FFD700;
+.lc-row:last-child {
+  border-bottom: none;
 }
 
-@media (max-width: 720px) {
-  .lc-table {
+/* Responsive */
+@media (max-width: 768px) {
+  .lc-page {
+    padding: 10px;
+  }
+  
+  .lc-hero {
+    padding: 20px 15px;
+  }
+  
+  .lc-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .lc-section {
+    padding: 20px;
+  }
+  
+  .lc-row {
     grid-template-columns: 1fr;
   }
+  
   .lc-row > div {
     border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
-
