@@ -1,4 +1,4 @@
-/* BETBDT Page Styles */
+/* BETBDT Page Styles - Beautiful like BGD33 */
 .page-betbdt {
   max-width: 1200px;
   margin: 0 auto;
@@ -71,9 +71,7 @@
   margin-bottom: 30px;
 }
 
-.why-choose-section,
-.comparison-section,
-.faq-section {
+.why-choose-section {
   background: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 15px;
@@ -115,6 +113,12 @@
 
 /* Comparison Table */
 .comparison-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   overflow-x: auto;
 }
 
@@ -156,6 +160,15 @@
 }
 
 /* FAQ Section */
+.faq-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
 .faq-list {
   margin-top: 20px;
 }
@@ -182,7 +195,7 @@
 }
 
 .faq-item p {
-  margin: 0 0 15px 0;
+  margin: 0;
   line-height: 1.6;
 }
 
@@ -192,13 +205,11 @@
 }
 
 .faq-item li {
-  margin: 8px 0;
-  padding: 5px 0;
+  margin: 5px 0;
 }
 
 .faq-item li strong {
   color: #FFD700;
-  font-weight: bold;
 }
 
 /* Responsive Design */
@@ -227,12 +238,6 @@
     font-size: 1rem;
   }
   
-  .why-choose-section,
-  .comparison-section,
-  .faq-section {
-    padding: 20px;
-  }
-  
   .comparison-table {
     font-size: 0.8rem;
   }
@@ -251,9 +256,5 @@
   .comparison-table th,
   .comparison-table td {
     padding: 6px 3px;
-  }
-  
-  .faq-item {
-    padding: 20px;
   }
 }

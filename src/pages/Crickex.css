@@ -1,4 +1,4 @@
-/* Crickex Page Styles */
+/* Crickex Page Styles - Beautiful like BGD33 */
 .page-crickex {
   max-width: 1200px;
   margin: 0 auto;
@@ -72,6 +72,9 @@
 }
 
 .why-choose-section,
+.games-section,
+.bonuses-section,
+.access-section,
 .comparison-section,
 .faq-section {
   background: rgba(255, 255, 255, 0.05);
@@ -113,11 +116,87 @@
   font-weight: bold;
 }
 
-/* Comparison Table */
-.comparison-section {
-  overflow-x: auto;
+/* Games Categories */
+.games-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
 }
 
+.game-category {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+}
+
+.game-category h3 {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.game-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-category li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-left: 3px solid #FFA500;
+}
+
+/* Access Steps */
+.access-steps ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
+}
+
+.access-steps li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+  counter-increment: step-counter;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.access-steps li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+}
+
+.access-steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFD700;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.access-steps li strong {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Comparison Table */
 .comparison-table {
   width: 100%;
   overflow-x: auto;
@@ -212,10 +291,8 @@
     font-size: 1rem;
   }
   
-  .why-choose-section,
-  .comparison-section,
-  .faq-section {
-    padding: 20px;
+  .games-categories {
+    grid-template-columns: 1fr;
   }
   
   .comparison-table {
@@ -225,6 +302,17 @@
   .comparison-table th,
   .comparison-table td {
     padding: 8px 5px;
+  }
+  
+  .access-steps li::before {
+    position: static;
+    transform: none;
+    margin-right: 15px;
+    display: inline-flex;
+  }
+  
+  .access-steps li {
+    padding-left: 50px;
   }
 }
 
@@ -236,9 +324,5 @@
   .comparison-table th,
   .comparison-table td {
     padding: 6px 3px;
-  }
-  
-  .faq-item {
-    padding: 20px;
   }
 }
