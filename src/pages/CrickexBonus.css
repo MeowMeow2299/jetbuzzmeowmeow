@@ -134,33 +134,6 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 40px 0;
-  max-height: 600px;
-  overflow-y: auto;
-  padding-right: 10px;
-}
-
-.bonus-types-grid::-webkit-scrollbar {
-  width: 8px;
-}
-
-.bonus-types-grid::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.bonus-types-grid::-webkit-scrollbar-thumb {
-  background: rgba(255, 215, 0, 0.3);
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.bonus-types-grid:hover::-webkit-scrollbar-thumb {
-  opacity: 1;
-}
-
-.bonus-types-grid::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 215, 0, 0.6);
 }
 
 .bonus-type-item {
@@ -195,7 +168,7 @@
 .bonus-type-item p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: #000000;
   margin: 0;
 }
 
@@ -247,33 +220,6 @@
 .claim-steps {
   max-width: 800px;
   margin: 0 auto;
-  max-height: 700px;
-  overflow-y: auto;
-  padding-right: 10px;
-}
-
-.claim-steps::-webkit-scrollbar {
-  width: 8px;
-}
-
-.claim-steps::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.claim-steps::-webkit-scrollbar-thumb {
-  background: rgba(255, 215, 0, 0.3);
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.claim-steps:hover::-webkit-scrollbar-thumb {
-  opacity: 1;
-}
-
-.claim-steps::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 215, 0, 0.6);
 }
 
 .claim-step {
