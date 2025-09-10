@@ -98,6 +98,10 @@
   max-width: 800px;
 }
 
+.cta-box * {
+  color: #000000 !important;
+}
+
 .bonus-types-section {
   padding: 60px 0;
   background: rgba(255, 255, 255, 0.02);
@@ -127,7 +131,7 @@
 
 .bonus-types-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin: 40px 0;
   max-height: 400px;
@@ -243,6 +247,33 @@
 .claim-steps {
   max-width: 800px;
   margin: 0 auto;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.claim-steps::-webkit-scrollbar {
+  width: 8px;
+}
+
+.claim-steps::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.claim-steps::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.3);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.claim-steps:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
+.claim-steps::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 215, 0, 0.6);
 }
 
 .claim-step {
@@ -278,6 +309,10 @@
   margin-right: 20px;
   flex-shrink: 0;
   box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+}
+
+.step-number * {
+  color: #000000 !important;
 }
 
 .step-content {
