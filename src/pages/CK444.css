@@ -228,6 +228,174 @@
   background: rgba(255, 215, 0, 0.05);
 }
 
+/* How to Claim Bonus Steps */
+.how-to-claim {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #FFD700;
+}
+
+.how-to-claim h3 {
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.how-to-claim ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: claim-counter;
+}
+
+.how-to-claim li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+  counter-increment: claim-counter;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.how-to-claim li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+}
+
+.how-to-claim li::before {
+  content: counter(claim-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFD700;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Steps Section */
+.steps-section {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #FFD700;
+}
+
+.steps-section h3 {
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: steps-counter;
+}
+
+.steps-list li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+  counter-increment: steps-counter;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.steps-list li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+}
+
+.steps-list li::before {
+  content: counter(steps-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFD700;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.steps-section .note {
+  background: rgba(255, 215, 0, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-style: italic;
+  color: #FFD700;
+}
+
+/* Login Steps */
+.login-steps {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border-left: 4px solid #FFD700;
+}
+
+.login-steps ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: login-counter;
+}
+
+.login-steps li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #FFD700;
+  counter-increment: login-counter;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.login-steps li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+}
+
+.login-steps li::before {
+  content: counter(login-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FFD700;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 /* FAQ Section */
 .faq-list {
   margin-top: 20px;
@@ -306,6 +474,21 @@
   }
   
   .access-steps li {
+    padding-left: 50px;
+  }
+  
+  .how-to-claim li::before,
+  .steps-list li::before,
+  .login-steps li::before {
+    position: static;
+    transform: none;
+    margin-right: 15px;
+    display: inline-flex;
+  }
+  
+  .how-to-claim li,
+  .steps-list li,
+  .login-steps li {
     padding-left: 50px;
   }
 }
