@@ -1,22 +1,25 @@
 .es-page {
-  padding: 70px 16px 40px;
+  padding: 20px;
   color: #fff;
   background: #000;
 }
 
 .es-hero {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
   text-align: center;
   margin-bottom: 24px;
+  padding: 40px 20px;
+  border-radius: 12px;
 }
 
 .es-hero h1 {
   margin: 0 0 8px 0;
   font-size: 28px;
-  color: #FFD700;
+  color: #000000;
 }
 
 .es-subtitle {
-  color: #ddd;
+  color: #333333;
 }
 
 .es-section {
