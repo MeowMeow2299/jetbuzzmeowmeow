@@ -149,6 +149,35 @@
   color: #00ffff;
 }
 
+/* Search results dropdown */
+.search-results {
+  position: absolute;
+  top: 56px; /* just below navbar height */
+  right: 16px;
+  width: 260px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  z-index: 3100;
+  overflow: hidden;
+}
+
+.search-result-item {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  background: transparent;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background: #2a2a2a;
+  color: #ffd700;
+}
+
 /* Nút glass */
 .btn-glass {
   position: relative;
