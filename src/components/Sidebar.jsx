@@ -147,9 +147,9 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Hamburger button với DaisyUI */}
+      {/* Hamburger button với màu pastel */}
       <button
-        className={`btn btn-primary btn-circle fixed top-4 left-4 z-50 shadow-lg ${isOpen ? 'open' : ''}`}
+        className={`btn btn-circle fixed top-4 left-4 z-50 shadow-lg bg-pastel-yellow hover:bg-pastel-yellow-light text-japanese-yellow-dark border-pastel-yellow-dark ${isOpen ? 'open' : ''}`}
         onClick={toggleSidebar}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -162,7 +162,7 @@ const Sidebar = () => {
       </button>
 
       <div className={`drawer-side ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
-        <div className="min-h-full w-64 bg-gradient-to-b from-pastel-yellow to-pastel-mint shadow-xl">
+        <div className="min-h-full w-64 bg-gradient-to-b from-pastel-yellow to-pastel-mint shadow-xl border-r-2 border-pastel-yellow-dark">
           <div className="p-4">
             <ul className="menu menu-vertical w-full text-base-content">
               {mainItems.map((item, index) => {
@@ -170,18 +170,18 @@ const Sidebar = () => {
                   <li key={index}>
                     {item.hasDropdown ? (
                       <details className="group">
-                        <summary className="group-open:bg-primary group-open:text-primary-content text-primary font-bold">
+                        <summary className="group-open:bg-pastel-yellow-light group-open:text-japanese-yellow-dark text-japanese-yellow-dark font-bold">
                           <span>{item.name}</span>
                           <FaChevronDown className="ml-auto transition-transform group-open:rotate-180" />
                         </summary>
-                        <ul className="bg-base-100 rounded-box shadow-lg">
+                        <ul className="bg-pastel-yellow-light rounded-box shadow-lg">
                           {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
                             <li key={dropdownIndex}>
                               {dropdownItem.isInternal ? (
                                 <Link 
                                   to={dropdownItem.link} 
                                   onClick={handleLinkClick}
-                                  className="hover:bg-primary hover:text-primary-content"
+                                  className="hover:bg-pastel-yellow hover:text-japanese-yellow-dark"
                                 >
                                   {dropdownItem.name}
                                 </Link>
@@ -191,7 +191,7 @@ const Sidebar = () => {
                                   target="_blank" 
                                   rel="noopener noreferrer"
                                   onClick={handleLinkClick}
-                                  className="hover:bg-primary hover:text-primary-content"
+                                  className="hover:bg-pastel-yellow hover:text-japanese-yellow-dark"
                                 >
                                   {dropdownItem.name}
                                 </a>
@@ -206,7 +206,7 @@ const Sidebar = () => {
                           <Link 
                             to={item.link} 
                             onClick={handleLinkClick}
-                            className="text-primary font-bold hover:bg-primary hover:text-primary-content rounded-lg"
+                            className="text-japanese-yellow-dark font-bold hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                           >
                             {item.name}
                           </Link>
@@ -216,7 +216,7 @@ const Sidebar = () => {
                             target="_blank" 
                             rel="noopener noreferrer" 
                             onClick={handleLinkClick}
-                            className="text-primary font-bold hover:bg-primary hover:text-primary-content rounded-lg"
+                            className="text-japanese-yellow-dark font-bold hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                           >
                             {item.name}
                           </a>
@@ -228,10 +228,10 @@ const Sidebar = () => {
               })}
             </ul>
 
-            <div className="divider"></div>
+            <div className="divider border-japanese-yellow-dark"></div>
             <ul className="menu menu-vertical w-full">
               <li className="menu-title">
-                <span className="text-primary font-bold">Partner Sites</span>
+                <span className="text-japanese-yellow-dark font-bold">Partner Sites</span>
               </li>
               {subItems.map((item, index) => (
                 <li key={index}>
@@ -239,7 +239,7 @@ const Sidebar = () => {
                     <Link 
                       to={item.link} 
                       onClick={handleLinkClick}
-                      className="hover:bg-primary hover:text-primary-content rounded-lg"
+                      className="hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                     >
                       {item.name}
                     </Link>
@@ -249,7 +249,7 @@ const Sidebar = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                       onClick={handleLinkClick}
-                      className="hover:bg-primary hover:text-primary-content rounded-lg"
+                      className="hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                     >
                       {item.name}
                     </a>
