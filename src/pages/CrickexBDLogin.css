@@ -481,9 +481,10 @@
   }
   
   .cta-box {
-    padding: 12px;
+    padding: 12px 0;
     padding-bottom: 20px;
     font-size: 0.9rem;
+
   }
   
   .app-section {
