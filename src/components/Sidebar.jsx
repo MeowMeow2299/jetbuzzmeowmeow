@@ -170,7 +170,7 @@ const Sidebar = () => {
                   <li key={index}>
                     {item.hasDropdown ? (
                       <details className="group">
-                        <summary className="group-open:bg-pastel-yellow-light group-open:text-japanese-yellow-dark text-japanese-yellow-dark font-bold">
+                        <summary className="group-open:bg-pastel-yellow-light group-open:text-japanese-yellow-dark text-japanese-yellow-dark font-bold uppercase">
                           <span>{item.name}</span>
                           <FaChevronDown className="ml-auto transition-transform group-open:rotate-180" />
                         </summary>
@@ -206,7 +206,7 @@ const Sidebar = () => {
                           <Link 
                             to={item.link} 
                             onClick={handleLinkClick}
-                            className="text-japanese-yellow-dark font-bold hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
+                            className="text-japanese-yellow-dark font-bold uppercase no-underline hover:no-underline hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                           >
                             {item.name}
                           </Link>
@@ -216,7 +216,7 @@ const Sidebar = () => {
                             target="_blank" 
                             rel="noopener noreferrer" 
                             onClick={handleLinkClick}
-                            className="text-japanese-yellow-dark font-bold hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
+                            className="text-japanese-yellow-dark font-bold uppercase no-underline hover:no-underline hover:bg-pastel-yellow hover:text-japanese-yellow-dark rounded-lg"
                           >
                             {item.name}
                           </a>
