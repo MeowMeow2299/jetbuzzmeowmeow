@@ -146,66 +146,79 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Hamburger luôn hiển thị ngoài cùng bên trái */}
-      <div
-        className={`hamburger ${isOpen ? 'open' : ''}`}
+      {/* Hamburger button với DaisyUI */}
+      <button
+        className={`btn btn-ghost btn-circle fixed top-4 left-4 z-50 ${isOpen ? 'open' : ''}`}
         onClick={toggleSidebar}
       >
-        <div className="line line1"></div>
-        <div className="line line2"></div>
-        <div className="line line3"></div>
-      </div>
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {isOpen ? (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          ) : (
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          )}
+        </svg>
+      </button>
 
-      <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-        {isOpen && (
-          <>
-            <ul className="main-items">
+      <div className={`drawer-side ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
+        <div className="min-h-full w-64 bg-base-200 text-base-content">
+          <div className="p-4">
+            <ul className="menu menu-vertical w-full">
               {mainItems.map((item, index) => {
                 return (
-                  <li key={index} className={`main-item ${item.hasDropdown ? 'has-dropdown' : ''}`}>
+                  <li key={index}>
                     {item.hasDropdown ? (
-                      <div className="dropdown-container">
-                        <div 
-                          className="dropdown-trigger"
-                          onClick={() => toggleDropdown(item.name)}
-                        >
-                          <span>{item.name}</span>
-                          <FaChevronDown className={`dropdown-icon ${activeDropdown === item.name ? 'rotated' : ''}`} />
-                        </div>
-                        {activeDropdown === item.name && (
-                          <ul className="dropdown-menu">
-                            {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
-                              <li key={dropdownIndex} className="dropdown-item">
-                                {dropdownItem.isInternal ? (
-                                  <Link 
-                                    to={dropdownItem.link} 
-                                    onClick={handleLinkClick}
-                                    className="dropdown-link"
-                                  >
-                                    {dropdownItem.name}
-                                  </Link>
-                                ) : (
-                                  <a 
-                                    href={dropdownItem.link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={handleLinkClick}
-                                    className="dropdown-link"
-                                  >
-                                    {dropdownItem.name}
-                                  </a>
-                                )}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
+                      <details className="group">
+                        <summary className="group-open:bg-primary group-open:text-primary-content">
+                          <span className="text-yellow-400 font-bold">{item.name}</span>
+                          <FaChevronDown className="ml-auto transition-transform group-open:rotate-180" />
+                        </summary>
+                        <ul className="bg-base-300 rounded-box">
+                          {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
+                            <li key={dropdownIndex}>
+                              {dropdownItem.isInternal ? (
+                                <Link 
+                                  to={dropdownItem.link} 
+                                  onClick={handleLinkClick}
+                                  className="text-white hover:text-yellow-400 hover:bg-base-100"
+                                >
+                                  {dropdownItem.name}
+                                </Link>
+                              ) : (
+                                <a 
+                                  href={dropdownItem.link} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  onClick={handleLinkClick}
+                                  className="text-white hover:text-yellow-400 hover:bg-base-100"
+                                >
+                                  {dropdownItem.name}
+                                </a>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
                     ) : (
                       <>
                         {item.isInternal ? (
-                          <Link to={item.link} onClick={handleLinkClick}>{item.name}</Link>
+                          <Link 
+                            to={item.link} 
+                            onClick={handleLinkClick}
+                            className="text-yellow-400 font-bold hover:text-yellow-300 hover:bg-base-100 rounded-lg"
+                          >
+                            {item.name}
+                          </Link>
                         ) : (
-                          <a href={item.link} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>{item.name}</a>
+                          <a 
+                            href={item.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            onClick={handleLinkClick}
+                            className="text-yellow-400 font-bold hover:text-yellow-300 hover:bg-base-100 rounded-lg"
+                          >
+                            {item.name}
+                          </a>
                         )}
                       </>
                     )}
@@ -214,11 +227,19 @@ const Sidebar = () => {
               })}
             </ul>
 
-            <ul className="sub-items">
+            <div className="divider"></div>
+            <ul className="menu menu-vertical w-full">
+              <li className="menu-title">
+                <span>Partner Sites</span>
+              </li>
               {subItems.map((item, index) => (
-                <li key={index} className="sub-item">
+                <li key={index}>
                   {item.isInternal ? (
-                    <Link to={item.link} className="sub-item-link" onClick={handleLinkClick}>
+                    <Link 
+                      to={item.link} 
+                      onClick={handleLinkClick}
+                      className="text-white hover:text-yellow-400 hover:bg-base-100 rounded-lg"
+                    >
                       {item.name}
                     </Link>
                   ) : (
@@ -226,8 +247,8 @@ const Sidebar = () => {
                       href={item.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="sub-item-link"
                       onClick={handleLinkClick}
+                      className="text-white hover:text-yellow-400 hover:bg-base-100 rounded-lg"
                     >
                       {item.name}
                     </a>
@@ -235,8 +256,8 @@ const Sidebar = () => {
                 </li>
               ))}
             </ul>
-          </>
-        )}
+          </div>
+        </div>
       </div>
     </>
   );
