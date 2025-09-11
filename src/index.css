@@ -14,8 +14,8 @@ html, body, #root {
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: hsl(var(--b1));
+  color: hsl(var(--bc));
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
