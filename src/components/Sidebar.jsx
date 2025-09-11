@@ -161,7 +161,7 @@ const Sidebar = () => {
       </button>
 
       <div className={`drawer-side ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
-        <div className="min-h-full w-64 bg-gradient-to-b from-[#FFF8DC] to-[#F0FFF0] shadow-xl border-r-2 border-[#E6C200]">
+        <div className="min-h-full w-64 bg-gradient-to-b from-[#FFF8DC] to-[#F0FFF0] shadow-xl border-r-2 border-[#E6C200]" style={{ background: 'linear-gradient(to bottom, #FFF8DC, #F0FFF0)' }}>
           <div className="p-4">
             <ul className="menu menu-vertical w-full text-base-content">
               {mainItems.map((item, index) => {
