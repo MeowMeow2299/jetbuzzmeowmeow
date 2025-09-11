@@ -34,7 +34,7 @@ const Sidebar = () => {
 
   // mainItems với đầy đủ các mục theo yêu cầu
   const mainItems = [
-    { name: 'Home', link: '/', isInternal: true },
+    { name: 'HOME', link: '/', isInternal: true },
     { name: 'Casino Games', link: '/casino', isInternal: true },
     { name: 'Slots', link: '/slots', isInternal: true },
     { name: 'Popular', link: '/popular', isInternal: true },
