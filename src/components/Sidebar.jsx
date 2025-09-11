@@ -117,6 +117,7 @@ const Sidebar = () => {
       ]
     },
     { name: 'Gamechicken', link: '/gamechicken', isInternal: true },
+    { name: 'Contact', link: '/contact', isInternal: true },
   ];
 
   const subItems = [

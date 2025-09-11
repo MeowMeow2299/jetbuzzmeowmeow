@@ -44,6 +44,32 @@
   gap: 15px;
 }
 
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.email-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffcc00;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.email-contact i {
+  font-size: 16px;
+}
+
+.email-contact span {
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+.email-contact:hover span {
+  color: #ffcc00;
+}
+
 .social-icons a {
   margin-right: 10px;
   font-size: 18px;

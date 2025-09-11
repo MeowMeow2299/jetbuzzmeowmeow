@@ -53,6 +53,12 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Connect & Download</h4>
           <div className="footer-icons">
+            <div className="contact-info">
+              <div className="email-contact">
+                <i className="fas fa-envelope"></i>
+                <span>hongha.hatu@gmail.com</span>
+              </div>
+            </div>
             <div className="social-icons">
               <a href="#"><i className="fab fa-facebook-f"></i></a>
               <a href="#"><i className="fab fa-twitter"></i></a>
