@@ -228,6 +228,170 @@
   background: rgba(255, 215, 0, 0.05);
 }
 
+/* Keywords Chart Section */
+.keywords-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.keywords-section h2 {
+  color: #FFD700;
+  font-size: 2rem;
+  margin: 0 0 25px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFD700;
+  text-align: center;
+  position: relative;
+}
+
+.keywords-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  border-radius: 2px;
+}
+
+.keywords-table {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.keywords-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.keywords-table thead {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.keywords-table th {
+  color: #000;
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.keywords-table th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.keywords-table th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.keywords-table th::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #000, #333, #000);
+}
+
+.keywords-table td {
+  padding: 18px 15px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.keywords-table td:first-child {
+  font-weight: bold;
+  color: #FFD700;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.keywords-table td:last-child {
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+.keywords-table tr {
+  transition: all 0.3s ease;
+}
+
+.keywords-table tr:hover {
+  background: rgba(255, 215, 0, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.keywords-table tr:hover td:first-child {
+  background: rgba(255, 215, 0, 0.2);
+  color: #FFA500;
+}
+
+.keywords-table tr:nth-child(even) {
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.keywords-table tr:nth-child(even):hover {
+  background: rgba(255, 215, 0, 0.15);
+}
+
+/* Special styling for the last row */
+.keywords-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.keywords-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+
+.keywords-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+/* Animation for table rows */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.keywords-table tbody tr {
+  animation: slideInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.keywords-table tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.keywords-table tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.keywords-table tbody tr:nth-child(3) { animation-delay: 0.3s; }
+.keywords-table tbody tr:nth-child(4) { animation-delay: 0.4s; }
+.keywords-table tbody tr:nth-child(5) { animation-delay: 0.5s; }
+.keywords-table tbody tr:nth-child(6) { animation-delay: 0.6s; }
+.keywords-table tbody tr:nth-child(7) { animation-delay: 0.7s; }
+.keywords-table tbody tr:nth-child(8) { animation-delay: 0.8s; }
+
 /* FAQ Section */
 .faq-list {
   margin-top: 20px;
@@ -298,6 +462,20 @@
     padding: 8px 5px;
   }
   
+  .keywords-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .keywords-table th {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .keywords-table td {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+  
   .access-steps li::before {
     position: static;
     transform: none;
@@ -318,5 +496,19 @@
   .comparison-table th,
   .comparison-table td {
     padding: 6px 3px;
+  }
+  
+  .keywords-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .keywords-table th {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .keywords-table td {
+    padding: 12px 8px;
+    font-size: 0.8rem;
   }
 }
