@@ -458,6 +458,221 @@
   font-size: 1.1rem;
 }
 
+/* Mobile Section - Enhanced Design */
+.mobile-section {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  color: #000000;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+}
+
+.mobile-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="mobileGrain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23mobileGrain)"/></svg>');
+  opacity: 0.3;
+}
+
+.mobile-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.mobile-section h2 {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.mobile-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #000000, #333333, #000000);
+  border-radius: 2px;
+}
+
+.mobile-section p {
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.mobile-features {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.mobile-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-features li {
+  background: rgba(255, 215, 0, 0.1);
+  margin: 15px 0;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border-left: 5px solid #ffd700;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mobile-features li:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.mobile-features li::before {
+  content: '📱';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background: #ffd700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+}
+
+.mobile-features p {
+  background: rgba(255, 215, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* Support Section - Enhanced Design */
+.support-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.support-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+  animation: supportBackgroundShift 8s ease-in-out infinite;
+}
+
+@keyframes supportBackgroundShift {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.support-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.support-section h2 {
+  color: #ffd700;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.support-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.support-section p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.support-section p::before {
+  content: '🤝';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 3rem;
+  opacity: 0.1;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
 /* FAQ Section */
 .faq-list {
   margin-top: 20px;
@@ -562,6 +777,42 @@
   .payment-category {
     padding: 20px;
   }
+  
+  .mobile-section {
+    padding: 25px;
+  }
+  
+  .mobile-section h2 {
+    font-size: 2rem;
+  }
+  
+  .mobile-features {
+    padding: 20px;
+  }
+  
+  .mobile-features li {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  
+  .mobile-features li::before {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+  
+  .support-section {
+    padding: 25px;
+  }
+  
+  .support-section h2 {
+    font-size: 2rem;
+  }
+  
+  .support-section p {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -572,5 +823,41 @@
   .comparison-table th,
   .comparison-table td {
     padding: 6px 3px;
+  }
+  
+  .mobile-section {
+    padding: 20px;
+  }
+  
+  .mobile-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .mobile-features {
+    padding: 15px;
+  }
+  
+  .mobile-features li {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .mobile-features li::before {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  
+  .support-section {
+    padding: 20px;
+  }
+  
+  .support-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .support-section p {
+    font-size: 1rem;
+    padding: 15px;
   }
 }
