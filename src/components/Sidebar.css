@@ -1,22 +1,29 @@
-/* Sidebar chính */
+/* Sidebar chính - chỉ hiển thị trên mobile */
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 250px;
   height: 100vh;
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  color: white;
+  background: linear-gradient(135deg, #FFF8DC, #F0FFF0);
+  color: #333;
   padding: 20px;
   overflow-y: auto;
   backdrop-filter: blur(8px);
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
-  border-right: 2px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  border-right: 2px solid rgba(255, 215, 0, 0.2);
   z-index: 1000;
   transition: transform 0.4s ease, opacity 0.3s ease;
   transform: translateX(0);
   opacity: 1;
   text-align: center;
+}
+
+/* Ẩn sidebar trên desktop */
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 /* Trạng thái đóng sidebar */
@@ -26,7 +33,7 @@
   pointer-events: none;
 }
 
-/* Hamburger */
+/* Hamburger - chỉ hiển thị trên mobile */
 .hamburger {
   position: fixed;   /* luôn cố định trên màn hình */
   top: 20px;
@@ -36,6 +43,13 @@
   gap: 6px;
   cursor: pointer;
   z-index: 4001; /* luôn cao hơn navbar */
+}
+
+/* Ẩn hamburger trên desktop */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
