@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Container from './Container';
 import Marquee from './Marquee';
-import Slider from './Slider';
+import Hotgame from './Hotgame';
 import Dom from './Dom';
-import Sliderx from './Sliderx';
-import Sliderxx from './Sliderxx';
-import Sliderxxx from './Sliderxxx';
+import Slots from './Slots';
+import Live from './Live';
+import Fish from './Fish';
 import Info from './Info';
 import { useAuth } from '../auth/AuthContext.jsx';
 
@@ -19,11 +19,11 @@ const Home = () => {
       
       {/* Hiển thị tất cả games cho mọi người, không cần login */}
       <Marquee />
-      <Slider />
+      <Hotgame />
       <Dom />
-      <Sliderx />
-      <Sliderxx />
-      <Sliderxxx />
+      <Slots />
+      <Live />
+      <Fish />
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>

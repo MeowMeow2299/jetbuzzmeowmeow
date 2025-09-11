@@ -1,7 +1,7 @@
 import React from "react";
-import "./Slider.css";
+import "./Hotgame.css";
 
-const Slider = () => {
+const Hotgame = () => {
   const handleGameClick = () => {
     window.open('https://www.betbdt.vip/register?affiliateCode=soy001', '_blank');
   };
@@ -28,7 +28,7 @@ const Slider = () => {
   return (
     <div className="slider-section">
       <div className="slider-header">
-        <h2>🎲 TOP SLOTS POPULAR IN BANGLADESH</h2>
+        <h2>Hot Games</h2>
         <a href="#" className="view-all">
           VIEW ALL ↗
         </a>
@@ -61,4 +61,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Hotgame;

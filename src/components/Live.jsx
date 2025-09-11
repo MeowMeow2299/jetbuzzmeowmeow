@@ -1,7 +1,7 @@
 import React from "react";
-import "./Sliderxx.css";
+import "./Live.css";
 
-const Sliderxx = () => {
+const Live = () => {
   const handleGameClick = () => {
     window.open('https://www.betbdt.vip/register?affiliateCode=soy001', '_blank');
   };
@@ -28,7 +28,7 @@ const Sliderxx = () => {
   return (
     <div className="slider-section">
       <div className="slider-header">
-        <h2>🎲 Live Dealer & Game Show Titles</h2>
+        <h2>Live</h2>
         <a href="#" className="view-all">
           VIEW ALL ↗
         </a>
@@ -61,4 +61,4 @@ const Sliderxx = () => {
   );
 };
 
-export default Sliderxx;
+export default Live;

@@ -2,11 +2,11 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 200px; /* Giảm chiều cao */
-  margin-top: 50px; /* Space below navbar */
+  height: 120px; /* Mini banner height */
+  margin-top: 10px; /* Space below navbar */
   overflow: hidden;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,53 +23,51 @@
 /* Banner Track */
 .banner-track {
   display: flex;
-  width: 1800px; /* 3 banners * 600px */
-  height: 200px;
-  animation: scroll-left 40s linear infinite; /* Chậm hơn */
-  gap: 20px; /* Cách đều nhau */
-  padding: 0 20px;
+  width: 300%; /* 3 banners * 100% */
+  height: 120px;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Individual Banner Slide */
 .banner-slide {
-  width: 580px; /* Nhỏ hơn */
-  height: 200px;
+  width: 33.333%; /* 100% / 3 banners */
+  height: 120px;
   flex-shrink: 0;
   position: relative;
 }
 
 /* Banner Image */
 .banner-image {
-  width: 580px; /* Nhỏ hơn */
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
   transition: transform 0.3s ease;
-  border-radius: 10px; /* Bo góc đẹp */
+  border-radius: 5px; /* Smaller border radius for mini banner */
 }
 
 .banner-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 /* Banner Logo Overlay */
 .banner-logo-overlay {
   position: absolute;
-  bottom: 15px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  padding: 8px;
+  border-radius: 4px;
+  padding: 4px;
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .banner-logo {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   display: block;
   transition: transform 0.3s ease;
@@ -85,16 +83,16 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.6);
-  border: 2px solid #FFD700;
+  border: 1px solid #FFD700;
   color: #FFD700;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   transition: all 0.3s ease;
   z-index: 10;
   backdrop-filter: blur(8px);
@@ -108,27 +106,27 @@
 }
 
 .banner-nav-prev {
-  left: 20px;
+  left: 10px;
 }
 
 .banner-nav-next {
-  right: 20px;
+  right: 10px;
 }
 
 /* Pagination Dots */
 .banner-pagination {
   position: absolute;
-  bottom: 12px;
+  bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 6px;
+  gap: 4px;
   z-index: 10;
 }
 
 .banner-dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.15);
@@ -146,17 +144,17 @@
 .banner-dot.active {
   background: #FFD700;
   border-color: #FFD700;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
-  transform: scale(1.15);
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+  transform: scale(1.2);
 }
 
 .banner-dot.active::after {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
   border: 1px solid rgba(255, 215, 0, 0.4);
   border-radius: 50%;
   animation: pulse 2s infinite;
@@ -173,122 +171,102 @@
   }
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner-container {
-    height: 150px; /* Giảm chiều cao mobile */
-    margin-top: 50px;
+    height: 100px; /* Smaller mobile height */
+    margin-top: 8px;
   }
   
   .banner-track {
-    width: 1200px; /* 3 banners * 400px */
-    height: 150px;
-    gap: 15px;
+    height: 100px;
   }
   
   .banner-slide {
-    width: 400px;
-    height: 150px;
-  }
-  
-  .banner-image {
-    width: 400px;
-    height: 150px;
+    height: 100px;
   }
   
   .banner-logo-overlay {
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 6px;
+    bottom: 6px;
+    padding: 3px;
   }
   
   .banner-logo {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
   }
   
   .banner-nav {
-    width: 40px;
-    height: 40px;
-    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
   }
   
   .banner-nav-prev {
-    left: 10px;
+    left: 8px;
   }
   
   .banner-nav-next {
-    right: 10px;
+    right: 8px;
   }
   
   .banner-pagination {
-    bottom: 10px;
-    gap: 5px;
+    bottom: 4px;
+    gap: 3px;
   }
   
   .banner-dot {
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 120px; /* Giảm chiều cao mobile nhỏ */
+    height: 80px; /* Even smaller for mobile */
+    margin-top: 5px;
   }
   
   .banner-track {
-    width: 900px; /* 3 banners * 300px */
-    height: 120px;
-    gap: 10px;
+    height: 80px;
   }
   
   .banner-slide {
-    width: 300px;
-    height: 120px;
-  }
-  
-  .banner-image {
-    width: 300px;
-    height: 120px;
+    height: 80px;
   }
   
   .banner-logo-overlay {
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
+    bottom: 4px;
+    padding: 2px;
   }
   
   .banner-logo {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
   }
   
   .banner-nav {
-    width: 35px;
-    height: 35px;
-    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  
+  .banner-nav-prev {
+    left: 5px;
+  }
+  
+  .banner-nav-next {
+    right: 5px;
   }
   
   .banner-pagination {
-    bottom: 8px;
-    gap: 4px;
+    bottom: 3px;
+    gap: 2px;
   }
   
   .banner-dot {
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
   }
 }
 

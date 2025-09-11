@@ -1,7 +1,7 @@
 import React from "react";
-import "./Sliderx.css";
+import "./Slots.css";
 
-const Sliderx = () => {
+const Slots = () => {
   const handleGameClick = () => {
     window.open('https://www.betbdt.vip/register?affiliateCode=soy001', '_blank');
   };
@@ -28,7 +28,7 @@ const Sliderx = () => {
   return (
     <div className="slider-section">
       <div className="slider-header">
-        <h2>🎲 Table Games & Card Games</h2>
+        <h2>Slots</h2>
         <a href="#" className="view-all">
           VIEW ALL ↗
         </a>
@@ -61,4 +61,4 @@ const Sliderx = () => {
   );
 };
 
-export default Sliderx;
+export default Slots;

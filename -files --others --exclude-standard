@@ -1,0 +1,10 @@
+[33md078a78[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Fix sidebar pastel colors and content display issues
+[33m4ffa81a[m Update sidebar to use DaisyUI classes for text styling
+[33m4b19086[m Redesign navbar with centered logo and left sidebar
+[33meb01710[m Fix navbar menu items to match sidebar
+[33m0c30fd5[m Implement responsive navbar and sidebar with pastel color scheme
+[33ma09f083[m Add Contact Form and Official Email Setup
+[33m51c9eee[m Fix Tailwind CSS build configuration and HTML structure
+[33m719dc7e[m Fix PostCSS and Tailwind config for Vercel deployment
+[33m8425c11[m Implement DaisyUI sidebar with modern design
+[33m423fd61[m Fix HOME menu item visibility in sidebar - add padding and min-height

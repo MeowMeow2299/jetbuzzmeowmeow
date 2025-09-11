@@ -7,6 +7,7 @@
   border-top: 2px solid #FFD700;
   border-bottom: 2px solid #FFD700;
   overflow-x: auto;
+  position: relative;
 }
 
 .dom-item {
@@ -33,4 +34,101 @@
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+}
+
+/* Search Container Styles */
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.search-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  min-width: 80px;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+  color: #FFD700;
+}
+
+.search-icon i {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.search-icon::after {
+  content: "Search";
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.search-input-overlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #111;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  min-width: 300px;
+  margin-top: 10px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  background: #222;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #FFA500;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-submit-btn {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-submit-btn:hover {
+  transform: scale(1.05);
+}
+
+.search-submit-btn i {
+  font-size: 16px;
 }
