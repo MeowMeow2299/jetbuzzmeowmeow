@@ -39,6 +39,7 @@ import JeetbuzzLogin from './pages/JeetbuzzLogin';
 import JeetbuzzCasino from './pages/JeetbuzzCasino';
 import JeetbuzzOnline from './pages/JeetbuzzOnline';
 import JeetbuzzPartner from './pages/JeetbuzzPartner';
+import Sports from './pages/Sports';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -64,7 +65,7 @@ function App() {
               <Route path="/lottery" element={<Lottery />} />
               <Route path="/e-sports" element={<ESport />} />
               <Route path="/table-games" element={<TableGames />} />
-              <Route path="/sports" element={<ComingSoon />} />
+              <Route path="/sports" element={<Sports />} />
               <Route path="/popular" element={<PopularGame />} />
             <Route path="/bgd33" element={<BGD33 />} />
             <Route path="/jeetbuzz" element={<JeetBuzz />} />

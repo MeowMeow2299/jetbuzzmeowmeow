@@ -1,10 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './Sports.css';
 
 const Sports = () => {
   return (
     <div className="sports-page">
-      {/* Meta tags are handled in index.html */}
+      <Helmet>
+        <title>JeetBuzz Sports Bangladesh – Online Cricket & Casino Gaming</title>
+        <meta name="description" content="Play cricket, football, E-Sports, and casino games online at JeetBuzzGames.com Bangladesh. Join now for live betting, slots, and top BETBDT games!" />
+        <meta name="keywords" content="JeetBuzz Games Bangladesh, online cricket betting Bangladesh, BETBDT 9wickets, BETBDT LuckySports, BETBDT BTi, BETBDT Saba Sports, BETBDT FB SPORTS, BETBDT United Gaming, BETBDT AP Gaming, BETBDT Poly Sports, BETBDT SV388, BETBDT RCB988 Horsebook, BETBDT PANDA SPORTS, BETBDT TF, BETBDT IA, E-Sports, online slots Bangladesh, JeetBuzz casino Bangladesh" />
+      </Helmet>
       
       <div className="sports-hero">
         <div className="container">
