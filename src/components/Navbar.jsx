@@ -31,7 +31,13 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
 
           {/* Desktop Menu */}
           <div className="navbar-center hidden md:flex">
-            <nav className="flex space-x-8">
+            <nav className="flex space-x-6">
+              <NavLink 
+                to="/" 
+                className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium transition-colors duration-300"
+              >
+                Home
+              </NavLink>
               <NavLink 
                 to="/casino" 
                 className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium transition-colors duration-300"
@@ -45,10 +51,10 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
                 Slots
               </NavLink>
               <NavLink 
-                to="/promotion" 
+                to="/popular" 
                 className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium transition-colors duration-300"
               >
-                Promotion
+                Popular
               </NavLink>
               <NavLink 
                 to="/contact" 
@@ -93,6 +99,13 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
             <div className="px-4 py-6 space-y-4">
               <nav className="flex flex-col space-y-3">
                 <NavLink 
+                  to="/" 
+                  className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium py-2 px-3 rounded-lg hover:bg-pastel-yellow-light transition-colors duration-300"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </NavLink>
+                <NavLink 
                   to="/casino" 
                   className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium py-2 px-3 rounded-lg hover:bg-pastel-yellow-light transition-colors duration-300"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -107,11 +120,11 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
                   Slots
                 </NavLink>
                 <NavLink 
-                  to="/promotion" 
+                  to="/popular" 
                   className="nav-link text-gray-700 hover:text-japanese-yellow-dark font-medium py-2 px-3 rounded-lg hover:bg-pastel-yellow-light transition-colors duration-300"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Promotion
+                  Popular
                 </NavLink>
                 <NavLink 
                   to="/contact" 
