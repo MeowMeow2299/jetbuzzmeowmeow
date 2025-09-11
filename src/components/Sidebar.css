@@ -86,6 +86,10 @@
   margin: 0;
 }
 
+.main-items {
+  padding-top: 10px;
+}
+
 .main-item {
   font-weight: bold;
   color: #FFD700;
@@ -94,6 +98,10 @@
   border-bottom: 2px solid #FFD700;
   padding-bottom: 4px;
   text-align: center;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Ensure main item links are always yellow and not underlined */
