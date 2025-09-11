@@ -481,7 +481,7 @@
   }
   
   .cta-box {
-    padding: 15px;
+    padding: 12px;
     font-size: 0.9rem;
   }
   
@@ -502,7 +502,7 @@
   
   .app-section p::after {
     font-size: 3rem;
-    top: -15px;
+    top: -35px;
     right: -15px;
   }
 }
@@ -510,7 +510,7 @@
 @media (max-width: 480px) {
   .app-section {
     padding: 20px 0;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   
   .app-section h2 {
