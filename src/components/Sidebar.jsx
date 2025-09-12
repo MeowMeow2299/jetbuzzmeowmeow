@@ -178,14 +178,28 @@ const Sidebar = () => {
                       className="section-header"
                       onClick={() => toggleDropdown(section.name)}
                       style={{
-                        color: '#FFD700',
+                        color: '#FFD700 !important',
                         fontWeight: '600',
                         fontSize: '14px',
                         textTransform: 'uppercase',
-                        letterSpacing: '0.5px'
+                        letterSpacing: '0.5px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        padding: '12px 16px',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease',
+                        borderBottom: '1px solid #FFD700'
                       }}
                     >
-                      <SectionIcon className="section-icon" style={{ color: '#FFD700' }} />
+                      <SectionIcon 
+                        className="section-icon" 
+                        style={{ 
+                          color: '#FFD700',
+                          width: '16px',
+                          height: '16px',
+                          marginRight: '12px'
+                        }} 
+                      />
                       <span 
                         className="section-title"
                         style={{
@@ -193,14 +207,20 @@ const Sidebar = () => {
                           fontWeight: '600',
                           fontSize: '14px',
                           textTransform: 'uppercase',
-                          letterSpacing: '0.5px'
+                          letterSpacing: '0.5px',
+                          flex: '1'
                         }}
                       >
                         {section.name}
                       </span>
                       <FaChevronUp 
                         className={`chevron ${isExpanded ? 'expanded' : ''}`} 
-                        style={{ color: '#FFD700' }}
+                        style={{ 
+                          color: '#FFD700',
+                          width: '12px',
+                          height: '12px',
+                          transition: 'transform 0.3s ease'
+                        }}
                       />
                     </div>
 
