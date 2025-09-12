@@ -1,52 +1,103 @@
-.lottery-page {
-  min-height: 100vh;
-  background: #000;
-  color: #fff;
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: sans-serif;
+}
+
+.lottery-container {
   padding: 20px;
 }
 
-.page-header {
-  text-align: center;
-  margin-bottom: 40px;
+.lottery-header {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.page-header h1 {
-  font-size: 48px;
+.lottery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lottery-card {
+  width: 150px;
+  height: 200px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lottery-card:hover {
+  transform: scale(1.05);
+}
+
+.lottery-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  filter: blur(0px);
+  transition: filter 0.3s ease;
+}
+
+.lottery-card:hover .lottery-image {
+  filter: blur(2px);
+}
+
+.lottery-title {
+  padding: 10px;
+  font-size: 14px;
   font-weight: bold;
-  color: #FFD700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  transition: opacity 0.3s ease;
 }
 
-.page-header p {
-  font-size: 18px;
-  color: #ccc;
-  margin: 0;
+.lottery-card:hover .lottery-title {
+  opacity: 0.7;
 }
 
-.games-container {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Glassmorphism hover effect */
+.lottery-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
-.coming-soon {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-  border-radius: 15px;
-  border: 1px solid #FFD700;
+.lottery-card::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 3;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.coming-soon h2 {
-  font-size: 32px;
-  color: #FFD700;
-  margin-bottom: 15px;
+.lottery-card:hover::before {
+  opacity: 1;
 }
 
-.coming-soon p {
-  font-size: 16px;
-  color: #ccc;
-  margin: 0;
+.lottery-card:hover::after {
+  opacity: 1;
 }
-
