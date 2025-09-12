@@ -101,3 +101,53 @@ body {
 .live-card:hover::after {
   opacity: 1;
 }
+
+/* View More Button */
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.view-more-btn {
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 242, 96, 0.3);
+}
+
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 96, 0.4);
+  background: linear-gradient(45deg, #0575e6, #00f260);
+}
+
+.view-more-btn:active {
+  transform: translateY(0);
+}
+
+/* All Loaded Message */
+.all-loaded-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.all-loaded-text {
+  color: #00f260;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 30px;
+  border: 2px solid #00f260;
+  border-radius: 25px;
+  background: rgba(0, 242, 96, 0.1);
+}
