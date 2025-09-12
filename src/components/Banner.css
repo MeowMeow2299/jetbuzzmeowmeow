@@ -2,9 +2,10 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 120px; /* Mini banner height */
+  height: 270px; /* Increased banner height */
   margin-top: 0; /* No margin top */
   margin-bottom: 20px; /* Space below banner */
+  padding: 0 20px; /* Added horizontal padding */
   overflow: hidden;
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -25,14 +26,14 @@
 .banner-track {
   display: flex;
   width: 300%; /* 3 groups * 100% */
-  height: 120px;
+  height: 270px;
   transition: transform 0.5s ease-in-out;
 }
 
 /* Individual Banner Slide */
 .banner-slide {
   width: 33.333%; /* 100% / 3 groups */
-  height: 120px;
+  height: 270px;
   flex-shrink: 0;
   position: relative;
 }
@@ -117,36 +118,41 @@
 /* Pagination Dots */
 .banner-pagination {
   position: absolute;
-  bottom: 6px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 4px;
+  gap: 8px;
   z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .banner-dot {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: relative;
 }
 
 .banner-dot:hover {
-  background: rgba(255, 215, 0, 0.3);
+  background: rgba(255, 215, 0, 0.4);
   border-color: #FFD700;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .banner-dot.active {
   background: #FFD700;
   border-color: #FFD700;
-  box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
-  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+  transform: scale(1.3);
 }
 
 .banner-dot.active::after {
@@ -175,16 +181,17 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .banner-container {
-    height: 100px; /* Smaller mobile height */
+    height: 200px; /* Smaller mobile height */
     margin-top: 8px;
+    padding: 0 15px;
   }
   
   .banner-track {
-    height: 100px;
+    height: 200px;
   }
   
   .banner-slide {
-    height: 100px;
+    height: 200px;
   }
   
   .banner-logo-overlay {
@@ -212,28 +219,30 @@
   }
   
   .banner-pagination {
-    bottom: 4px;
-    gap: 3px;
+    bottom: 10px;
+    gap: 6px;
+    padding: 6px 12px;
   }
   
   .banner-dot {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
   }
 }
 
 @media (max-width: 480px) {
   .banner-container {
-    height: 80px; /* Even smaller for mobile */
+    height: 150px; /* Even smaller for mobile */
     margin-top: 5px;
+    padding: 0 10px;
   }
   
   .banner-track {
-    height: 80px;
+    height: 150px;
   }
   
   .banner-slide {
-    height: 80px;
+    height: 150px;
   }
   
   .banner-logo-overlay {
@@ -261,13 +270,14 @@
   }
   
   .banner-pagination {
-    bottom: 3px;
-    gap: 2px;
+    bottom: 8px;
+    gap: 4px;
+    padding: 4px 8px;
   }
   
   .banner-dot {
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
   }
 }
 
