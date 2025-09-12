@@ -1,7 +1,7 @@
 .sports-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-  color: #ffffff;
+  background: #1a1a1a;
+  color: #fff;
   padding: 20px;
 }
 
@@ -10,31 +10,22 @@
 }
 
 .back-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
-  color: #00ff88;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
-  padding: 10px 20px;
-  border: 2px solid #00ff88;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  background: rgba(0, 255, 136, 0.1);
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .back-button:hover {
-  background: #00ff88;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
-  text-decoration: none;
+  color: #ffcc00;
 }
 
 .back-arrow {
   font-size: 20px;
-  font-weight: bold;
 }
 
 .back-text {
@@ -42,7 +33,7 @@
 }
 
 .games-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

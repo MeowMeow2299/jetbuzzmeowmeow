@@ -33,6 +33,9 @@ const SportsPage = () => {
       </div>
       
       <div className="games-container">
+        <h2 style={{ color: '#ffffff', textAlign: 'center', marginBottom: '20px' }}>
+          SPORTS GAMES ({sportsGames.length})
+        </h2>
         <div className="games-grid">
           {sportsGames.map((game) => (
             <div key={game.id} className="game-card">
