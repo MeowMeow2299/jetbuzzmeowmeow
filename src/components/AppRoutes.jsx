@@ -16,6 +16,9 @@ import SportsPage from '../pages/SportsPage';
 import LotteryPage from '../pages/LotteryPage';
 import ESportsPage from '../pages/ESportsPage';
 
+// Import blog pages
+import BlogJeetBuzzBangladesh from '../pages/BlogJeetBuzzBangladesh';
+
 const AppRoutes = () => (
   <Routes>
     <Route path="/promotion" element={<Promotion />} />
@@ -33,6 +36,9 @@ const AppRoutes = () => (
     <Route path="/sports-games" element={<SportsPage />} />
     <Route path="/lottery" element={<LotteryPage />} />
     <Route path="/esports" element={<ESportsPage />} />
+    
+    {/* Blog pages */}
+    <Route path="/blog/jeetbuzz-bangladesh" element={<BlogJeetBuzzBangladesh />} />
   </Routes>
 );
 
