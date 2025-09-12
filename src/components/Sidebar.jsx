@@ -3,9 +3,9 @@ import './Sidebar.css';
 import { 
   FaHome, 
   FaGamepad, 
-  FaDice, 
+  FaCrown, 
   FaVideo, 
-  FaDiceD20, 
+  FaDice, 
   FaTicketAlt, 
   FaTrophy, 
   FaEgg, 
@@ -15,7 +15,8 @@ import {
   FaClub,
   FaDiamond,
   FaSwords,
-  FaChevronDown
+  FaChevronDown,
+  FaCircle
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext.jsx';
@@ -53,10 +54,10 @@ const Sidebar = () => {
   // Main navigation items (9 items)
   const mainMenuItems = [
     { name: 'HOME', link: '/', icon: FaHome },
-    { name: 'CASINO GAMES', link: '/casino', icon: FaGamepad },
-    { name: 'SLOTS', link: '/slots', icon: FaDice },
+    { name: 'CASINO GAMES', link: '/casino', icon: FaCircle },
+    { name: 'SLOTS', link: '/slots', icon: FaCrown },
     { name: 'LIVE CASINO', link: '/live-casino', icon: FaVideo },
-    { name: 'TABLE GAMES', link: '/table-games', icon: FaDiceD20 },
+    { name: 'TABLE GAMES', link: '/table-games', icon: FaDice },
     { name: 'LOTTERY', link: '/lottery', icon: FaTicketAlt },
     { name: 'SPORTS', link: '/sports', icon: FaTrophy },
     { name: 'GAMECHICKEN', link: '/gamechicken', icon: FaEgg },
@@ -67,15 +68,15 @@ const Sidebar = () => {
   const collapsibleSections = [
     {
       name: 'POPULAR GAMES',
-      icon: FaClub,
+      icon: FaTrophy,
       subItems: [
         { name: 'BGD33', link: '/bgd33', icon: FaSpade },
-        { name: 'BETBDT', link: '/betbdt', icon: FaHeart },
-        { name: 'JEETBUZZ', link: '/jeetbuzz', icon: FaClub },
-        { name: 'CRICKEX', link: '/crickex', icon: FaDiamond },
+        { name: 'BETBOT', link: '/betbot', icon: FaSpade },
+        { name: 'JEETBUZZ', link: '/jeetbuzz', icon: FaSpade },
+        { name: 'CRICKEX', link: '/crickex', icon: FaSpade },
         { name: 'TK999', link: '/tk999', icon: FaSpade },
-        { name: 'CK444', link: '/ck444', icon: FaHeart },
-        { name: 'L444 ONLINE GAME', link: '/l444-online-game', icon: FaClub }
+        { name: 'CK444', link: '/ck444', icon: FaSpade },
+        { name: 'L444 ONLINE GAME', link: '/l444-online-game', icon: FaSpade }
       ]
     },
     {
@@ -97,11 +98,11 @@ const Sidebar = () => {
       name: 'JEETBUZZ',
       icon: FaClub,
       subItems: [
-        { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', icon: FaClub },
-        { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', icon: FaClub },
-        { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', icon: FaClub },
-        { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', icon: FaClub },
-        { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', icon: FaClub }
+        { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', icon: FaSpade },
+        { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', icon: FaSpade },
+        { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', icon: FaSpade },
+        { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', icon: FaSpade },
+        { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', icon: FaSpade }
       ]
     }
   ];
