@@ -1,0 +1,463 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.blog-header-with-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFD700;
+}
+
+.back-icon {
+  color: #FFD700;
+  font-size: 28px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.back-icon:hover {
+  color: #FFA500;
+  background-color: rgba(255, 215, 0, 0.1);
+  transform: translateX(-3px);
+}
+
+.blog-main-title {
+  color: #FFD700;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-content {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.blog-intro {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #FFD700;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-intro::after {
+  content: '🎰';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.blog-section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.blog-section:nth-child(1) { animation-delay: 0.1s; }
+.blog-section:nth-child(2) { animation-delay: 0.2s; }
+.blog-section:nth-child(3) { animation-delay: 0.3s; }
+.blog-section:nth-child(4) { animation-delay: 0.4s; }
+.blog-section:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.1);
+  border-color: #FFD700;
+}
+
+.section-title {
+  color: #FFD700;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFD700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.subsection-title {
+  color: #FFA500;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+  padding-left: 15px;
+  border-left: 4px solid #FFA500;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+.games-list, .slots-list, .betbdt-games-list, .bonus-list, .tech-list, .conclusion-list {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 15px 0;
+}
+
+.games-list li, .slots-list li, .betbdt-games-list li, .bonus-list li, .tech-list li, .conclusion-list li {
+  margin-bottom: 12px;
+  color: #e0e0e0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.games-list li::before {
+  content: "🎮";
+  position: absolute;
+  left: -20px;
+}
+
+.slots-list li::before {
+  content: "🎰";
+  position: absolute;
+  left: -20px;
+}
+
+.betbdt-games-list li::before {
+  content: "🏆";
+  position: absolute;
+  left: -20px;
+}
+
+.bonus-list li::before {
+  content: "🎁";
+  position: absolute;
+  left: -20px;
+}
+
+.tech-list li::before {
+  content: "⚡";
+  position: absolute;
+  left: -20px;
+}
+
+.conclusion-list li::before {
+  content: "✅";
+  position: absolute;
+  left: -20px;
+}
+
+.comparison-table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #444;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  min-width: 600px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #e0e0e0;
+}
+
+.comparison-table th {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-shadow: none;
+}
+
+.comparison-table td {
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+.comparison-table td:first-child {
+  background-color: #333;
+  color: #FFD700;
+  font-weight: 600;
+  width: 20%;
+  border-right: 1px solid #444;
+}
+
+.comparison-table td:nth-child(2) {
+  background-color: rgba(255, 215, 0, 0.05);
+  border-right: 1px solid #444;
+}
+
+.comparison-table td:nth-child(3) {
+  background-color: rgba(255, 165, 0, 0.05);
+}
+
+.comparison-table tr:hover {
+  background-color: rgba(255, 215, 0, 0.08);
+}
+
+.comparison-table tr:hover td:first-child {
+  background-color: rgba(255, 215, 0, 0.15);
+}
+
+.blog-conclusion {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.15));
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #FFD700;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-conclusion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.8s;
+}
+
+.blog-conclusion:hover::before {
+  left: 100%;
+}
+
+.blog-conclusion p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.blog-conclusion .section-title {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Special styling for RTP values */
+.betbdt-games-list li strong:contains("RTP") {
+  color: #00FF88;
+  font-weight: 700;
+}
+
+/* Highlight special features */
+.games-list li strong,
+.slots-list li strong,
+.betbdt-games-list li strong,
+.bonus-list li strong,
+.tech-list li strong {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 15px;
+  }
+  
+  .blog-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .blog-content {
+    padding: 25px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.2rem;
+  }
+  
+  .blog-header-with-back {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .back-icon {
+    align-self: flex-start;
+  }
+  
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px 8px;
+  }
+  
+  .blog-intro::after {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-main-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.1rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+  
+  .comparison-table td:first-child {
+    width: 25%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500;
+}
+
+/* Special animations for comparison table */
+.comparison-table tr {
+  animation: slideInFromLeft 0.6s ease forwards;
+}
+
+.comparison-table tr:nth-child(1) { animation-delay: 0.1s; }
+.comparison-table tr:nth-child(2) { animation-delay: 0.2s; }
+.comparison-table tr:nth-child(3) { animation-delay: 0.3s; }
+.comparison-table tr:nth-child(4) { animation-delay: 0.4s; }
+.comparison-table tr:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Highlight effects for special content */
+.blog-intro {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+/* Special styling for numbers and percentages */
+.games-list li:contains("%"),
+.slots-list li:contains("%"),
+.betbdt-games-list li:contains("%") {
+  background-color: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 4px;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+/* Enhanced hover effects */
+.blog-section:hover .subsection-title {
+  color: #FFD700;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+.blog-section:hover .games-list,
+.blog-section:hover .slots-list,
+.blog-section:hover .betbdt-games-list,
+.blog-section:hover .bonus-list,
+.blog-section:hover .tech-list {
+  border-color: #FFD700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+}
