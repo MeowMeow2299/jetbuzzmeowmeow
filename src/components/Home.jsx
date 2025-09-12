@@ -9,6 +9,7 @@ import Fish from './Fish';
 import Sports from './Sports';
 import ESports from './E-sports';
 import Publisher from './Publisher';
+import CurrencySupport from './CurrencySupport';
 import Info from './Info';
 import { useAuth } from '../auth/AuthContext.jsx';
 
@@ -30,6 +31,7 @@ const Home = () => {
       <Sports />
       <ESports />
       <Publisher />
+      <CurrencySupport />
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>

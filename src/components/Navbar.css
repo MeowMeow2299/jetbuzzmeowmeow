@@ -127,61 +127,113 @@ body.sidebar-closed .navbar {
   padding: 6px 12px;
 }
 
-/* Search bar */
+/* Search bar - Modern Design */
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #222;
-  border-radius: 4px;
-  padding: 6px 10px;
-  border: 1px solid #2a2a2a;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.search-bar:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 215, 0, 0.6);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
 }
 
 .search-bar input {
   background: transparent;
   border: none;
-  color: #fff;
+  color: #333;
   font-size: 14px;
+  font-weight: 500;
   outline: none;
-  width: 140px;
+  width: 160px;
+  padding: 4px 8px;
+}
+
+.search-bar input::placeholder {
+  color: #666;
+  font-weight: 400;
 }
 
 .search-icon {
-  color: #ccc;
+  color: #666;
   margin-right: 8px;
+  transition: all 0.3s ease;
 }
 
 .search-bar:hover .search-icon {
-  color: #00ffff;
+  color: #FFD700;
+  transform: scale(1.1);
 }
 
-/* Search results dropdown */
+/* Search results dropdown - Modern Design */
 .search-results {
   position: absolute;
-  top: 56px; /* just below navbar height */
+  top: 56px;
   right: 16px;
-  width: 260px;
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  width: 300px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 
+    0 12px 32px rgba(0, 0, 0, 0.15),
+    0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 3100;
   overflow: hidden;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .search-result-item {
   width: 100%;
   text-align: left;
-  padding: 10px 12px;
+  padding: 12px 16px;
   background: transparent;
-  color: #eee;
+  color: #333;
   border: none;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
 }
 
 .search-result-item:hover {
-  background: #2a2a2a;
-  color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  transform: translateX(4px);
+}
+
+.search-result-item:active {
+  background: rgba(255, 215, 0, 0.2);
+  transform: translateX(2px);
 }
 
 /* Nút glass */

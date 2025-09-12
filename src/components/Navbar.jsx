@@ -48,7 +48,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
 
           {/* Right - Search */}
           <div className="navbar-right flex items-center" style={{ position: 'relative' }}>
-            <div className="flex items-center bg-white border-2 border-yellow-400 rounded-lg px-3 py-2 shadow-md" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}>
+            <div className="flex items-center bg-white px-3 py-2 shadow-md" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}>
               <Search className="w-5 h-5 text-gray-600 mr-2" />
               <input
                 type="text"
@@ -61,7 +61,7 @@ const Navbar = ({ onLoginClick, onSignupClick }) => {
               />
             </div>
             {(isFocused || query) && results.length > 0 && (
-              <div className="absolute top-12 right-0 w-72 bg-white border-2 border-yellow-400 rounded-lg shadow-xl z-50">
+              <div className="absolute top-12 right-0 w-72 bg-white shadow-xl z-50">
                 {results.map((item, idx) => (
                   <button
                     key={`${item.path}-${idx}`}

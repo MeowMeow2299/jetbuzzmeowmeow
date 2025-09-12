@@ -1,0 +1,872 @@
+/* How to Place Bet Container */
+.how-to-bet-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.how-to-bet-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 165, 0, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 200, 0, 0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Page Header */
+.page-header-with-back {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.back-icon {
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.back-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.how-to-bet-header {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #000, #333, #000);
+  background-size: 200% 200%;
+  animation: textGradient 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  margin: 0;
+}
+
+@keyframes textGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Content */
+.how-to-bet-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Introduction Section */
+.intro-section {
+  margin-bottom: 20px;
+}
+
+.intro-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.intro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.intro-card:hover::before {
+  left: 100%;
+}
+
+.intro-header {
+  padding: 30px 40px 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.intro-icon {
+  font-size: 28px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.intro-title {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #000, #333, #000);
+  background-size: 200% 200%;
+  animation: textGradient 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.intro-body {
+  padding: 40px;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #000, #333, #000);
+  background-size: 200% 200%;
+  animation: textGradient 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Steps Section */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.step-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.step-card:hover::before {
+  left: 100%;
+}
+
+.step-header {
+  padding: 30px 40px 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.step-number {
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.step-icon {
+  font-size: 24px;
+  color: #000;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  flex: 1;
+}
+
+.step-body {
+  padding: 30px 40px 40px;
+}
+
+.step-description {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.8;
+  margin: 0 0 25px 0;
+  text-align: justify;
+}
+
+.step-details {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+}
+
+.details-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  transform: translateX(10px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+}
+
+.detail-icon {
+  font-size: 14px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.detail-text {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Game Types Section */
+.game-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.game-type-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-type-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.game-type-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.game-type-card:hover::before {
+  left: 100%;
+}
+
+.game-type-icon {
+  font-size: 32px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+  margin: 0 auto 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-type-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.game-type-description {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Payment Methods Section */
+.payment-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.payment-method-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.payment-method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.payment-method-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.payment-method-card:hover::before {
+  left: 100%;
+}
+
+.payment-method-icon {
+  font-size: 24px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  margin: 0 auto 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-method-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.payment-method-description {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tips Section */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.tip-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.tip-card:hover::before {
+  left: 100%;
+}
+
+.tip-icon {
+  font-size: 32px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+  margin: 0 auto 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.tip-description {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Conclusion Section */
+.conclusion-section {
+  margin-top: 20px;
+}
+
+.conclusion-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.conclusion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.conclusion-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.8s;
+}
+
+.conclusion-card:hover::before {
+  left: 100%;
+}
+
+.conclusion-header {
+  padding: 30px 40px 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.conclusion-icon {
+  font-size: 28px;
+  color: #000;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.conclusion-title {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #000, #333, #000);
+  background-size: 200% 200%;
+  animation: textGradient 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.conclusion-body {
+  padding: 40px;
+  text-align: center;
+}
+
+.conclusion-text {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.8;
+  margin: 0 0 30px 0;
+  text-align: justify;
+}
+
+.conclusion-cta {
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 35px;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 25px rgba(255, 215, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 35px rgba(255, 215, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #FFA500, #FFD700, #FFA500);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+.cta-icon {
+  font-size: 20px;
+}
+
+.cta-text {
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-to-bet-container {
+    padding: 15px;
+  }
+  
+  .how-to-bet-header {
+    font-size: 36px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+  }
+  
+  .intro-header,
+  .step-header,
+  .conclusion-header {
+    padding: 25px 30px 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .intro-body,
+  .step-body,
+  .conclusion-body {
+    padding: 25px 30px;
+  }
+  
+  .intro-text,
+  .step-description,
+  .conclusion-text {
+    font-size: 16px;
+  }
+  
+  .step-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .step-title {
+    font-size: 20px;
+  }
+  
+  .details-title {
+    font-size: 18px;
+  }
+  
+  .detail-text {
+    font-size: 14px;
+  }
+  
+  .game-types-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .payment-methods-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .game-type-card,
+  .tip-card {
+    padding: 25px;
+  }
+  
+  .payment-method-card {
+    padding: 20px;
+  }
+  
+  .game-type-name,
+  .tip-title {
+    font-size: 18px;
+  }
+  
+  .game-type-description,
+  .tip-description {
+    font-size: 14px;
+  }
+  
+  .payment-method-name {
+    font-size: 16px;
+  }
+  
+  .payment-method-description {
+    font-size: 12px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-to-bet-header {
+    font-size: 28px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .intro-text,
+  .step-description,
+  .conclusion-text {
+    font-size: 14px;
+  }
+  
+  .step-title {
+    font-size: 18px;
+  }
+  
+  .details-title {
+    font-size: 16px;
+  }
+  
+  .detail-text {
+    font-size: 12px;
+  }
+  
+  .game-type-name,
+  .tip-title {
+    font-size: 16px;
+  }
+  
+  .game-type-description,
+  .tip-description {
+    font-size: 12px;
+  }
+  
+  .payment-method-name {
+    font-size: 14px;
+  }
+  
+  .payment-method-description {
+    font-size: 10px;
+  }
+  
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}

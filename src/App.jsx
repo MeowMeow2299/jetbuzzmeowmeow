@@ -50,6 +50,15 @@ import PokerGamesPage from './pages/PokerGamesPage';
 import SportsPage from './pages/SportsPage';
 import LotteryPage from './pages/LotteryPage';
 import ESportsPage from './pages/ESportsPage';
+import AboutUs from './pages/AboutUs';
+import AntiMoneyLaundering from './pages/AntiMoneyLaundering';
+import CashBackOffer from './pages/CashBackOffer';
+import CookiePolicy from './pages/CookiePolicy';
+import DisputeResolution from './pages/DisputeResolution';
+import FairnessRNGTesting from './pages/FairnessRNGTesting';
+import HelpCenterFAQ from './pages/HelpCenterFAQ';
+import HowToPlaceBet from './pages/HowToPlaceBet';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   return (
@@ -84,6 +93,15 @@ function App() {
               <Route path="/sports-games" element={<SportsPage />} />
               <Route path="/lottery" element={<LotteryPage />} />
               <Route path="/esports" element={<ESportsPage />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/anti-money-laundering" element={<AntiMoneyLaundering />} />
+              <Route path="/cash-back-offer" element={<CashBackOffer />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/dispute-resolution" element={<DisputeResolution />} />
+              <Route path="/fairness-rng-testing" element={<FairnessRNGTesting />} />
+              <Route path="/help-center-faq" element={<HelpCenterFAQ />} />
+              <Route path="/how-to-place-bet" element={<HowToPlaceBet />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/bgd33" element={<BGD33 />} />
             <Route path="/jeetbuzz" element={<JeetBuzz />} />
             <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />

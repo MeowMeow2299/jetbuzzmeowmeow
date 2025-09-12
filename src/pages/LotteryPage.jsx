@@ -4,7 +4,7 @@ import { FaArrowLeft } from 'react-icons/fa';
 import './LotteryPage.css';
 
 const cardData = [
-  { image: '/photo/LOTTERY/gcs__ELOTT-SEALOTT_1748432813813.png', title: 'ELOTT SEA Lottery' },
+  { image: '/photo/LOTTERY/gcs__ELOTT-SEALOTT_1748432813813.png', title: 'ELOTT SEA' },
 ];
 
 const LotteryPage = () => {

@@ -36,20 +36,17 @@ const Hotgame = () => {
                   <div className="game-image-container">
                     <img src={item.img} className="game-image" alt={item.title} />
                     {item.isHot && <div className="hot-badge">HOT</div>}
-                    <div className="hover-overlay">
-                      <button className="play-btn" onClick={(e) => e.stopPropagation()}>
-                      </button>
-                      <button className="free-trial-btn" onClick={(e) => e.stopPropagation()}>
-                        FREE TRIAL
-                      </button>
-                    </div>
+                    <div className="game-title-overlay">{item.title}</div>
+                    <button className="play-btn" onClick={(e) => e.stopPropagation()}>
+                      <div className="play-triangle"></div>
+                    </button>
+                    <button className="free-trial-btn" onClick={(e) => e.stopPropagation()}>
+                      FREE TRIAL
+                    </button>
                     <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
                       <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
                     </button>
                     <div className="provider-logo">Jili</div>
-                  </div>
-                  <div className="game-info">
-                    <div className="game-title">{item.title}</div>
                   </div>
                 </div>
         ))}

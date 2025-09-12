@@ -133,8 +133,8 @@ body {
 }
 
 .view-more-btn {
-  background: linear-gradient(45deg, #00f260, #0575e6);
-  color: white;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+  color: #000;
   border: none;
   padding: 12px 30px;
   border-radius: 25px;
@@ -142,13 +142,19 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 242, 96, 0.3);
+  box-shadow: 
+    0 4px 15px rgba(255, 215, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .view-more-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 242, 96, 0.4);
-  background: linear-gradient(45deg, #0575e6, #00f260);
+  box-shadow: 
+    0 6px 20px rgba(255, 215, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #FFA500, #FFD700, #FFA500);
 }
 
 .view-more-btn:active {

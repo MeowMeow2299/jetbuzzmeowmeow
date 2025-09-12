@@ -12,7 +12,7 @@ const generateFishGames = () => {
   ambsFish.forEach(name => {
     games.push({
       image: `/photo/FISH/${name}.png`,
-      title: name.replace('AMBS', 'AMBS Fish ')
+      title: name.replace('AMBS', 'AMBS')
     });
   });
   
@@ -20,7 +20,7 @@ const generateFishGames = () => {
   for (let i = 11; i <= 18; i++) {
     games.push({
       image: `/photo/FISH/BSP${i.toString().padStart(3, '0')}.png`,
-      title: `BSP Fish ${i.toString().padStart(3, '0')}`
+      title: `BSP${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -29,7 +29,7 @@ const generateFishGames = () => {
   btFish.forEach(num => {
     games.push({
       image: `/photo/FISH/BT${num.toString().padStart(4, '0')}.png`,
-      title: `BT Fish ${num.toString().padStart(4, '0')}`
+      title: `BT${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -38,22 +38,22 @@ const generateFishGames = () => {
   fcFish.forEach(num => {
     games.push({
       image: `/photo/FISH/FC${num.toString().padStart(4, '0')}.png`,
-      title: `FC Fish ${num.toString().padStart(4, '0')}`
+      title: `FC${num.toString().padStart(4, '0')}`
     });
   });
   
   // FS, FTG, JDB series
   games.push(
-    { image: '/photo/FISH/FS0045.png', title: 'FS Fish 0045' },
-    { image: '/photo/FISH/FTG002.png', title: 'FTG Fish 002' },
-    { image: '/photo/FISH/FTG088.png', title: 'FTG Fish 088' }
+    { image: '/photo/FISH/FS0045.png', title: 'FS0045' },
+    { image: '/photo/FISH/FTG002.png', title: 'FTG002' },
+    { image: '/photo/FISH/FTG088.png', title: 'FTG088' }
   );
   
   const jdbFish = [80, 81, 82, 83, 141, 152, 154, 206, 213, 234];
   jdbFish.forEach(num => {
     games.push({
       image: `/photo/FISH/JDB${num.toString().padStart(3, '0')}.png`,
-      title: `JDB Fish ${num.toString().padStart(3, '0')}`
+      title: `JDB${num.toString().padStart(3, '0')}`
     });
   });
   
@@ -62,7 +62,7 @@ const generateFishGames = () => {
   jkFish.forEach(num => {
     games.push({
       image: `/photo/FISH/JK${num.toString().padStart(4, '0')}.png`,
-      title: `JK Fish ${num.toString().padStart(4, '0')}`
+      title: `JK${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -71,7 +71,7 @@ const generateFishGames = () => {
   jlFish.forEach(num => {
     games.push({
       image: `/photo/FISH/JL${num.toString().padStart(4, '0')}.png`,
-      title: `JL Fish ${num.toString().padStart(4, '0')}`
+      title: `JL${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -80,7 +80,7 @@ const generateFishGames = () => {
   kaFish.forEach(num => {
     games.push({
       image: `/photo/FISH/KA${num.toString().padStart(4, '0')}.png`,
-      title: `KA Fish ${num.toString().padStart(4, '0')}`
+      title: `KA${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -89,7 +89,7 @@ const generateFishGames = () => {
   mgFish.forEach(num => {
     games.push({
       image: `/photo/FISH/MG${num.toString().padStart(4, '0')}.png`,
-      title: `MG Fish ${num.toString().padStart(4, '0')}`
+      title: `MG${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -98,7 +98,7 @@ const generateFishGames = () => {
   ptFish.forEach(num => {
     games.push({
       image: `/photo/FISH/PT${num.toString().padStart(4, '0')}.png`,
-      title: `PT Fish ${num.toString().padStart(4, '0')}`
+      title: `PT${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -107,24 +107,24 @@ const generateFishGames = () => {
   sgFish.forEach(num => {
     games.push({
       image: `/photo/FISH/SG${num.toString().padStart(4, '0')}.png`,
-      title: `SG Fish ${num.toString().padStart(4, '0')}`
+      title: `SG${num.toString().padStart(4, '0')}`
     });
   });
   
   // VA, YL series
   games.push(
-    { image: '/photo/FISH/VA0045.png', title: 'VA Fish 0045' },
-    { image: '/photo/FISH/YL0010.png', title: 'YL Fish 0010' },
-    { image: '/photo/FISH/YL0016.png', title: 'YL Fish 0016' },
-    { image: '/photo/FISH/YL0017.png', title: 'YL Fish 0017' },
-    { image: '/photo/FISH/YL0018.png', title: 'YL Fish 0018' },
-    { image: '/photo/FISH/YL0019.png', title: 'YL Fish 0019' }
+    { image: '/photo/FISH/VA0045.png', title: 'VA0045' },
+    { image: '/photo/FISH/YL0010.png', title: 'YL0010' },
+    { image: '/photo/FISH/YL0016.png', title: 'YL0016' },
+    { image: '/photo/FISH/YL0017.png', title: 'YL0017' },
+    { image: '/photo/FISH/YL0018.png', title: 'YL0018' },
+    { image: '/photo/FISH/YL0019.png', title: 'YL0019' }
   );
   
   // Special fish games
   games.push(
-    { image: '/photo/FISH/default.png', title: 'Default Fish Game' },
-    { image: '/photo/FISH/JK-COLOR.png', title: 'JK Color Fish' }
+    { image: '/photo/FISH/default.png', title: 'Default Fish' },
+    { image: '/photo/FISH/JK-COLOR.png', title: 'JK Color' }
   );
   
   return games;

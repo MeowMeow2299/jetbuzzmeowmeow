@@ -1,0 +1,147 @@
+.currency-section {
+  background: #000;
+  padding: 40px 20px;
+  color: white;
+}
+
+.currency-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.currency-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFD700;
+  text-align: left;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.currency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.currency-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 180px;
+  height: 120px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: none;
+}
+
+.currency-item:hover {
+  transform: translateY(-5px);
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.currency-image-container {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+.currency-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+  transition: all 0.3s ease;
+}
+
+.currency-item:hover .currency-image {
+  transform: scale(1.1);
+  filter: brightness(1.3) contrast(1.2);
+}
+
+.currency-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-top: 5px;
+}
+
+.currency-item:hover .currency-name {
+  color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .currency-section {
+    padding: 30px 15px;
+  }
+  
+  .currency-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .currency-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .currency-item {
+    max-width: 140px;
+    height: 100px;
+    padding: 15px;
+  }
+  
+  .currency-image-container {
+    width: 60px;
+    height: 45px;
+    margin-bottom: 8px;
+  }
+  
+  .currency-name {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .currency-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+  }
+  
+  .currency-item {
+    max-width: 120px;
+    height: 90px;
+    padding: 12px;
+  }
+  
+  .currency-image-container {
+    width: 50px;
+    height: 35px;
+  }
+  
+  .currency-name {
+    font-size: 9px;
+  }
+}

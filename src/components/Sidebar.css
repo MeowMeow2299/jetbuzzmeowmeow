@@ -39,6 +39,56 @@
   padding-right: 5px;
 }
 
+/* Home Icon Section */
+.home-icon-section {
+  margin-bottom: 20px;
+  padding: 12px 0;
+}
+
+.home-icon-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.home-icon-link:hover {
+  background: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.4);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.home-icon {
+  font-size: 20px;
+  color: #FFD700;
+  transition: all 0.3s ease;
+}
+
+.home-icon-link:hover .home-icon {
+  color: #FFA500;
+  transform: scale(1.1);
+}
+
+.home-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFD700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.home-icon-link:hover .home-text {
+  color: #FFA500;
+}
+
 /* Casino Games Section */
 .casino-games-section {
   margin-bottom: 20px;

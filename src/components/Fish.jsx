@@ -40,17 +40,16 @@ const Fish = () => {
             <div key={index} className="game-card" onClick={handleGameClick}>
               <div className="game-image-container">
                 <img src={item.img} alt={item.title} className="game-image" />
-                <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
-                  <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
-                </button>
+                <div className="game-title-overlay">{item.title}</div>
                 <button className="play-btn" onClick={(e) => e.stopPropagation()}>
                   <div className="play-triangle"></div>
                 </button>
-                <div className="free-trial-label">FREE TRIAL</div>
-              </div>
-              <div className="game-info">
-                <div className="game-title">{item.title}</div>
-                <div className="game-provider">{item.provider}</div>
+                <button className="free-trial-btn" onClick={(e) => e.stopPropagation()}>
+                  FREE TRIAL
+                </button>
+                <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
+                  <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
+                </button>
               </div>
             </div>
           ))}

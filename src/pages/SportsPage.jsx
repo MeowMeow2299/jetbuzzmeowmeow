@@ -4,17 +4,17 @@ import { FaArrowLeft } from 'react-icons/fa';
 import './SportsPage.css';
 
 const cardData = [
-  { image: '/photo/9WICKETS_SPORTS.png', title: 'BETBDT Swickets' },
-  { image: '/photo/BETBDT_LUCKY_SPORTS.png', title: 'BETBDT TFB' },
-  { image: '/photo/BTI_SPORTS.png', title: 'BETBDT BTI' },
-  { image: '/photo/SABA_SPORTS.png', title: 'BETBDT Saba...' },
-  { image: '/photo/FB_SPORTS.png', title: 'BETBDT FBB...' },
-  { image: '/photo/UNITED_GAMING_SPORTS.png', title: 'BETBDT United...' },
-  { image: '/photo/AP_GAMING_SPORTS.png', title: 'BETBDT AAP Gaming' },
-  { image: '/photo/POLY_SPORTS.png', title: 'BETBDT Poly Sports' },
-  { image: '/photo/SV388_SPORTS.png', title: 'BETBDT SV388' },
-  { image: '/photo/RCB988_HOURSEBOOK_SPORTS.png', title: 'BETBDT RCB888...' },
-  { image: '/photo/PANDA_SPORTS.png', title: 'BETBDT PANDA...' },
+  { image: '/photo/9WICKETS_SPORTS.png', title: '9Wickets' },
+  { image: '/photo/BETBDT_LUCKY_SPORTS.png', title: 'Lucky Sports' },
+  { image: '/photo/BTI_SPORTS.png', title: 'BTI Sports' },
+  { image: '/photo/SABA_SPORTS.png', title: 'Saba Sports' },
+  { image: '/photo/FB_SPORTS.png', title: 'FB Sports' },
+  { image: '/photo/UNITED_GAMING_SPORTS.png', title: 'United Gaming' },
+  { image: '/photo/AP_GAMING_SPORTS.png', title: 'AP Gaming' },
+  { image: '/photo/POLY_SPORTS.png', title: 'Poly Sports' },
+  { image: '/photo/SV388_SPORTS.png', title: 'SV388' },
+  { image: '/photo/RCB988_HOURSEBOOK_SPORTS.png', title: 'RCB988' },
+  { image: '/photo/PANDA_SPORTS.png', title: 'Panda Sports' },
 ];
 
 const SportsPage = () => {

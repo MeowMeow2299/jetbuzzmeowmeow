@@ -46,15 +46,15 @@ const Footer = () => {
         <div className="footer-section about-section">
           <h3 className="section-title">ABOUT</h3>
           <ul className="footer-links">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">ANTI MONEY LAUNDERING</a></li>
-            <li><a href="#">CASH BACK OFFER</a></li>
-            <li><a href="#">COOKIE POLICY</a></li>
-            <li><a href="#">DISPUTE RESOLUTION</a></li>
-            <li><a href="#">FAIRNESS & RNG TESTING</a></li>
-            <li><a href="#">HELP CENTER FAQ</a></li>
-            <li><a href="#">HOW TO PLACE A BET</a></li>
-            <li><a href="#">SITEMAP</a></li>
+            <li><a href="/about-us">ABOUT US</a></li>
+            <li><a href="/anti-money-laundering">ANTI MONEY LAUNDERING</a></li>
+            <li><a href="/cash-back-offer">CASH BACK OFFER</a></li>
+            <li><a href="/cookie-policy">COOKIE POLICY</a></li>
+            <li><a href="/dispute-resolution">DISPUTE RESOLUTION</a></li>
+            <li><a href="/fairness-rng-testing">FAIRNESS & RNG TESTING</a></li>
+            <li><a href="/help-center-faq">HELP CENTER FAQ</a></li>
+            <li><a href="/how-to-place-bet">HOW TO PLACE A BET</a></li>
+            <li><a href="/terms-of-service">TERMS OF SERVICE</a></li>
           </ul>
         </div>
 

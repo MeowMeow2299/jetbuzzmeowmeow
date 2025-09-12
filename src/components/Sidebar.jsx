@@ -124,6 +124,21 @@ const Sidebar = () => {
         <div className="min-h-full w-64">
           <div className="p-4">
             <div className="sidebar-content">
+              {/* Home Icon */}
+              <div className="home-icon-section">
+                <Link 
+                  to="/" 
+                  onClick={handleLinkClick}
+                  className="home-icon-link"
+                >
+                  <FaHome className="home-icon" />
+                  <span className="home-text">HOME</span>
+                </Link>
+              </div>
+
+              {/* Separator */}
+              <div className="menu-separator"></div>
+
               {/* Casino Games Section */}
               <div className="casino-games-section">
                 <h2 className="section-title-casino">CASINO GAMES</h2>

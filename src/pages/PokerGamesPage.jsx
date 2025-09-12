@@ -11,7 +11,7 @@ const generatePokerGames = () => {
   for (let i = 19; i <= 54; i++) {
     games.push({
       image: `/photo/POCKER/BSP${i.toString().padStart(3, '0')}.png`,
-      title: `BSP Poker ${i.toString().padStart(3, '0')}`
+      title: `BSP${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -20,7 +20,7 @@ const generatePokerGames = () => {
   jlPoker.forEach(num => {
     games.push({
       image: `/photo/POCKER/JL${num.toString().padStart(4, '0')}.png`,
-      title: `JL Poker ${num.toString().padStart(4, '0')}`
+      title: `JL${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -29,7 +29,7 @@ const generatePokerGames = () => {
   kmPoker.forEach(num => {
     games.push({
       image: `/photo/POCKER/KM${num.toString().padStart(4, '0')}.png`,
-      title: `KM Poker ${num.toString().padStart(4, '0')}`
+      title: `KM${num.toString().padStart(4, '0')}`
     });
   });
   
@@ -37,7 +37,7 @@ const generatePokerGames = () => {
   for (let i = 1; i <= 11; i++) {
     games.push({
       image: `/photo/POCKER/KP${i.toString().padStart(4, '0')}.png`,
-      title: `KP Poker ${i.toString().padStart(4, '0')}`
+      title: `KP${i.toString().padStart(4, '0')}`
     });
   }
   
@@ -46,15 +46,15 @@ const generatePokerGames = () => {
     const imageName = i === 1 ? 'image.png' : `image${i}.png`;
     games.push({
       image: `/photo/POCKER/${imageName}`,
-      title: `Poker Game ${i}`
+      title: `Poker ${i}`
     });
   }
   
   // Special images
   games.push(
-    { image: '/photo/POCKER/info-img.e89e245e.png', title: 'Info Poker Game' },
-    { image: '/photo/POCKER/1706.jpg', title: 'Poker Game 1706' },
-    { image: '/photo/POCKER/2105.jpg', title: 'Poker Game 2105' }
+    { image: '/photo/POCKER/info-img.e89e245e.png', title: 'Info Poker' },
+    { image: '/photo/POCKER/1706.jpg', title: 'Poker 1706' },
+    { image: '/photo/POCKER/2105.jpg', title: 'Poker 2105' }
   );
   
   // Color logos (provider logos)
@@ -77,7 +77,7 @@ const generatePokerGames = () => {
   colorLogos.forEach(logo => {
     games.push({
       image: `/photo/POCKER/${logo}.png`,
-      title: `${logo.replace('-COLOR', '')} Poker`
+      title: `${logo.replace('-COLOR', '')}`
     });
   });
   
@@ -91,7 +91,7 @@ const generatePokerGames = () => {
   svgIcons.forEach(icon => {
     games.push({
       image: `/photo/POCKER/${icon}.svg`,
-      title: `${icon.toUpperCase()} Poker`
+      title: `${icon.toUpperCase()}`
     });
   });
   

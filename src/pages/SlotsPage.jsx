@@ -14,7 +14,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/5G${i.toString().padStart(4, '0')}.png`,
-      title: `5G ${i.toString().padStart(4, '0')}`
+      title: `5G${i.toString().padStart(4, '0')}`
     });
   }
   
@@ -25,7 +25,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/759${i.toString().padStart(3, '0')}.png`,
-      title: `759 ${i.toString().padStart(3, '0')}`
+      title: `759${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -36,7 +36,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/AE${i.toString().padStart(4, '0')}.png`,
-      title: `AE ${i.toString().padStart(4, '0')}`
+      title: `AE${i.toString().padStart(4, '0')}`
     });
   }
   
@@ -45,7 +45,7 @@ const generateSlotsGames = () => {
   ambsNumbers.forEach(num => {
     games.push({
       image: `/photo/SLOTS/AMBS${num.toString().padStart(2, '0')}.png`,
-      title: `AMBS ${num.toString().padStart(2, '0')}`
+      title: `AMBS${num.toString().padStart(2, '0')}`
     });
   });
   
@@ -54,7 +54,7 @@ const generateSlotsGames = () => {
   ambsLetters.forEach(letter => {
     games.push({
       image: `/photo/SLOTS/AMBS${letter}.png`,
-      title: `AMBS ${letter}`
+      title: `AMBS${letter}`
     });
   });
   
@@ -65,7 +65,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/AMG${i.toString().padStart(3, '0')}.png`,
-      title: `AMG ${i.toString().padStart(3, '0')}`
+      title: `AMG${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -73,7 +73,7 @@ const generateSlotsGames = () => {
   for (let i = 2; i <= 39; i++) {
     games.push({
       image: `/photo/SLOTS/AUX${i.toString().padStart(3, '0')}.png`,
-      title: `AUX ${i.toString().padStart(3, '0')}`
+      title: `AUX${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -90,7 +90,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/BGA${i.toString().padStart(3, '0')}.png`,
-      title: `BGA ${i.toString().padStart(3, '0')}`
+      title: `BGA${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -101,7 +101,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/BNG${i.toString().padStart(3, '0')}.png`,
-      title: `BNG ${i.toString().padStart(3, '0')}`
+      title: `BNG${i.toString().padStart(3, '0')}`
     });
   }
   
@@ -112,7 +112,7 @@ const generateSlotsGames = () => {
     }
     games.push({
       image: `/photo/SLOTS/BOM${i.toString().padStart(3, '0')}.png`,
-      title: `BOM ${i.toString().padStart(3, '0')}`
+      title: `BOM${i.toString().padStart(3, '0')}`
     });
   }
   

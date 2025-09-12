@@ -16,13 +16,13 @@ const generateLiveGames = () => {
     // Add both versions (with and without 2 suffix)
     games.push({
       image: `/photo/LIVE/EG4${i}.png`,
-      title: `Live Game EG4${i}`
+      title: `EG4${i}`
     });
     
     if (i <= 4482) { // Only add 2 suffix for numbers that exist
       games.push({
         image: `/photo/LIVE/EG4${i}2.png`,
-        title: `Live Game EG4${i}2`
+        title: `EG4${i}2`
       });
     }
   }
