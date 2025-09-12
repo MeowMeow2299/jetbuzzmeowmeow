@@ -8,6 +8,7 @@ import Live from './Live';
 import Fish from './Fish';
 import Sports from './Sports';
 import ESports from './E-sports';
+import Publisher from './Publisher';
 import Info from './Info';
 import { useAuth } from '../auth/AuthContext.jsx';
 
@@ -28,6 +29,7 @@ const Home = () => {
       <Fish />
       <Sports />
       <ESports />
+      <Publisher />
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>
