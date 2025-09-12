@@ -1,53 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './HotGamesPage.css';
 
+const cardData = [
+  { image: '/photo/superace.png', title: 'Super Ace' },
+  { image: '/photo/Fortune Gems.png', title: 'Fortune Gems' },
+  { image: '/photo/aviator.png', title: 'Aviator' },
+  { image: '/photo/MoneyComing.png', title: 'Money Coming' },
+  { image: '/photo/Boxing King.png', title: 'Boxing King' },
+  { image: '/photo/lucky7.png', title: 'Lucky 7' },
+  { image: '/photo/Fortune Gems 3.png', title: 'Fortune Gems 3' },
+  { image: '/photo/crazytime.png', title: 'Crazy Time' },
+  { image: '/photo/Golden_Bank.png', title: 'Golden Bank' },
+  { image: '/photo/Goden Empire.gif', title: 'Golden Empire' },
+  { image: '/photo/777.png', title: '777-Classic Style' },
+  { image: '/photo/party.png', title: 'Party Star' },
+  { image: '/photo/leprechaun.png', title: 'Leprechaun Riches' },
+  { image: '/photo/egypt.png', title: 'Legacy of Egypt' },
+  { image: '/photo/wildace.png', title: 'Wild Ace' },
+  { image: '/photo/cricket.png', title: 'Crash Cricket' },
+  { image: '/photo/buffalo.png', title: 'Ascent Charge Buffalo' },
+];
+
 const HotGamesPage = () => {
-  const games = [
-    { id: 1, title: 'Super Ace', provider: 'Jili', image: '/photo/superace.png' },
-    { id: 2, title: 'Fortune Gems', provider: 'Jili', image: '/photo/Fortune Gems.png' },
-    { id: 3, title: 'Aviator', provider: 'Spribe', image: '/photo/aviator.png' },
-    { id: 4, title: 'Super Ace Deluxe', provider: 'Jili', image: '/photo/superace.png' },
-    { id: 5, title: 'Money Coming', provider: 'Jili', image: '/photo/MoneyComing.png' },
-    { id: 6, title: 'Boxing King', provider: 'Jili', image: '/photo/Boxing King.png' },
-    { id: 7, title: 'Lucky 7', provider: 'Ezugi', image: '/photo/lucky7.png' },
-    { id: 8, title: 'Fortune Gems 3', provider: 'Jili', image: '/photo/Fortune Gems 3.png' },
-    { id: 9, title: 'Crazy Time', provider: 'Evolution', image: '/photo/crazytime.png' },
-    { id: 10, title: 'Golden Bank', provider: 'Jili', image: '/photo/Golden_Bank.png' },
-    { id: 11, title: 'Golden Empire', provider: 'Jili', image: '/photo/Goden Empire.gif' },
-    { id: 12, title: '777-Classic Style', provider: 'BTGaming', image: '/photo/777.png' },
-    { id: 13, title: 'Party Star', provider: 'Jili', image: '/photo/party.png' },
-    { id: 14, title: 'Leprechaun Riches', provider: 'Pocket Games Soft', image: '/photo/leprechaun.png' },
-    { id: 15, title: 'Legacy of Egypt', provider: 'Jili', image: '/photo/egypt.png' },
-    { id: 16, title: 'Wild Ace', provider: 'Jili', image: '/photo/wildace.png' },
-    { id: 17, title: 'Crash Cricket', provider: 'Jili', image: '/photo/cricket.png' },
-    { id: 18, title: 'Ascent Charge Buffalo', provider: 'Jili', image: '/photo/buffalo.png' },
-  ];
+  console.log('HotGamesPage loaded with', cardData.length, 'cards');
 
   return (
-    <div className="hot-games-page">
-      <div className="page-header">
-        <Link to="/" className="back-button">
-          <span className="back-arrow">←</span>
-          <span className="back-text">Hot Games</span>
-        </Link>
-      </div>
-      
-      <div className="games-container">
-        <div className="games-grid">
-          {games.map((game) => (
-            <div key={game.id} className="game-card">
-              <div className="game-image-container">
-                <img src={game.image} alt={game.title} className="game-image" />
-                <button className="favorite-btn">
-                  <span className="heart-icon">♥</span>
-                </button>
-                <div className="provider-badge">{game.provider}</div>
-              </div>
-              <button className="game-play-btn">{game.title}</button>
-            </div>
-          ))}
-        </div>
+    <div className="hotgames-container">
+      <h1 className="hotgames-header">Hot Games</h1>
+      <div className="hotgames-grid">
+        {cardData.map((card, index) => (
+          <div key={index} className="hotgames-card">
+            <img
+              src={card.image || '/photo/logo.png'}
+              alt={card.title}
+              className="hotgames-image"
+              onError={(e) => {
+                e.target.src = '/photo/logo.png';
+              }}
+            />
+            <div className="hotgames-title">{card.title}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
