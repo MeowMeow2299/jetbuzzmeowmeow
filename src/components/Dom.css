@@ -10,6 +10,11 @@
   position: relative;
 }
 
+.dom-item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .dom-item {
   display: flex;
   flex-direction: column;

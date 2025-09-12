@@ -1,9 +1,13 @@
 .container {
   position: relative;
   width: 100%;
+  max-width: 100%;
   height: 60vh; /* tránh phóng to quá trên mobile; có thể tinh chỉnh */
   overflow: hidden;     /* Ẩn mọi phần tràn */
   overflow-x: hidden;   /* Chặn cuộn ngang */
+  margin: 0 auto;       /* Căn giữa container */
+  margin-top: 0;        /* Không margin top */
+  margin-bottom: 20px;  /* Khoảng cách với content dưới */
 }
 
 .container-img {

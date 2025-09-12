@@ -1,19 +1,17 @@
 /* Navbar cố định trên cùng */
-/* Navbar nhỏ như thanh công cụ phía trên */
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;   /* luôn dính từ mép trái */
-  right: 0;  /* luôn dính mép phải */
   height: 60px;
   z-index: 3000;
-  background: rgba(15, 15, 15, 0.85);
+  background: linear-gradient(135deg, #1f2937, #000000) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   display: flex;
   align-items: center;
   padding: 8px 0;
+  width: 100%;
 }
 
 
@@ -56,15 +54,17 @@
 /* Logo bên trái */
 .navbar-left .logo img {
   height: 50px;
-  margin-left: 35px; /* Dịch logo sang phải để tránh hamburger menu */
+  margin-left: 60px;
 }
 
 /* Slogan ở giữa */
 .navbar-center .slogan {
-  font-size: 20px;
-  font-weight: 600;
-  color: #FFD700;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 1px;
 }
 
 /* Khu vực bên phải */
@@ -125,42 +125,45 @@
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #222;
-  border-radius: 4px;
-  padding: 6px 10px;
-  border: 1px solid #2a2a2a;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: 2px solid #FFD700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .search-bar input {
   background: transparent;
   border: none;
-  color: #fff;
+  color: #000;
   font-size: 14px;
   outline: none;
-  width: 140px;
+  width: 160px;
+  font-weight: 500;
 }
 
 .search-icon {
-  color: #ccc;
+  color: #666;
   margin-right: 8px;
 }
 
 .search-bar:hover .search-icon {
-  color: #00ffff;
+  color: #FFD700;
 }
 
 /* Search results dropdown */
 .search-results {
   position: absolute;
   top: 56px; /* just below navbar height */
-  right: 16px;
-  width: 260px;
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  right: 0;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   z-index: 3100;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .search-result-item {
@@ -168,14 +171,15 @@
   text-align: left;
   padding: 10px 12px;
   background: transparent;
-  color: #eee;
+  color: #000;
   border: none;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .search-result-item:hover {
-  background: #2a2a2a;
-  color: #ffd700;
+  background: rgba(255, 215, 0, 0.1);
+  color: #000;
 }
 
 /* Nút glass */
@@ -258,7 +262,7 @@
   }
   .navbar-left .logo img {
     height: 40px;
-    margin-left: 25px;
+    margin-left: 50px;
   }
   .navbar-center .slogan {
     display: none;
@@ -294,7 +298,7 @@
   
   .navbar-left .logo img {
     height: 35px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
   
   .btn-circle {

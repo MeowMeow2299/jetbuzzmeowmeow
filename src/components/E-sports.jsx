@@ -1,7 +1,7 @@
 import React from "react";
 import "./E-sports.css";
 
-const E-sports = () => {
+const ESports = () => {
   const handleGameClick = () => {
     window.open('https://www.betbdt.vip/register?affiliateCode=soy001', '_blank');
   };
@@ -40,7 +40,6 @@ const E-sports = () => {
             <div key={index} className="game-card" onClick={handleGameClick}>
               <div className="game-image-container">
                 <img src={item.img} alt={item.title} className="game-image" />
-                <div className="game-title-overlay">{item.title}</div>
                 <button className="favorite-btn" onClick={(e) => e.stopPropagation()}>
                   <span className={`heart-icon ${item.isFavorite ? 'favorited' : ''}`}>♥</span>
                 </button>
@@ -61,4 +60,4 @@ const E-sports = () => {
   );
 };
 
-export default E-sports;
+export default ESports;

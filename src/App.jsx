@@ -41,14 +41,23 @@ import JeetbuzzOnline from './pages/JeetbuzzOnline';
 import JeetbuzzPartner from './pages/JeetbuzzPartner';
 import Sports from './pages/Sports';
 import ProtectedRoute from './components/ProtectedRoute';
+import HotGamesPage from './pages/HotGamesPage';
+import FavoritesPage from './pages/FavoritesPage';
+import SlotsPage from './pages/SlotsPage';
+import FishPage from './pages/FishPage';
+import LivePage from './pages/LivePage';
+import PokerGamesPage from './pages/PokerGamesPage';
+import SportsPage from './pages/SportsPage';
+import LotteryPage from './pages/LotteryPage';
+import ESportsPage from './pages/ESportsPage';
 
 function App() {
   return (
     <BrowserRouter>
       <FirebaseErrorHandler />
-      <div className="app-layout" style={{ display: 'flex' }}>
+      <div className="app-layout">
         <Sidebar />
-        <div className="content-area" style={{ flex: 1, width: '100%' }}>
+        <div className="content-area">
           <Navbar
             onLoginClick={() => console.log('Login clicked')}
             onSignupClick={() => console.log('Signup clicked')}
@@ -67,6 +76,15 @@ function App() {
               <Route path="/table-games" element={<TableGames />} />
               <Route path="/sports" element={<Sports />} />
               <Route path="/popular" element={<PopularGame />} />
+              <Route path="/hot-games" element={<HotGamesPage />} />
+              <Route path="/favorites" element={<FavoritesPage />} />
+              <Route path="/slots-games" element={<SlotsPage />} />
+              <Route path="/fish-games" element={<FishPage />} />
+              <Route path="/live-games" element={<LivePage />} />
+              <Route path="/poker-games" element={<PokerGamesPage />} />
+              <Route path="/sports-games" element={<SportsPage />} />
+              <Route path="/lottery" element={<LotteryPage />} />
+              <Route path="/esports" element={<ESportsPage />} />
             <Route path="/bgd33" element={<BGD33 />} />
             <Route path="/jeetbuzz" element={<JeetBuzz />} />
             <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />

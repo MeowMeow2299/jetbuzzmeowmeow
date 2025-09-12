@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Dom.css';
 
 const menuItems = [
-  { iconClass: 'fa fa-home', label: 'Home' },
-  { iconClass: 'fa fa-fire', label: 'Hot Games' },
-  { iconClass: 'fa fa-heart', label: 'Favorites' },
-  { iconClass: 'fa fa-dice', label: 'Slots' },
-  { iconClass: 'fa fa-fish', label: 'Fish' },
-  { iconClass: 'fa fa-broadcast-tower', label: 'Live' },
-  { iconClass: 'fa fa-clone', label: 'Poker Games' },
-  { iconClass: 'fa fa-trophy', label: 'Sports' },
-  { iconClass: 'fa fa-money-bill', label: 'Lottery' },
-  { iconClass: 'fa fa-gamepad', label: 'E-Sports' },
+  { iconClass: 'fa fa-home', label: 'Home', link: '/' },
+  { iconClass: 'fa fa-fire', label: 'Hot Games', link: '/hot-games' },
+  { iconClass: 'fa fa-heart', label: 'Favorites', link: '/favorites' },
+  { iconClass: 'fa fa-dice', label: 'Slots', link: '/slots-games' },
+  { iconClass: 'fa fa-fish', label: 'Fish', link: '/fish-games' },
+  { iconClass: 'fa fa-broadcast-tower', label: 'Live', link: '/live-games' },
+  { iconClass: 'fa fa-clone', label: 'Poker Games', link: '/poker-games' },
+  { iconClass: 'fa fa-trophy', label: 'Sports', link: '/sports-games' },
+  { iconClass: 'fa fa-money-bill', label: 'Lottery', link: '/lottery' },
+  { iconClass: 'fa fa-gamepad', label: 'E-Sports', link: '/esports' },
 ];
 
 const Dom = () => {
@@ -38,10 +39,12 @@ const Dom = () => {
   return (
     <div className="dom-menu">
       {menuItems.map((item, index) => (
-        <div key={index} className="dom-item">
-          <i className={`dom-icon ${item.iconClass}`} aria-hidden="true"></i>
-          <div className="dom-label">{item.label}</div>
-        </div>
+        <Link key={index} to={item.link} className="dom-item-link">
+          <div className="dom-item">
+            <i className={`dom-icon ${item.iconClass}`} aria-hidden="true"></i>
+            <div className="dom-label">{item.label}</div>
+          </div>
+        </Link>
       ))}
       
       {/* Thanh tìm kiếm */}

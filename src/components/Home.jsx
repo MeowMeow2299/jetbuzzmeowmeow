@@ -6,6 +6,8 @@ import Dom from './Dom';
 import Slots from './Slots';
 import Live from './Live';
 import Fish from './Fish';
+import Sports from './Sports';
+import ESports from './E-sports';
 import Info from './Info';
 import { useAuth } from '../auth/AuthContext.jsx';
 
@@ -24,6 +26,8 @@ const Home = () => {
       <Slots />
       <Live />
       <Fish />
+      <Sports />
+      <ESports />
       
       <Info isOpen={showInfo} onClose={() => setShowInfo(false)} />
     </>

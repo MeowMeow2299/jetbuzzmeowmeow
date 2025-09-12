@@ -14,21 +14,163 @@ html, body, #root {
 }
 
 body {
-  background-color: hsl(var(--b1));
-  color: hsl(var(--bc));
+  background-color: #000000;
+  color: #ffffff;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Layout shifts when sidebar is open */
-.sidebar-open .navbar {
-  padding-left: 250px;
+/* Remove underlines from all links */
+a, Link {
+  text-decoration: none !important;
 }
 
-.sidebar-open .main-content {
-  margin-left: 250px;
+a:hover, Link:hover {
+  text-decoration: none !important;
+}
+
+/* Sidebar specific styles */
+.sidebar a, .sidebar Link {
+  text-decoration: none !important;
+}
+
+.sidebar a:hover, .sidebar Link:hover {
+  text-decoration: none !important;
+}
+
+/* Force Tailwind classes to work */
+.text-yellow-600 {
+  color: #d97706 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em !important;
+}
+
+.no-underline {
+  text-decoration: none !important;
+}
+
+/* Layout adjustments for sidebar */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-area {
+  flex: 1;
+  margin-left: 0; /* No margin, content sits next to sidebar */
+  transition: margin-left 0.3s ease-in-out;
+  position: relative;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* When sidebar is closed */
+body.sidebar-closed .content-area {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* Navbar positioning */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  width: calc(100% - 250px);
+  transition: left 0.3s ease-in-out;
+  z-index: 3000;
+}
+
+body.sidebar-closed .navbar {
+  left: 0;
+}
+
+/* Main content padding */
+.main-content {
+  padding-top: 60px; /* Height of navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure all sections are properly contained */
+.slider-section,
+.container,
+.marquee-section,
+.info-section,
+.footer-section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Force all content to be centered */
+.slider-section *,
+.container *,
+.marquee-section *,
+.info-section *,
+.footer-section * {
+  box-sizing: border-box;
+}
+
+/* Global layout structure */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
 }
 
 @media (max-width: 768px) {
-  .sidebar-open .navbar { padding-left: 56px; }
-  .sidebar-open .main-content { margin-left: 0; }
+  .content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .navbar {
+    left: 0;
+  }
+  
+  .main-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

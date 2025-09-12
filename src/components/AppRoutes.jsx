@@ -5,12 +5,34 @@ import Slots from '../pages/Slots';
 import Promotion from '../pages/Promotion';
 import Contact from '../pages/Contact';
 
+// Import new game pages
+import HotGamesPage from '../pages/HotGamesPage';
+import FavoritesPage from '../pages/FavoritesPage';
+import SlotsPage from '../pages/SlotsPage';
+import FishPage from '../pages/FishPage';
+import LivePage from '../pages/LivePage';
+import PokerGamesPage from '../pages/PokerGamesPage';
+import SportsPage from '../pages/SportsPage';
+import LotteryPage from '../pages/LotteryPage';
+import ESportsPage from '../pages/ESportsPage';
+
 const AppRoutes = () => (
   <Routes>
     <Route path="/promotion" element={<Promotion />} />
     <Route path="/casino" element={<Casino />} />
     <Route path="/slots" element={<Slots />} />
     <Route path="/contact" element={<Contact />} />
+    
+    {/* New game pages */}
+    <Route path="/hot-games" element={<HotGamesPage />} />
+    <Route path="/favorites" element={<FavoritesPage />} />
+    <Route path="/slots-games" element={<SlotsPage />} />
+    <Route path="/fish-games" element={<FishPage />} />
+    <Route path="/live-games" element={<LivePage />} />
+    <Route path="/poker-games" element={<PokerGamesPage />} />
+    <Route path="/sports-games" element={<SportsPage />} />
+    <Route path="/lottery" element={<LotteryPage />} />
+    <Route path="/esports" element={<ESportsPage />} />
   </Routes>
 );
 

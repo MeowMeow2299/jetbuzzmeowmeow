@@ -1,18 +1,50 @@
 /* App layout helpers */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
 .content-area {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
 }
+
+/* When sidebar is open */
+.sidebar-open .content-area {
+  margin-left: 250px; /* width of sidebar */
+}
+
+/* When sidebar is closed */
+.content-area {
+  margin-left: 0;
+}
+
 .main-content {
   padding-top: 60px; /* height of navbar */
   padding-left: 12px;
   padding-right: 12px;
+  flex: 1;
+  transition: all 0.3s ease;
 }
 
+/* Responsive adjustments */
 @media (min-width: 1024px) {
   .main-content {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-open .content-area {
+    margin-left: 0;
+  }
+  
+  .content-area {
+    margin-left: 0;
   }
 }
