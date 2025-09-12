@@ -24,6 +24,7 @@ import BlogJeetBuzzLoginCasinoJourney from '../pages/BlogJeetBuzzLoginCasinoJour
 import BlogCK444MobileGaming from '../pages/BlogCK444MobileGaming';
 import BlogCK444LoginGuide from '../pages/BlogCK444LoginGuide';
 import BlogJeetBuzzGamesHub from '../pages/BlogJeetBuzzGamesHub';
+import BlogJeetBuzzGamesBangladesh from '../pages/BlogJeetBuzzGamesBangladesh';
 
 const AppRoutes = () => (
   <Routes>
@@ -51,6 +52,7 @@ const AppRoutes = () => (
     <Route path="/blog/ck444-mobile-gaming" element={<BlogCK444MobileGaming />} />
     <Route path="/blog/ck444-login-guide" element={<BlogCK444LoginGuide />} />
     <Route path="/blog/jeetbuzz-games-hub" element={<BlogJeetBuzzGamesHub />} />
+    <Route path="/blog/jeetbuzz-games-bangladesh" element={<BlogJeetBuzzGamesBangladesh />} />
   </Routes>
 );
 
