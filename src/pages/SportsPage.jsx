@@ -15,7 +15,13 @@ const SportsPage = () => {
     { id: 9, title: 'SABA SPORTS', provider: 'SABA Gaming', image: '/photo/SABA_SPORTS.png' },
     { id: 10, title: 'SV388 SPORTS', provider: 'SV388', image: '/photo/SV388_SPORTS.png' },
     { id: 11, title: 'UNITED GAMING SPORTS', provider: 'United Gaming', image: '/photo/UNITED_GAMING_SPORTS.png' },
+    // Fallback games with existing images
+    { id: 12, title: 'Super Ace Sports', provider: 'Jili', image: '/photo/superace.png' },
+    { id: 13, title: 'Money Coming Sports', provider: 'Jili', image: '/photo/Money_Coming.png' },
+    { id: 14, title: 'Golden Bank Sports', provider: 'Jili', image: '/photo/GOLDEN_BANK.png' },
   ];
+
+  console.log('SportsPage loaded with', sportsGames.length, 'games');
 
   return (
     <div className="sports-page">
@@ -31,7 +37,14 @@ const SportsPage = () => {
           {sportsGames.map((game) => (
             <div key={game.id} className="game-card">
               <div className="game-image-container">
-                <img src={game.image} alt={game.title} className="game-image" />
+                <img 
+                  src={game.image} 
+                  alt={game.title} 
+                  className="game-image"
+                  onError={(e) => {
+                    e.target.src = '/photo/logo.png'; // Fallback image
+                  }}
+                />
                 <div className="sports-indicator">SPORTS</div>
                 <button className="favorite-btn">
                   <span className="heart-icon">♥</span>
