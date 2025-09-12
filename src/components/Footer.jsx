@@ -58,19 +58,18 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Middle-Right Section - UTILITY PAGES Links */}
+        {/* Middle-Right Section - BLOGS Links */}
         <div className="footer-section utility-section">
-          <h3 className="section-title">UTILITY PAGES</h3>
+          <h3 className="section-title">BLOGS</h3>
           <ul className="footer-links">
-            <li><a href="#">JEETBUZZ AFFILIATION PROGRAM</a></li>
-            <li><a href="#">KYC POLICIES</a></li>
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li><a href="#">PROMOTION BONUS</a></li>
-            <li><a href="#">SELF EXCLUSION</a></li>
-            <li><a href="#">TERMS OF SERVICES</a></li>
-            <li><a href="#">VIP LOYALTY PROGRAM</a></li>
-            <li><a href="#">WELCOME BONUS</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><a href="/blog/jeetbuzz-bangladesh">JeetBuzz Bangladesh</a></li>
+            <li><a href="/blog/jeetbuzz-premier-casino-platform">JeetBuzz – A Deep Dive into Bangladesh's Premier Casino Platform</a></li>
+            <li><a href="/blog/blog-outline">Blog Outline</a></li>
+            <li><a href="/blog/jeetbuzz-login-casino-journey">JeetBuzz Login: Start Your Thrilling Casino Journey</a></li>
+            <li><a href="/blog/ck444-mobile-gaming">CK444 App for iPhone and Android Users: Mobile Gaming Made Easy</a></li>
+            <li><a href="/blog/ck444-login-guide">CK444 Login App: A Complete Guide to Live Casino, Table Games, and Mobile Play</a></li>
+            <li><a href="/blog/jeetbuzz-games-hub">JeetBuzz Games The Ultimate Casino Gaming Hub in Bangla</a></li>
+            <li><a href="/blog/jeetbuzz-games-bangladesh">JeetBuzz Games in Bangladesh & How to Find Information on Google, Yahoo, and Bing</a></li>
           </ul>
         </div>
 
