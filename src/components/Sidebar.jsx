@@ -51,10 +51,8 @@ const Sidebar = () => {
     };
   }, [isOpen]);
 
-  // Main navigation items (9 items)
+  // Main navigation items (7 items) - matching the image
   const mainMenuItems = [
-    { name: 'HOME', link: '/', icon: FaHome },
-    { name: 'CASINO GAMES', link: '/casino', icon: FaCircle },
     { name: 'SLOTS', link: '/slots', icon: FaCrown },
     { name: 'LIVE CASINO', link: '/live-casino', icon: FaVideo },
     { name: 'TABLE GAMES', link: '/table-games', icon: FaDice },
@@ -71,7 +69,7 @@ const Sidebar = () => {
       icon: FaTrophy,
       subItems: [
         { name: 'BGD33', link: '/bgd33', icon: FaSpade },
-        { name: 'BETBOT', link: '/betbot', icon: FaSpade },
+        { name: 'BETBDT', link: '/betbdt', icon: FaSpade },
         { name: 'JEETBUZZ', link: '/jeetbuzz', icon: FaSpade },
         { name: 'CRICKEX', link: '/crickex', icon: FaSpade },
         { name: 'TK999', link: '/tk999', icon: FaSpade },
@@ -126,24 +124,29 @@ const Sidebar = () => {
         <div className="min-h-full w-64">
           <div className="p-4">
             <div className="sidebar-content">
-              {/* Main Navigation Items */}
-              <ul className="main-menu">
-                {mainMenuItems.map((item, index) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <li key={index} className="main-menu-item">
-                      <Link 
-                        to={item.link} 
-                        onClick={handleLinkClick}
-                        className="main-menu-link"
-                      >
-                        <IconComponent className="menu-icon" />
-                        <span className="menu-text">{item.name}</span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              {/* Casino Games Section */}
+              <div className="casino-games-section">
+                <h2 className="section-title-casino">CASINO GAMES</h2>
+                
+                {/* Main Navigation Items */}
+                <ul className="main-menu">
+                  {mainMenuItems.map((item, index) => {
+                    const IconComponent = item.icon;
+                    return (
+                      <li key={index} className="main-menu-item">
+                        <Link 
+                          to={item.link} 
+                          onClick={handleLinkClick}
+                          className="main-menu-link"
+                        >
+                          <IconComponent className="menu-icon" />
+                          <span className="menu-text">{item.name}</span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
 
               {/* Separator */}
               <div className="menu-separator"></div>

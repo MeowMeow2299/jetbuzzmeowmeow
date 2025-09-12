@@ -39,16 +39,31 @@
   padding-right: 5px;
 }
 
+/* Casino Games Section */
+.casino-games-section {
+  margin-bottom: 20px;
+}
+
+.section-title-casino {
+  color: #FFD700;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  padding: 0 16px;
+}
+
 /* Main Menu */
 .main-menu {
   list-style: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
 .main-menu-item {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #FFD700;
 }
 
 .main-menu-item:last-child {
@@ -59,9 +74,9 @@
   display: flex;
   align-items: center;
   padding: 12px 16px;
-  color: #ffffff;
+  color: #FFD700;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -71,8 +86,8 @@
 }
 
 .main-menu-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
   text-decoration: none;
 }
 
@@ -80,7 +95,7 @@
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  color: #ffffff;
+  color: #FFD700;
 }
 
 .menu-text {
@@ -90,7 +105,7 @@
 /* Menu Separator */
 .menu-separator {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #FFD700;
   margin: 16px 0;
 }
 
@@ -103,11 +118,11 @@
   display: flex;
   align-items: center;
   padding: 12px 16px;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
+  color: #FFD700;
+  font-weight: 700;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 0;
@@ -115,14 +130,14 @@
 }
 
 .section-header:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 215, 0, 0.1);
 }
 
 .section-icon {
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  color: #ffffff;
+  color: #FFD700;
 }
 
 .section-title {
@@ -133,7 +148,7 @@
   width: 12px;
   height: 12px;
   transition: transform 0.3s ease;
-  color: #ffffff;
+  color: #FFD700;
 }
 
 .chevron.expanded {
@@ -165,10 +180,11 @@
   transition: all 0.3s ease;
   border-radius: 0;
   background: transparent;
+  border-bottom: 1px solid #FFD700;
 }
 
 .sub-menu-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 215, 0, 0.1);
   color: #ffffff;
   text-decoration: none;
 }
