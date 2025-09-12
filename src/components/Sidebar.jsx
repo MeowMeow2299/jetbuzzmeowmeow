@@ -177,10 +177,31 @@ const Sidebar = () => {
                     <div 
                       className="section-header"
                       onClick={() => toggleDropdown(section.name)}
+                      style={{
+                        color: '#FFD700',
+                        fontWeight: '600',
+                        fontSize: '14px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.5px'
+                      }}
                     >
-                      <SectionIcon className="section-icon" />
-                      <span className="section-title">{section.name}</span>
-                      <FaChevronUp className={`chevron ${isExpanded ? 'expanded' : ''}`} />
+                      <SectionIcon className="section-icon" style={{ color: '#FFD700' }} />
+                      <span 
+                        className="section-title"
+                        style={{
+                          color: '#FFD700',
+                          fontWeight: '600',
+                          fontSize: '14px',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.5px'
+                        }}
+                      >
+                        {section.name}
+                      </span>
+                      <FaChevronUp 
+                        className={`chevron ${isExpanded ? 'expanded' : ''}`} 
+                        style={{ color: '#FFD700' }}
+                      />
                     </div>
 
                     {/* Sub Items */}
