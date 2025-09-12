@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './ESportsPage.css';
 
 const cardData = [
@@ -7,11 +9,15 @@ const cardData = [
 ];
 
 const ESportsPage = () => {
+  const navigate = useNavigate();
   console.log('ESportsPage loaded with', cardData.length, 'cards');
 
   return (
     <div className="esports-container">
-      <h1 className="esports-header">E-Sports</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="esports-header">E-Sports</h1>
+      </div>
       <div className="esports-grid">
         {cardData.map((card, index) => (
           <div key={index} className="esports-card">

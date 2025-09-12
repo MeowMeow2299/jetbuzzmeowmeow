@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './PokerGamesPage.css';
 
 // Generate poker games from the POCKER folder
@@ -97,6 +99,7 @@ const generatePokerGames = () => {
 };
 
 const PokerGamesPage = () => {
+  const navigate = useNavigate();
   const allGames = generatePokerGames();
   const [visibleCount, setVisibleCount] = useState(24); // Show 24 games initially
   const itemsPerLoad = 24; // Load 24 more games each time
@@ -112,7 +115,10 @@ const PokerGamesPage = () => {
 
   return (
     <div className="poker-container">
-      <h1 className="poker-header">Poker Games</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="poker-header">Poker Games</h1>
+      </div>
       <div className="poker-grid">
         {visibleGames.map((card, index) => (
           <div key={index} className="poker-card">

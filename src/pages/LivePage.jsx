@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './LivePage.css';
 
 // Generate all live games from the LIVE folder
@@ -29,6 +31,7 @@ const generateLiveGames = () => {
 };
 
 const LivePage = () => {
+  const navigate = useNavigate();
   const allGames = generateLiveGames();
   const [visibleCount, setVisibleCount] = useState(24); // Show 24 games initially
   const itemsPerLoad = 24; // Load 24 more games each time
@@ -44,7 +47,10 @@ const LivePage = () => {
 
   return (
     <div className="live-container">
-      <h1 className="live-header">Live</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="live-header">Live</h1>
+      </div>
       <div className="live-grid">
         {visibleGames.map((card, index) => (
           <div key={index} className="live-card">

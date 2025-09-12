@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './FishPage.css';
 
 // Generate fish games from the FISH folder
@@ -129,6 +131,7 @@ const generateFishGames = () => {
 };
 
 const FishPage = () => {
+  const navigate = useNavigate();
   const allGames = generateFishGames();
   const [visibleCount, setVisibleCount] = useState(24); // Show 24 games initially
   const itemsPerLoad = 24; // Load 24 more games each time
@@ -144,7 +147,10 @@ const FishPage = () => {
 
   return (
     <div className="fish-container">
-      <h1 className="fish-header">Fish Games</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="fish-header">Fish Games</h1>
+      </div>
       <div className="fish-grid">
         {visibleGames.map((card, index) => (
           <div key={index} className="fish-card">

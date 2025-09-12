@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './LotteryPage.css';
 
 const cardData = [
@@ -6,11 +8,15 @@ const cardData = [
 ];
 
 const LotteryPage = () => {
+  const navigate = useNavigate();
   console.log('LotteryPage loaded with', cardData.length, 'cards');
 
   return (
     <div className="lottery-container">
-      <h1 className="lottery-header">Lottery</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="lottery-header">Lottery</h1>
+      </div>
       <div className="lottery-grid">
         {cardData.map((card, index) => (
           <div key={index} className="lottery-card">

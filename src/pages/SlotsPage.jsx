@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './SlotsPage.css';
 
 // Generate slots games from the SLOTS folder
@@ -118,6 +120,7 @@ const generateSlotsGames = () => {
 };
 
 const SlotsPage = () => {
+  const navigate = useNavigate();
   const allGames = generateSlotsGames();
   const [visibleCount, setVisibleCount] = useState(24); // Show 24 games initially
   const itemsPerLoad = 24; // Load 24 more games each time
@@ -133,7 +136,10 @@ const SlotsPage = () => {
 
   return (
     <div className="slots-container">
-      <h1 className="slots-header">Slots</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="slots-header">Slots</h1>
+      </div>
       <div className="slots-grid">
         {visibleGames.map((card, index) => (
           <div key={index} className="slots-card">

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './HotGamesPage.css';
 
 const cardData = [
@@ -72,11 +74,15 @@ const cardData = [
 ];
 
 const HotGamesPage = () => {
+  const navigate = useNavigate();
   console.log('HotGamesPage loaded with', cardData.length, 'cards');
 
   return (
     <div className="hotgames-container">
-      <h1 className="hotgames-header">Hot Games</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="hotgames-header">Hot Games</h1>
+      </div>
       <div className="hotgames-grid">
         {cardData.map((card, index) => (
           <div key={index} className="hotgames-card">

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './SportsPage.css';
 
 const cardData = [
@@ -16,11 +18,15 @@ const cardData = [
 ];
 
 const SportsPage = () => {
+  const navigate = useNavigate();
   console.log('SportsPage loaded with', cardData.length, 'cards');
   
   return (
     <div className="sports-container">
-      <h1 className="sports-header">Sports</h1>
+      <div className="page-header-with-back">
+        <FaArrowLeft className="back-icon" onClick={() => navigate('/')} />
+        <h1 className="sports-header">Sports</h1>
+      </div>
       <div className="sports-grid">
         {cardData.map((card, index) => (
           <div key={index} className="sports-card">
