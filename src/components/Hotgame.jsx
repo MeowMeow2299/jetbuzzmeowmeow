@@ -7,18 +7,18 @@ const Hotgame = () => {
   };
 
   const items = [
-    { id: 1, title: "Super Ace", provider: "Jili", img: "/photo/superace.png", isFavorite: false, isHot: true },
-    { id: 2, title: "Boxing King", provider: "Jili", img: "/photo/Boxing King.png", isFavorite: true, isHot: true },
-    { id: 3, title: "Fortune Gems", provider: "Jili", img: "/photo/Fortune Gems.png", isFavorite: false, isHot: true },
-    { id: 4, title: "Money Coming", provider: "Jili", img: "/photo/MoneyComing.png", isFavorite: true, isHot: true },
-    { id: 5, title: "Fortune Gems 3", provider: "Jili", img: "/photo/Fortune Gems 3.png", isFavorite: false, isHot: true },
-    { id: 6, title: "Super Ace Deluxe", provider: "Jili", img: "/photo/superace.png", isFavorite: true, isHot: true },
-    { id: 7, title: "Safari King", provider: "Jili", img: "/photo/Safari_King.png", isFavorite: false, isHot: false },
-    { id: 8, title: "Lucky Jaguar", provider: "Jili", img: "/photo/JL0003.png", isFavorite: true, isHot: false },
-    { id: 9, title: "Thai Hilo", provider: "Jili", img: "/photo/JL0004.png", isFavorite: false, isHot: false },
-    { id: 10, title: "Shōgun", provider: "Jili", img: "/photo/JL0005.png", isFavorite: true, isHot: false },
-    { id: 11, title: "Cricket Roulette", provider: "Jili", img: "/photo/JL0006.png", isFavorite: false, isHot: false },
-    { id: 12, title: "Golden Bank 2", provider: "Jili", img: "/photo/Golden_Bank.png", isFavorite: true, isHot: false },
+    { id: 1, title: "Super Ace", provider: "Jili", img: "/photo/HOTGAMES/SUPERACE_HOTGAMES.png", isFavorite: false, isHot: true },
+    { id: 2, title: "Boxing King", provider: "Jili", img: "/photo/HOTGAMES/BOXING_KING_HOTGAMES.png", isFavorite: true, isHot: true },
+    { id: 3, title: "Fortune Gems", provider: "Jili", img: "/photo/HOTGAMES/FORTUNE_GEM_HOTGAMES.png", isFavorite: false, isHot: true },
+    { id: 4, title: "Money Coming", provider: "Jili", img: "/photo/HOTGAMES/MONEY_COMING_HOTGAMES.png", isFavorite: true, isHot: true },
+    { id: 5, title: "Fortune Gems 3", provider: "Jili", img: "/photo/HOTGAMES/FORTUNE_GEM_3_HOTGAMES.png", isFavorite: false, isHot: true },
+    { id: 6, title: "Super Ace Deluxe", provider: "Jili", img: "/photo/HOTGAMES/SUPERACE_DELUE_HOTGAMES.png", isFavorite: true, isHot: true },
+    { id: 7, title: "Safari Wilds", provider: "Jili", img: "/photo/HOTGAMES/SAFARI_WILDS.png", isFavorite: false, isHot: false },
+    { id: 8, title: "Buffalo Hold and Run", provider: "Jili", img: "/photo/HOTGAMES/BUFFALO_HOLD_AND_RUN_HOTGAMES.png", isFavorite: true, isHot: false },
+    { id: 9, title: "Charge Buffalo", provider: "Jili", img: "/photo/HOTGAMES/CHARGE_BUFFALO_HOTGAMES.png", isFavorite: false, isHot: false },
+    { id: 10, title: "777 Coins", provider: "Jili", img: "/photo/HOTGAMES/777_COINS_HOTGAMES.png", isFavorite: true, isHot: false },
+    { id: 11, title: "Wild Ace", provider: "Jili", img: "/photo/HOTGAMES/WILD_ACE.png", isFavorite: false, isHot: false },
+    { id: 12, title: "Gold Bank", provider: "Jili", img: "/photo/HOTGAMES/GOLD_BANK.png", isFavorite: true, isHot: false },
   ];
 
   return (

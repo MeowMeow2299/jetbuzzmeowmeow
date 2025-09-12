@@ -7,22 +7,22 @@ const Live = () => {
   };
 
   const items = [
-    { id: 1, title: "Lightning Blackjack", provider: "Evolution", img: "/photo/JL0186.png", isFavorite: false },
-    { id: 2, title: "Immersive Roulette", provider: "Evolution", img: "/photo/JL0187.png", isFavorite: true },
-    { id: 3, title: "Speed Baccarat", provider: "Evolution", img: "/photo/JL0188.png", isFavorite: false },
-    { id: 4, title: "Infinite Blackjack", provider: "Evolution", img: "/photo/JL0189.png", isFavorite: true },
-    { id: 5, title: "Auto Roulette", provider: "Evolution", img: "/photo/JL0190.png", isFavorite: false },
-    { id: 6, title: "VIP Blackjack", provider: "Evolution", img: "/photo/JL0191.png", isFavorite: true },
-    { id: 7, title: "Dragon Tiger Live", provider: "Evolution", img: "/photo/JL0192.png", isFavorite: false },
-    { id: 8, title: "Baccarat Squeeze", provider: "Evolution", img: "/photo/JL0216.png", isFavorite: true },
-    { id: 9, title: "Roulette Royale", provider: "Evolution", img: "/photo/JL0223.png", isFavorite: false },
-    { id: 10, title: "Blackjack Party", provider: "Evolution", img: "/photo/JL0231.png", isFavorite: true },
-    { id: 11, title: "Mega Ball Live", provider: "Evolution", img: "/photo/KA0775.png", isFavorite: false },
-    { id: 12, title: "Crazy Time Live", provider: "Evolution", img: "/photo/KA0811.png", isFavorite: true },
-    { id: 13, title: "Monopoly Live Show", provider: "Evolution", img: "/photo/KA0817.png", isFavorite: false },
-    { id: 14, title: "Dream Catcher Live", provider: "Evolution", img: "/photo/JL-COLOR.png", isFavorite: true },
-    { id: 15, title: "Gonzo's Treasure Hunt Live", provider: "Evolution", img: "/photo/JP.svg", isFavorite: false },
-    { id: 16, title: "Wheel of Fortune Live", provider: "Evolution", img: "/photo/superace.png", isFavorite: true },
+    { id: 1, title: "EG4 Live Game", provider: "EG4", img: "/photo/LIVE/EG4001.png", isFavorite: false },
+    { id: 2, title: "EG4 Roulette", provider: "EG4", img: "/photo/LIVE/EG4126.png", isFavorite: true },
+    { id: 3, title: "EG4 Baccarat", provider: "EG4", img: "/photo/LIVE/EG4127.png", isFavorite: false },
+    { id: 4, title: "EG4 Blackjack", provider: "EG4", img: "/photo/LIVE/EG4128.png", isFavorite: true },
+    { id: 5, title: "EG4 Dragon Tiger", provider: "EG4", img: "/photo/LIVE/EG4129.png", isFavorite: false },
+    { id: 6, title: "EG4 Sic Bo", provider: "EG4", img: "/photo/LIVE/EG4130.png", isFavorite: true },
+    { id: 7, title: "EG4 Auto Roulette", provider: "EG4", img: "/photo/LIVE/EG4131.png", isFavorite: false },
+    { id: 8, title: "EG4 Speed Baccarat", provider: "EG4", img: "/photo/LIVE/EG4132.png", isFavorite: true },
+    { id: 9, title: "EG4 Lightning Roulette", provider: "EG4", img: "/photo/LIVE/EG4133.png", isFavorite: false },
+    { id: 10, title: "EG4 Immersive Roulette", provider: "EG4", img: "/photo/LIVE/EG4134.png", isFavorite: true },
+    { id: 11, title: "EG4 Infinite Blackjack", provider: "EG4", img: "/photo/LIVE/EG4135.png", isFavorite: false },
+    { id: 12, title: "EG4 VIP Blackjack", provider: "EG4", img: "/photo/LIVE/EG4136.png", isFavorite: true },
+    { id: 13, title: "EG4 Mega Ball", provider: "EG4", img: "/photo/LIVE/EG4137.png", isFavorite: false },
+    { id: 14, title: "EG4 Crazy Time", provider: "EG4", img: "/photo/LIVE/EG4138.png", isFavorite: true },
+    { id: 15, title: "EG4 Monopoly Live", provider: "EG4", img: "/photo/LIVE/EG4139.png", isFavorite: false },
+    { id: 16, title: "EG4 Dream Catcher", provider: "EG4", img: "/photo/LIVE/EG4140.png", isFavorite: true },
   ];
 
   return (

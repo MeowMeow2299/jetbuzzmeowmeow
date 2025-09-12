@@ -96,11 +96,11 @@ const Sidebar = () => {
       name: 'JEETBUZZ',
       icon: FaClub,
       subItems: [
-        { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', icon: FaSpade },
-        { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', icon: FaSpade },
-        { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', icon: FaSpade },
-        { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', icon: FaSpade },
-        { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', icon: FaSpade }
+        { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', icon: FaClub },
+        { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', icon: FaClub },
+        { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', icon: FaClub },
+        { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', icon: FaClub },
+        { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', icon: FaClub }
       ]
     }
   ];

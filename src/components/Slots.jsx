@@ -7,22 +7,22 @@ const Slots = () => {
   };
 
   const items = [
-    { id: 1, title: "Blackjack Classic", provider: "Evolution", img: "/photo/JL0111.png", isFavorite: false },
-    { id: 2, title: "Roulette European", provider: "Evolution", img: "/photo/JL0116.png", isFavorite: true },
-    { id: 3, title: "Baccarat Live", provider: "Evolution", img: "/photo/JL0125.png", isFavorite: false },
-    { id: 4, title: "Poker Texas Hold'em", provider: "Pragmatic Play", img: "/photo/JL0136.png", isFavorite: true },
-    { id: 5, title: "Dragon Tiger", provider: "Evolution", img: "/photo/JL0148.png", isFavorite: false },
-    { id: 6, title: "Sic Bo Live", provider: "Evolution", img: "/photo/JL0156.png", isFavorite: true },
-    { id: 7, title: "Crazy Time", provider: "Evolution", img: "/photo/JL0162.png", isFavorite: false },
-    { id: 8, title: "Monopoly Live", provider: "Evolution", img: "/photo/JL0166.png", isFavorite: true },
-    { id: 9, title: "Lightning Roulette", provider: "Evolution", img: "/photo/JL0167.png", isFavorite: false },
-    { id: 10, title: "Dream Catcher", provider: "Evolution", img: "/photo/JL0170.png", isFavorite: true },
-    { id: 11, title: "Gonzo's Treasure Hunt", provider: "Evolution", img: "/photo/JL0171.png", isFavorite: false },
-    { id: 12, title: "Mega Ball", provider: "Evolution", img: "/photo/JL0181.png", isFavorite: true },
-    { id: 13, title: "Wheel of Fortune", provider: "Evolution", img: "/photo/JL0182.png", isFavorite: false },
-    { id: 14, title: "Deal or No Deal", provider: "Evolution", img: "/photo/JL0183.png", isFavorite: true },
-    { id: 15, title: "Crazy Coin Flip", provider: "Evolution", img: "/photo/JL0184.png", isFavorite: false },
-    { id: 16, title: "Cash or Crash", provider: "Evolution", img: "/photo/JL0185.png", isFavorite: true },
+    { id: 1, title: "5G Slots", provider: "5G", img: "/photo/SLOTS/5G0002.png", isFavorite: false },
+    { id: 2, title: "759 Slots", provider: "759", img: "/photo/SLOTS/759002.png", isFavorite: true },
+    { id: 3, title: "AE Slots", provider: "AE", img: "/photo/SLOTS/AE0001.png", isFavorite: false },
+    { id: 4, title: "AMBS Slots", provider: "AMBS", img: "/photo/SLOTS/AMBS02.png", isFavorite: true },
+    { id: 5, title: "AMG Slots", provider: "AMG", img: "/photo/SLOTS/AMG002.png", isFavorite: false },
+    { id: 6, title: "AUX Slots", provider: "AUX", img: "/photo/SLOTS/AUX002.png", isFavorite: true },
+    { id: 7, title: "BGA Slots", provider: "BGA", img: "/photo/SLOTS/BGA002.png", isFavorite: false },
+    { id: 8, title: "BNG Slots", provider: "BNG", img: "/photo/SLOTS/BNG002.png", isFavorite: true },
+    { id: 9, title: "BOM Slots", provider: "BOM", img: "/photo/SLOTS/BOM002.png", isFavorite: false },
+    { id: 10, title: "More 5G Games", provider: "5G", img: "/photo/SLOTS/5G0003.png", isFavorite: true },
+    { id: 11, title: "More 759 Games", provider: "759", img: "/photo/SLOTS/759003.png", isFavorite: false },
+    { id: 12, title: "More AE Games", provider: "AE", img: "/photo/SLOTS/AE0002.png", isFavorite: true },
+    { id: 13, title: "More AMBS Games", provider: "AMBS", img: "/photo/SLOTS/AMBS03.png", isFavorite: false },
+    { id: 14, title: "More AMG Games", provider: "AMG", img: "/photo/SLOTS/AMG003.png", isFavorite: true },
+    { id: 15, title: "More AUX Games", provider: "AUX", img: "/photo/SLOTS/AUX003.png", isFavorite: false },
+    { id: 16, title: "More BGA Games", provider: "BGA", img: "/photo/SLOTS/BGA003.png", isFavorite: true },
   ];
 
   return (

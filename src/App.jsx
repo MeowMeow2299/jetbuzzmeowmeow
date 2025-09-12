@@ -59,6 +59,7 @@ import FairnessRNGTesting from './pages/FairnessRNGTesting';
 import HelpCenterFAQ from './pages/HelpCenterFAQ';
 import HowToPlaceBet from './pages/HowToPlaceBet';
 import TermsOfService from './pages/TermsOfService';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -90,6 +91,7 @@ function App() {
               <Route path="/fish-games" element={<FishPage />} />
               <Route path="/live-games" element={<LivePage />} />
               <Route path="/poker-games" element={<PokerGamesPage />} />
+              <Route path="/sports" element={<SportsPage />} />
               <Route path="/sports-games" element={<SportsPage />} />
               <Route path="/lottery" element={<LotteryPage />} />
               <Route path="/esports" element={<ESportsPage />} />
@@ -102,6 +104,7 @@ function App() {
               <Route path="/help-center-faq" element={<HelpCenterFAQ />} />
               <Route path="/how-to-place-bet" element={<HowToPlaceBet />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/search" element={<SearchResults />} />
             <Route path="/bgd33" element={<BGD33 />} />
             <Route path="/jeetbuzz" element={<JeetBuzz />} />
             <Route path="/jeetbuzz-game" element={<JeetBuzzGame />} />

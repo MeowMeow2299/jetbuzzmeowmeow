@@ -1,13 +1,20 @@
 /* Terms of Service Container */
 .terms-of-service-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
-  background-size: 200% 200%;
-  animation: gradientShift 8s ease infinite;
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 16px;
+  margin: 20px;
+  padding: 40px;
   font-family: 'Segoe UI', sans-serif;
   position: relative;
   overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(255, 215, 0, 0.1);
 }
 
 .terms-of-service-container::before {

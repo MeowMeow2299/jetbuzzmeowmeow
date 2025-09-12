@@ -7,22 +7,22 @@ const Fish = () => {
   };
 
   const items = [
-    { id: 1, title: "Crash Game", provider: "Spribe", img: "/photo/1.png", isFavorite: false },
-    { id: 2, title: "Plinko", provider: "Spribe", img: "/photo/2.png", isFavorite: true },
-    { id: 3, title: "Dice", provider: "Spribe", img: "/photo/3.png", isFavorite: false },
-    { id: 4, title: "Mines", provider: "Spribe", img: "/photo/4.png", isFavorite: true },
-    { id: 5, title: "Hilo", provider: "Spribe", img: "/photo/5.png", isFavorite: false },
-    { id: 6, title: "Limbo", provider: "Spribe", img: "/photo/6.png", isFavorite: true },
-    { id: 7, title: "Keno", provider: "Spribe", img: "/photo/7.png", isFavorite: false },
-    { id: 8, title: "Wheel", provider: "Spribe", img: "/photo/8.png", isFavorite: true },
-    { id: 9, title: "Blackjack", provider: "Spribe", img: "/photo/9.png", isFavorite: false },
-    { id: 10, title: "Baccarat", provider: "Spribe", img: "/photo/10.png", isFavorite: true },
-    { id: 11, title: "Roulette", provider: "Spribe", img: "/photo/11.png", isFavorite: false },
-    { id: 12, title: "Poker", provider: "Spribe", img: "/photo/12.png", isFavorite: true },
-    { id: 13, title: "Lottery", provider: "Spribe", img: "/photo/banner1.jpeg", isFavorite: false },
-    { id: 14, title: "Scratch Cards", provider: "Spribe", img: "/photo/banner2.jpeg", isFavorite: true },
-    { id: 15, title: "Virtual Sports", provider: "Spribe", img: "/photo/banner3.jpeg", isFavorite: false },
-    { id: 16, title: "Instant Win", provider: "Spribe", img: "/photo/banner4.jpeg", isFavorite: true },
+    { id: 1, title: "BSP Fish Game", provider: "BSP", img: "/photo/FISH/BSP011.png", isFavorite: false },
+    { id: 2, title: "BT Fish Game", provider: "BT", img: "/photo/FISH/BT0064.png", isFavorite: true },
+    { id: 3, title: "FC Fish Game", provider: "FC", img: "/photo/FISH/FC0018.png", isFavorite: false },
+    { id: 4, title: "FTG Fish Game", provider: "FTG", img: "/photo/FISH/FTG002.png", isFavorite: true },
+    { id: 5, title: "JDB Fish Game", provider: "JDB", img: "/photo/FISH/JDB080.png", isFavorite: false },
+    { id: 6, title: "JK Fish Game", provider: "JK", img: "/photo/FISH/JK0019.png", isFavorite: true },
+    { id: 7, title: "JL Fish Game", provider: "JL", img: "/photo/FISH/JL0002.png", isFavorite: false },
+    { id: 8, title: "KA Fish Game", provider: "KA", img: "/photo/FISH/KA0002.png", isFavorite: true },
+    { id: 9, title: "MG Fish Game", provider: "MG", img: "/photo/FISH/MG0024.png", isFavorite: false },
+    { id: 10, title: "PT Fish Game", provider: "PT", img: "/photo/FISH/PT0185.png", isFavorite: true },
+    { id: 11, title: "SG Fish Game", provider: "SG", img: "/photo/FISH/SG0128.png", isFavorite: false },
+    { id: 12, title: "VA Fish Game", provider: "VA", img: "/photo/FISH/VA0045.png", isFavorite: true },
+    { id: 13, title: "YL Fish Game", provider: "YL", img: "/photo/FISH/YL0010.png", isFavorite: false },
+    { id: 14, title: "More BSP Games", provider: "BSP", img: "/photo/FISH/BSP012.png", isFavorite: true },
+    { id: 15, title: "More BT Games", provider: "BT", img: "/photo/FISH/BT0065.png", isFavorite: false },
+    { id: 16, title: "More FC Games", provider: "FC", img: "/photo/FISH/FC0019.png", isFavorite: true },
   ];
 
   return (
