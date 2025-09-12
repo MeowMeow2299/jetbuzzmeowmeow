@@ -2,27 +2,36 @@ import React from 'react';
 import './SportsPage.css';
 
 const cardData = [
-  { image: '', title: 'BETBDT Swickets' },
-  { image: '', title: 'BETBDT TFB' },
-  { image: '', title: 'BETBDT BTI' },
-  { image: '', title: 'BETBDT Saba...' },
-  { image: '', title: 'BETBDT FBB...' },
-  { image: '', title: 'BETBDT United...' },
-  { image: '', title: 'BETBDT AAP Gaming' },
-  { image: '', title: 'BETBDT Poly Sports' },
-  { image: '', title: 'BETBDT SV388' },
-  { image: '', title: 'BETBDT RCB888...' },
-  { image: '', title: 'BETBDT PANDA...' },
+  { image: '/photo/9WICKETS_SPORTS.png', title: 'BETBDT Swickets' },
+  { image: '/photo/BETBDT_LUCKY_SPORTS.png', title: 'BETBDT TFB' },
+  { image: '/photo/BTI_SPORTS.png', title: 'BETBDT BTI' },
+  { image: '/photo/SABA_SPORTS.png', title: 'BETBDT Saba...' },
+  { image: '/photo/FB_SPORTS.png', title: 'BETBDT FBB...' },
+  { image: '/photo/UNITED_GAMING_SPORTS.png', title: 'BETBDT United...' },
+  { image: '/photo/AP_GAMING_SPORTS.png', title: 'BETBDT AAP Gaming' },
+  { image: '/photo/POLY_SPORTS.png', title: 'BETBDT Poly Sports' },
+  { image: '/photo/SV388_SPORTS.png', title: 'BETBDT SV388' },
+  { image: '/photo/RCB988_HOURSEBOOK_SPORTS.png', title: 'BETBDT RCB888...' },
+  { image: '/photo/PANDA_SPORTS.png', title: 'BETBDT PANDA...' },
 ];
 
 const SportsPage = () => {
+  console.log('SportsPage loaded with', cardData.length, 'cards');
+  
   return (
     <div className="sports-container">
       <h1 className="sports-header">Sports</h1>
       <div className="sports-grid">
         {cardData.map((card, index) => (
           <div key={index} className="sports-card">
-            <img src={card.image} alt={card.title} className="sports-image" />
+            <img 
+              src={card.image || '/photo/logo.png'} 
+              alt={card.title} 
+              className="sports-image"
+              onError={(e) => {
+                e.target.src = '/photo/logo.png';
+              }}
+            />
             <div className="sports-title">{card.title}</div>
           </div>
         ))}
