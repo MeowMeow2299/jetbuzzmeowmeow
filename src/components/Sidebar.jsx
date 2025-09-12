@@ -27,8 +27,10 @@ const Sidebar = () => {
 
   useEffect(() => {
     document.body.classList.toggle('sidebar-open', isOpen);
+    document.body.classList.toggle('sidebar-closed', !isOpen);
     return () => {
       document.body.classList.remove('sidebar-open');
+      document.body.classList.remove('sidebar-closed');
     };
   }, [isOpen]);
 

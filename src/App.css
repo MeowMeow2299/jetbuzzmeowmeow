@@ -10,16 +10,11 @@
   min-height: 100vh;
   flex: 1;
   transition: margin-left 0.3s ease;
-  margin-left: 0;
-}
-
-/* When sidebar is open */
-.sidebar-open .content-area {
-  margin-left: 250px; /* width of sidebar */
+  margin-left: 250px; /* default: sidebar is open */
 }
 
 /* When sidebar is closed */
-.content-area {
+.sidebar-closed .content-area {
   margin-left: 0;
 }
 
