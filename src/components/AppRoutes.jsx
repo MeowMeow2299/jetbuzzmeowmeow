@@ -19,6 +19,7 @@ import ESportsPage from '../pages/ESportsPage';
 // Import blog pages
 import BlogJeetBuzzBangladesh from '../pages/BlogJeetBuzzBangladesh';
 import BlogJeetBuzzPremierCasino from '../pages/BlogJeetBuzzPremierCasino';
+import BlogOutline from '../pages/BlogOutline';
 
 const AppRoutes = () => (
   <Routes>
@@ -41,6 +42,7 @@ const AppRoutes = () => (
     {/* Blog pages */}
     <Route path="/blog/jeetbuzz-bangladesh" element={<BlogJeetBuzzBangladesh />} />
     <Route path="/blog/jeetbuzz-premier-casino-platform" element={<BlogJeetBuzzPremierCasino />} />
+    <Route path="/blog/blog-outline" element={<BlogOutline />} />
   </Routes>
 );
 
