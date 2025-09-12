@@ -89,34 +89,53 @@
   pointer-events: none;
 }
 
-/* Hamburger - chỉ hiển thị trên mobile */
+/* Hamburger - hiển thị trên tất cả thiết bị */
 .hamburger {
-  position: fixed;   /* luôn cố định trên màn hình */
+  position: fixed;
   top: 20px;
   left: 20px;
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  z-index: 4001; /* luôn cao hơn navbar */
+  z-index: 4001;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-/* Hamburger hiển thị trên cả desktop và mobile */
-@media (min-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
 }
 
+/* Hamburger responsive */
 @media (max-width: 768px) {
-  .hamburger { top: 12px; left: 12px; }
-  .sidebar { width: 220px; padding: 16px; }
+  .hamburger { 
+    top: 15px; 
+    left: 15px; 
+    width: 45px;
+    height: 45px;
+  }
+  .sidebar { width: 220px; }
   .main-item { font-size: 14px; }
   .sub-item { font-size: 13px; }
 }
 
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .hamburger .line {
-  width: 30px;
+  width: 24px;
   height: 3px;
   background-color: #ffffff;
   border-radius: 2px;
@@ -125,13 +144,13 @@
 
 /* Hiệu ứng xoay */
 .hamburger.open .line1 {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
 .hamburger.open .line2 {
   opacity: 0;
 }
 .hamburger.open .line3 {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 /* Icon đầu sidebar */

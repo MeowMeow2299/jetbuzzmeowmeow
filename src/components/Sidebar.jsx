@@ -69,18 +69,17 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* Hamburger button với màu pastel */}
+      {/* Hamburger button */}
       <button
-        className={`btn btn-circle fixed top-4 left-4 z-50 shadow-lg bg-pastel-yellow hover:bg-pastel-yellow-light text-japanese-yellow-dark border-pastel-yellow-dark ${isOpen ? 'open' : ''}`}
+        className={`hamburger ${isOpen ? 'open' : ''}`}
         onClick={toggleSidebar}
+        aria-label="Toggle sidebar"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          {isOpen ? (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          ) : (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          )}
-        </svg>
+        <div className="hamburger-lines">
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
+        </div>
       </button>
 
       <div className={`sidebar ${isOpen ? '' : 'closed'}`}>
