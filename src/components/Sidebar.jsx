@@ -1,6 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './Sidebar.css';
-import { FaHome, FaThLarge, FaHeart, FaChevronDown } from 'react-icons/fa';
+import { 
+  FaHome, 
+  FaGamepad, 
+  FaDice, 
+  FaVideo, 
+  FaDiceD20, 
+  FaTicketAlt, 
+  FaTrophy, 
+  FaEgg, 
+  FaChevronUp,
+  FaSpade,
+  FaHeart,
+  FaClub,
+  FaDiamond,
+  FaSwords,
+  FaChevronDown
+} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext.jsx';
 
@@ -34,39 +50,60 @@ const Sidebar = () => {
     };
   }, [isOpen]);
 
-  // Tất cả menu items hiển thị trực tiếp (không dropdown)
-  const allMenuItems = [
-    { name: 'HOME', link: '/', isInternal: true },
-    { name: 'CASINO GAMES', link: '/casino', isInternal: true },
-    { name: 'SLOTS', link: '/slots', isInternal: true },
-    { name: 'LIVE CASINO', link: '/live-casino', isInternal: true },
-    { name: 'TABLE GAMES', link: '/table-games', isInternal: true },
-    { name: 'LOTTERY', link: '/lottery', isInternal: true },
-    { name: 'SPORTS', link: '/sports', isInternal: true },
-    { name: 'GAMECHICKEN', link: '/gamechicken', isInternal: true },
-    { name: 'E-SPORT', link: '/e-sports', isInternal: true },
-    { name: 'POPULAR GAMES', link: '/popular', isInternal: true },
-    { name: 'BGD33', link: '/bgd33', isInternal: true },
-    { name: 'BETBDT', link: '/betbdt', isInternal: true },
-    { name: 'JEETBUZZ', link: '/jeetbuzz', isInternal: true },
-    { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', isInternal: true },
-    { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', isInternal: true },
-    { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', isInternal: true },
-    { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', isInternal: true },
-    { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', isInternal: true },
-    { name: 'CRICKEX', link: '/crickex', isInternal: true },
-    { name: 'CRICKEX LOGIN', link: '/crickex-login', isInternal: true },
-    { name: 'CRICKEX BET', link: '/crickex-bet', isInternal: true },
-    { name: 'CRICKEX APP', link: '/crickex-app', isInternal: true },
-    { name: 'CRICKEX ONLINE', link: '/crickex-online', isInternal: true },
-    { name: 'CRICKEX ACCOUNT CREATE', link: '/crickex-account-create', isInternal: true },
-    { name: 'CRICKEX BONUS', link: '/crickex-bonus', isInternal: true },
-    { name: 'CRICKEX BD LOGIN', link: '/crickex-bd-login', isInternal: true },
-    { name: 'CRICKEX BETTING APP', link: '/crickex-betting-app', isInternal: true },
-    { name: 'CRICKEX BET BANGLA', link: '/crickex-bet-bangla', isInternal: true },
-    { name: 'TK999', link: '/tk999', isInternal: true },
-    { name: 'CK444', link: '/ck444', isInternal: true },
-    { name: 'L444 ONLINE GAME', link: '/l444-online-game', isInternal: true }
+  // Main navigation items (9 items)
+  const mainMenuItems = [
+    { name: 'HOME', link: '/', icon: FaHome },
+    { name: 'CASINO GAMES', link: '/casino', icon: FaGamepad },
+    { name: 'SLOTS', link: '/slots', icon: FaDice },
+    { name: 'LIVE CASINO', link: '/live-casino', icon: FaVideo },
+    { name: 'TABLE GAMES', link: '/table-games', icon: FaDiceD20 },
+    { name: 'LOTTERY', link: '/lottery', icon: FaTicketAlt },
+    { name: 'SPORTS', link: '/sports', icon: FaTrophy },
+    { name: 'GAMECHICKEN', link: '/gamechicken', icon: FaEgg },
+    { name: 'E-SPORT', link: '/e-sports', icon: FaGamepad }
+  ];
+
+  // Collapsible sections
+  const collapsibleSections = [
+    {
+      name: 'POPULAR GAMES',
+      icon: FaClub,
+      subItems: [
+        { name: 'BGD33', link: '/bgd33', icon: FaSpade },
+        { name: 'BETBDT', link: '/betbdt', icon: FaHeart },
+        { name: 'JEETBUZZ', link: '/jeetbuzz', icon: FaClub },
+        { name: 'CRICKEX', link: '/crickex', icon: FaDiamond },
+        { name: 'TK999', link: '/tk999', icon: FaSpade },
+        { name: 'CK444', link: '/ck444', icon: FaHeart },
+        { name: 'L444 ONLINE GAME', link: '/l444-online-game', icon: FaClub }
+      ]
+    },
+    {
+      name: 'CRICKEX',
+      icon: FaSwords,
+      subItems: [
+        { name: 'CRICKEX LOGIN', link: '/crickex-login', icon: FaSwords },
+        { name: 'CRICKEX BET', link: '/crickex-bet', icon: FaSwords },
+        { name: 'CRICKEX APP', link: '/crickex-app', icon: FaSwords },
+        { name: 'CRICKEX ONLINE', link: '/crickex-online', icon: FaSwords },
+        { name: 'CRICKEX ACCOUNT CREATE', link: '/crickex-account-create', icon: FaSwords },
+        { name: 'CRICKEX BONUS', link: '/crickex-bonus', icon: FaSwords },
+        { name: 'CRICKEX BD LOGIN', link: '/crickex-bd-login', icon: FaSwords },
+        { name: 'CRICKEX BETTING APP', link: '/crickex-betting-app', icon: FaSwords },
+        { name: 'CRICKEX BET BANGLA', link: '/crickex-bet-bangla', icon: FaSwords }
+      ]
+    },
+    {
+      name: 'JEETBUZZ',
+      icon: FaClub,
+      subItems: [
+        { name: 'JEETBUZZ LOGIN', link: '/jeetbuzz-login', icon: FaClub },
+        { name: 'JEETBUZZ CASINO', link: '/jeetbuzz-casino', icon: FaClub },
+        { name: 'JEETBUZZ GAME', link: '/jeetbuzz-game', icon: FaClub },
+        { name: 'JEETBUZZ ONLINE', link: '/jeetbuzz-online', icon: FaClub },
+        { name: 'JEETBUZZ PARTNER', link: '/jeetbuzz-partner', icon: FaClub }
+      ]
+    }
   ];
 
   return (
@@ -88,32 +125,68 @@ const Sidebar = () => {
         <div className="min-h-full w-64">
           <div className="p-4">
             <div className="sidebar-content">
-              {/* Tất cả menu items hiển thị trực tiếp */}
-              <ul className="menu menu-vertical w-full text-base-content">
-                {allMenuItems.map((item, index) => (
-                  <li key={index}>
-                    {item.isInternal ? (
+              {/* Main Navigation Items */}
+              <ul className="main-menu">
+                {mainMenuItems.map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <li key={index} className="main-menu-item">
                       <Link 
                         to={item.link} 
                         onClick={handleLinkClick}
-                        className="text-white font-medium text-sm uppercase tracking-wide hover:bg-white hover:bg-opacity-10 rounded-lg px-4 py-3 transition-all duration-300 no-underline"
+                        className="main-menu-link"
                       >
-                        {item.name}
+                        <IconComponent className="menu-icon" />
+                        <span className="menu-text">{item.name}</span>
                       </Link>
-                    ) : (
-                      <a 
-                        href={item.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        onClick={handleLinkClick}
-                        className="text-white font-medium text-sm uppercase tracking-wide hover:bg-white hover:bg-opacity-10 rounded-lg px-4 py-3 transition-all duration-300 no-underline"
-                      >
-                        {item.name}
-                      </a>
-                    )}
-                  </li>
-                ))}
+                    </li>
+                  );
+                })}
               </ul>
+
+              {/* Separator */}
+              <div className="menu-separator"></div>
+
+              {/* Collapsible Sections */}
+              {collapsibleSections.map((section, sectionIndex) => {
+                const SectionIcon = section.icon;
+                const isExpanded = activeDropdown === section.name;
+                
+                return (
+                  <div key={sectionIndex} className="collapsible-section">
+                    {/* Section Header */}
+                    <div 
+                      className="section-header"
+                      onClick={() => toggleDropdown(section.name)}
+                    >
+                      <SectionIcon className="section-icon" />
+                      <span className="section-title">{section.name}</span>
+                      <FaChevronUp className={`chevron ${isExpanded ? 'expanded' : ''}`} />
+                    </div>
+
+                    {/* Sub Items */}
+                    {isExpanded && (
+                      <ul className="sub-menu">
+                        {section.subItems.map((subItem, subIndex) => {
+                          const SubIcon = subItem.icon;
+                          return (
+                            <li key={subIndex} className="sub-menu-item">
+                              <Link 
+                                to={subItem.link} 
+                                onClick={handleLinkClick}
+                                className="sub-menu-link"
+                              >
+                                <SubIcon className="sub-icon" />
+                                <span className="sub-text">{subItem.name}</span>
+                              </Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
