@@ -4,24 +4,17 @@ import './SportsPage.css';
 
 const SportsPage = () => {
   const sportsGames = [
-    { id: 1, title: 'Football Betting', provider: 'Bet365', image: '/photo/football-betting.png' },
-    { id: 2, title: 'Basketball Live', provider: 'Bet365', image: '/photo/basketball-live.png' },
-    { id: 3, title: 'Tennis Championship', provider: 'Bet365', image: '/photo/tennis-championship.png' },
-    { id: 4, title: 'Cricket World Cup', provider: 'Bet365', image: '/photo/cricket-world-cup.png' },
-    { id: 5, title: 'Baseball League', provider: 'Bet365', image: '/photo/baseball-league.png' },
-    { id: 6, title: 'Hockey Match', provider: 'Bet365', image: '/photo/hockey-match.png' },
-    { id: 7, title: 'Golf Tournament', provider: 'Bet365', image: '/photo/golf-tournament.png' },
-    { id: 8, title: 'Boxing Fight', provider: 'Bet365', image: '/photo/boxing-fight.png' },
-    { id: 9, title: 'Formula 1', provider: 'Bet365', image: '/photo/formula-1.png' },
-    { id: 10, title: 'Olympic Games', provider: 'Bet365', image: '/photo/olympic-games.png' },
-    { id: 11, title: 'Volleyball', provider: 'Bet365', image: '/photo/volleyball.png' },
-    { id: 12, title: 'Badminton', provider: 'Bet365', image: '/photo/badminton.png' },
-    { id: 13, title: 'Table Tennis', provider: 'Bet365', image: '/photo/table-tennis.png' },
-    { id: 14, title: 'Swimming', provider: 'Bet365', image: '/photo/swimming.png' },
-    { id: 15, title: 'Cycling', provider: 'Bet365', image: '/photo/cycling.png' },
-    { id: 16, title: 'Athletics', provider: 'Bet365', image: '/photo/athletics.png' },
-    { id: 17, title: 'Rugby', provider: 'Bet365', image: '/photo/rugby.png' },
-    { id: 18, title: 'American Football', provider: 'Bet365', image: '/photo/american-football.png' },
+    { id: 1, title: '9WICKETS SPORTS', provider: '9Wickets', image: '/photo/9WICKETS_SPORTS.png' },
+    { id: 2, title: 'AP GAMING SPORTS', provider: 'AP Gaming', image: '/photo/AP_GAMING_SPORTS.png' },
+    { id: 3, title: 'BETBDT LUCKY SPORTS', provider: 'BetBDT', image: '/photo/BETBDT_LUCKY_SPORTS.png' },
+    { id: 4, title: 'BTI SPORTS', provider: 'BTI', image: '/photo/BTI_SPORTS.png' },
+    { id: 5, title: 'FB SPORTS', provider: 'FB Gaming', image: '/photo/FB_SPORTS.png' },
+    { id: 6, title: 'PANDA SPORTS', provider: 'Panda Gaming', image: '/photo/PANDA_SPORTS.png' },
+    { id: 7, title: 'POLY SPORTS', provider: 'Poly Gaming', image: '/photo/POLY_SPORTS.png' },
+    { id: 8, title: 'RCB988 HOURSEBOOK SPORTS', provider: 'RCB988', image: '/photo/RCB988_HOURSEBOOK_SPORTS.png' },
+    { id: 9, title: 'SABA SPORTS', provider: 'SABA Gaming', image: '/photo/SABA_SPORTS.png' },
+    { id: 10, title: 'SV388 SPORTS', provider: 'SV388', image: '/photo/SV388_SPORTS.png' },
+    { id: 11, title: 'UNITED GAMING SPORTS', provider: 'United Gaming', image: '/photo/UNITED_GAMING_SPORTS.png' },
   ];
 
   return (
