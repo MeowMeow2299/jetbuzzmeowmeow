@@ -146,6 +146,7 @@ const SlotsPage = () => {
               }}
             />
             <div className="slots-title">{card.title}</div>
+            <button className="free-trial-btn">FREE TRIAL</button>
           </div>
         ))}
       </div>
