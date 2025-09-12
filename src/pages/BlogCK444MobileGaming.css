@@ -1,0 +1,551 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.blog-header-with-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFD700;
+}
+
+.back-icon {
+  color: #FFD700;
+  font-size: 28px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.back-icon:hover {
+  color: #FFA500;
+  background-color: rgba(255, 215, 0, 0.1);
+  transform: translateX(-3px);
+}
+
+.blog-main-title {
+  color: #FFD700;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-content {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.blog-intro {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #FFD700;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-intro::after {
+  content: '📱';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.intro-title {
+  color: #FFA500;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 4px solid #FFA500;
+}
+
+.blog-section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.blog-section:nth-child(1) { animation-delay: 0.1s; }
+.blog-section:nth-child(2) { animation-delay: 0.2s; }
+.blog-section:nth-child(3) { animation-delay: 0.3s; }
+.blog-section:nth-child(4) { animation-delay: 0.4s; }
+.blog-section:nth-child(5) { animation-delay: 0.5s; }
+.blog-section:nth-child(6) { animation-delay: 0.6s; }
+.blog-section:nth-child(7) { animation-delay: 0.7s; }
+.blog-section:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.1);
+  border-color: #FFD700;
+}
+
+.section-title {
+  color: #FFD700;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFD700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.subsection-title {
+  color: #FFA500;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+  padding-left: 15px;
+  border-left: 4px solid #FFA500;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+.iphone-features-list, .android-features-list, .common-features-list, .security-list {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 15px 0;
+}
+
+.iphone-features-list li, .android-features-list li, .common-features-list li, .security-list li {
+  margin-bottom: 12px;
+  color: #e0e0e0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.iphone-features-list li::before {
+  content: "🍎";
+  position: absolute;
+  left: -20px;
+}
+
+.android-features-list li::before {
+  content: "🤖";
+  position: absolute;
+  left: -20px;
+}
+
+.common-features-list li::before {
+  content: "📱";
+  position: absolute;
+  left: -20px;
+}
+
+.security-list li::before {
+  content: "🔒";
+  position: absolute;
+  left: -20px;
+}
+
+.games-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.game-category {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #FFD700;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.game-category:hover::before {
+  left: 100%;
+}
+
+.game-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+}
+
+.game-category h4 {
+  color: #FFD700;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #FFD700;
+}
+
+.game-category p {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.tips-list {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 15px 0;
+}
+
+.tips-list li {
+  margin-bottom: 12px;
+  color: #e0e0e0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.tips-list li::before {
+  content: "💡";
+  position: absolute;
+  left: -20px;
+}
+
+.device-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.device-advantages {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.device-advantages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 8px 8px 0 0;
+}
+
+.device-advantages.iphone-advantages::before {
+  background: linear-gradient(90deg, #007AFF, #5AC8FA);
+}
+
+.device-advantages.android-advantages::before {
+  background: linear-gradient(90deg, #34A853, #00D4AA);
+}
+
+.device-advantages:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+  border-color: #FFD700;
+}
+
+.device-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.iphone-title {
+  background: linear-gradient(135deg, #007AFF, #5AC8FA);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.android-title {
+  background: linear-gradient(135deg, #34A853, #00D4AA);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.device-features {
+  list-style: none;
+  padding: 0;
+}
+
+.device-features li {
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.device-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.blog-conclusion {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.15));
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #FFD700;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-conclusion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.8s;
+}
+
+.blog-conclusion:hover::before {
+  left: 100%;
+}
+
+.blog-conclusion p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.call-to-action {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.2));
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #FFD700;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFD700;
+  margin-top: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 15px;
+  }
+  
+  .blog-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .blog-content {
+    padding: 25px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.2rem;
+  }
+  
+  .blog-header-with-back {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .back-icon {
+    align-self: flex-start;
+  }
+  
+  .games-categories,
+  .device-comparison {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .blog-intro::after {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+  }
+  
+  .call-to-action {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-main-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.1rem;
+  }
+  
+  .device-title {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+  }
+  
+  .call-to-action {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500;
+}
+
+/* Special animations for device advantages */
+.device-advantages {
+  animation: slideInFromBottom 0.6s ease forwards;
+}
+
+.device-advantages:nth-child(1) { animation-delay: 0.1s; }
+.device-advantages:nth-child(2) { animation-delay: 0.2s; }
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced hover effects */
+.blog-section:hover .subsection-title {
+  color: #FFD700;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+.blog-section:hover .iphone-features-list,
+.blog-section:hover .android-features-list,
+.blog-section:hover .common-features-list,
+.blog-section:hover .security-list,
+.blog-section:hover .tips-list {
+  border-color: #FFD700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+}
+
+/* Special styling for strong elements */
+.iphone-features-list li strong,
+.android-features-list li strong,
+.common-features-list li strong,
+.security-list li strong,
+.tips-list li strong {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+/* Highlight special features */
+.game-category h4 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.device-title {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
