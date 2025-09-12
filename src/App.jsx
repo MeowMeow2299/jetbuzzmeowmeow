@@ -74,7 +74,6 @@ function App() {
               <Route path="/lottery" element={<Lottery />} />
               <Route path="/e-sports" element={<ESport />} />
               <Route path="/table-games" element={<TableGames />} />
-              <Route path="/sports" element={<Sports />} />
               <Route path="/popular" element={<PopularGame />} />
               <Route path="/hot-games" element={<HotGamesPage />} />
               <Route path="/favorites" element={<FavoritesPage />} />

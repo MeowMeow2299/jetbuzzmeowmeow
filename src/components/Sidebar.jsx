@@ -10,13 +10,13 @@ import {
   FaTrophy, 
   FaEgg, 
   FaChevronUp,
-  FaSpade,
   FaHeart,
-  FaClub,
-  FaDiamond,
-  FaSwords,
   FaChevronDown,
-  FaCircle
+  FaCircle,
+  FaCircle as FaSpade,
+  FaCircle as FaSwords,
+  FaCircle as FaClub,
+  FaCircle as FaDiamond
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext.jsx';
