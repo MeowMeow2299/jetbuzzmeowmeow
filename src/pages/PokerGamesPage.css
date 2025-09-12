@@ -1,52 +1,153 @@
-.poker-games-page {
-  min-height: 100vh;
-  background: #000;
-  color: #fff;
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: sans-serif;
+}
+
+.poker-container {
   padding: 20px;
 }
 
-.page-header {
-  text-align: center;
-  margin-bottom: 40px;
+.poker-header {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.page-header h1 {
-  font-size: 48px;
+.poker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.poker-card {
+  width: 150px;
+  height: 200px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.poker-card:hover {
+  transform: scale(1.05);
+}
+
+.poker-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  filter: blur(0px);
+  transition: filter 0.3s ease;
+}
+
+.poker-card:hover .poker-image {
+  filter: blur(2px);
+}
+
+.poker-title {
+  padding: 10px;
+  font-size: 14px;
   font-weight: bold;
-  color: #FFD700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  transition: opacity 0.3s ease;
 }
 
-.page-header p {
-  font-size: 18px;
-  color: #ccc;
-  margin: 0;
+.poker-card:hover .poker-title {
+  opacity: 0.7;
 }
 
-.games-container {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Glassmorphism hover effect */
+.poker-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
-.coming-soon {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
-  border-radius: 15px;
-  border: 1px solid #FFD700;
+.poker-card::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 3;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-.coming-soon h2 {
-  font-size: 32px;
-  color: #FFD700;
-  margin-bottom: 15px;
+.poker-card:hover::before {
+  opacity: 1;
 }
 
-.coming-soon p {
+.poker-card:hover::after {
+  opacity: 1;
+}
+
+/* View More Button */
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.view-more-btn {
+  background: linear-gradient(45deg, #00f260, #0575e6);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
   font-size: 16px;
-  color: #ccc;
-  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 242, 96, 0.3);
 }
 
+.view-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 96, 0.4);
+  background: linear-gradient(45deg, #0575e6, #00f260);
+}
+
+.view-more-btn:active {
+  transform: translateY(0);
+}
+
+/* All Loaded Message */
+.all-loaded-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.all-loaded-text {
+  color: #00f260;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 30px;
+  border: 2px solid #00f260;
+  border-radius: 25px;
+  background: rgba(0, 242, 96, 0.1);
+}
