@@ -22,6 +22,7 @@ import BlogJeetBuzzPremierCasino from '../pages/BlogJeetBuzzPremierCasino';
 import BlogOutline from '../pages/BlogOutline';
 import BlogJeetBuzzLoginCasinoJourney from '../pages/BlogJeetBuzzLoginCasinoJourney';
 import BlogCK444MobileGaming from '../pages/BlogCK444MobileGaming';
+import BlogCK444LoginGuide from '../pages/BlogCK444LoginGuide';
 
 const AppRoutes = () => (
   <Routes>
@@ -47,6 +48,7 @@ const AppRoutes = () => (
     <Route path="/blog/blog-outline" element={<BlogOutline />} />
     <Route path="/blog/jeetbuzz-login-casino-journey" element={<BlogJeetBuzzLoginCasinoJourney />} />
     <Route path="/blog/ck444-mobile-gaming" element={<BlogCK444MobileGaming />} />
+    <Route path="/blog/ck444-login-guide" element={<BlogCK444LoginGuide />} />
   </Routes>
 );
 

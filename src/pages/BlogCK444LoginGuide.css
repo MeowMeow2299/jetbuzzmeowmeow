@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.blog-header-with-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FFD700;
+}
+
+.back-icon {
+  color: #FFD700;
+  font-size: 28px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.back-icon:hover {
+  color: #FFA500;
+  background-color: rgba(255, 215, 0, 0.1);
+  transform: translateX(-3px);
+}
+
+.blog-main-title {
+  color: #FFD700;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog-content {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+
+.blog-intro {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #FFD700;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-intro::after {
+  content: '🎯';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.blog-section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: #222;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.blog-section:nth-child(1) { animation-delay: 0.1s; }
+.blog-section:nth-child(2) { animation-delay: 0.2s; }
+.blog-section:nth-child(3) { animation-delay: 0.3s; }
+.blog-section:nth-child(4) { animation-delay: 0.4s; }
+.blog-section:nth-child(5) { animation-delay: 0.5s; }
+.blog-section:nth-child(6) { animation-delay: 0.6s; }
+.blog-section:nth-child(7) { animation-delay: 0.7s; }
+.blog-section:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.1);
+  border-color: #FFD700;
+}
+
+.section-title {
+  color: #FFD700;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #FFD700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.blog-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+.features-list, .games-list, .mobile-experience-list, .security-list, .tips-list {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 15px 0;
+}
+
+.features-list li, .games-list li, .mobile-experience-list li, .security-list li, .tips-list li {
+  margin-bottom: 12px;
+  color: #e0e0e0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.features-list li::before {
+  content: "⭐";
+  position: absolute;
+  left: -20px;
+}
+
+.games-list li::before {
+  content: "🎮";
+  position: absolute;
+  left: -20px;
+}
+
+.mobile-experience-list li::before {
+  content: "📱";
+  position: absolute;
+  left: -20px;
+}
+
+.security-list li::before {
+  content: "🔒";
+  position: absolute;
+  left: -20px;
+}
+
+.tips-list li::before {
+  content: "💡";
+  position: absolute;
+  left: -20px;
+}
+
+.login-steps-list {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  margin: 15px 0;
+  counter-reset: step-counter;
+}
+
+.login-steps-list li {
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  padding-left: 40px;
+  position: relative;
+  counter-increment: step-counter;
+}
+
+.login-steps-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000000;
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-shadow: none;
+}
+
+.faq-container {
+  display: grid;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.faq-item {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 165, 0, 0.05));
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.faq-item:hover::before {
+  left: 100%;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+  border-color: #FFD700;
+}
+
+.faq-question {
+  color: #FFD700;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #FFD700;
+}
+
+.faq-answer {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.faq-answer::before {
+  content: "💬";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  opacity: 0.7;
+}
+
+.blog-conclusion {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 165, 0, 0.15));
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #FFD700;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-conclusion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.8s;
+}
+
+.blog-conclusion:hover::before {
+  left: 100%;
+}
+
+.blog-conclusion p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.blog-conclusion .section-title {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 15px;
+  }
+  
+  .blog-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .blog-content {
+    padding: 25px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-header-with-back {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .back-icon {
+    align-self: flex-start;
+  }
+  
+  .faq-container {
+    gap: 15px;
+  }
+  
+  .blog-intro::after {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+  }
+  
+  .login-steps-list li {
+    padding-left: 35px;
+  }
+  
+  .login-steps-list li::before {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-main-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .faq-question {
+    font-size: 1.1rem;
+  }
+  
+  .login-steps-list li {
+    padding-left: 30px;
+  }
+  
+  .login-steps-list li::before {
+    width: 20px;
+    height: 20px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500;
+}
+
+/* Special animations for FAQ items */
+.faq-item {
+  animation: slideInFromRight 0.6s ease forwards;
+}
+
+.faq-item:nth-child(1) { animation-delay: 0.1s; }
+.faq-item:nth-child(2) { animation-delay: 0.2s; }
+.faq-item:nth-child(3) { animation-delay: 0.3s; }
+.faq-item:nth-child(4) { animation-delay: 0.4s; }
+.faq-item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced hover effects */
+.blog-section:hover .section-title {
+  color: #FFD700;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+.blog-section:hover .features-list,
+.blog-section:hover .games-list,
+.blog-section:hover .mobile-experience-list,
+.blog-section:hover .security-list,
+.blog-section:hover .tips-list,
+.blog-section:hover .login-steps-list {
+  border-color: #FFD700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+}
+
+/* Special styling for strong elements */
+.features-list li strong,
+.games-list li strong,
+.mobile-experience-list li strong,
+.security-list li strong,
+.tips-list li strong,
+.login-steps-list li strong {
+  color: #FFD700;
+  font-weight: 600;
+}
+
+/* Highlight FAQ section */
+.faq-container {
+  background-color: rgba(255, 215, 0, 0.02);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Numbered steps styling */
+.login-steps-list {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 165, 0, 0.05));
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Special glow effect for conclusion */
+.blog-conclusion {
+  animation: subtleGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes subtleGlow {
+  from {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+  }
+}
