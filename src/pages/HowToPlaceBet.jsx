@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaUserPlus, FaWallet, FaGamepad, FaTarget, FaDollarSign, FaCheckCircle, FaChartLine, FaLightbulb, FaBookOpen, FaGift, FaShieldAlt, FaPlay, FaCreditCard, FaTrophy, FaDice, FaFootballBall, FaChess, FaStar } from 'react-icons/fa';
+import { FaArrowLeft, FaUserPlus, FaWallet, FaGamepad, FaBullseye, FaDollarSign, FaCheckCircle, FaChartLine, FaLightbulb, FaBookOpen, FaGift, FaShieldAlt, FaPlay, FaCreditCard, FaTrophy, FaDice, FaFootballBall, FaChess, FaStar } from 'react-icons/fa';
 import './HowToPlaceBet.css';
 
 const updateOrCreateMeta = (name, content) => {
@@ -69,7 +69,7 @@ const HowToPlaceBet = () => {
       id: 4,
       title: 'Select Your Bet Type',
       description: 'Each game or match may offer multiple types of bets. For example, in cricket, you can bet on match winner, total runs, or player performance, while in live casino, you can bet on red/black in roulette or banker/player in baccarat.',
-      icon: FaTarget,
+      icon: FaBullseye,
       details: [
         'Choose bet type (match winner, total runs)',
         'Select specific outcomes',
