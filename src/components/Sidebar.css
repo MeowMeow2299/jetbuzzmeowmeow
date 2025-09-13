@@ -164,11 +164,16 @@
   margin-bottom: 8px;
 }
 
-/* Force yellow color for section headers */
+/* Force yellow color for section headers - MAXIMUM SPECIFICITY */
 .sidebar .collapsible-section .section-header,
 .sidebar .collapsible-section .section-header span,
-.sidebar .collapsible-section .section-title {
+.sidebar .collapsible-section .section-title,
+div.sidebar div.collapsible-section div.section-header,
+div.sidebar div.collapsible-section div.section-header span,
+div.sidebar div.collapsible-section span.section-title {
   color: #FFD700 !important;
+  color: gold !important;
+  color: rgb(255, 215, 0) !important;
 }
 
 .sidebar .collapsible-section .section-header {
@@ -391,4 +396,18 @@
   .sidebar {
     display: block;
   }
+}
+
+/* ULTIMATE FORCE - Load last to override everything */
+.sidebar .collapsible-section .section-header * {
+  color: #FFD700 !important;
+}
+
+.sidebar .collapsible-section .section-title {
+  color: #FFD700 !important;
+  color: gold !important;
+}
+
+.sidebar .collapsible-section .section-header {
+  color: #FFD700 !important;
 }
